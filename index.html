@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link rel="shortcut icon" href="https://app.doublestruck.eu/images/fav/EP.ico?v=1739233799" />
+
+    <meta name="description" content="Exampro gatekeeper facility to launch products">
+
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://app.doublestruck.eu/gate-tb/css/normalize.css">
+    <link rel="stylesheet" href="https://app.doublestruck.eu/gate-tb/css/skeleton.css">
+
+    <link rel="stylesheet" href="https://ds-vendor.doublestruck.eu/fontawesome/font-awesome-5.15.4/css/all.min.css">
+
+    <link href="https://ds-welcome.doublestruck.eu/welcome/css/gatemessages.css" rel="stylesheet">
+
+    <!-- gate-tb/css/font-awesome.min.css -->
+
+    <link rel="stylesheet" href="https://app.doublestruck.eugate-tb/css/skeleton-tabs.css?s=as">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+
+    <script>
+        var reqid = "51da8882d6e9a7a69d8e10fef587ce47";
+        const tbOrderForm = "https://forms.doublestruck.co.uk/?brand=TB";
+        const epOrderForm = "https://forms.doublestruck.co.uk/?brand=EP";
+        const supportLink = "https://support.exampro.co.uk/";
+        const adminfaqs = "https://support.exampro.co.uk/kb/?lnd=JS";
+    </script>
+
+    <link rel="stylesheet" href="https://app.doublestruck.eu/css/gate-common2.css">
+
+
+    <title>Exampro Gatekeeper</title>
+    <link rel="stylesheet" href="https://app.doublestruck.eu/gate-ep/css/styles.css">
+
+
+
+
+
+    <script src="https://app.doublestruck.eugate-tb/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script>
+        var launched_theme = "EP";
+        var teachername = "";
+        var teacherkey = "";
+        var isteacher = "0";
+    </script>
+
+</head>
+
+<body class="ep-root">
+
+
+    <div id="loading" style="display: none;">
+        <div id="spinner">
+            <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+
+
+
+    <!--[if lt IE 8]>
+                <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+    <div class="gatekeeper">
+
+
+        <header class="gk-header" role="banner" id="pageHeader">
+            <div class="logo-container">
+                <a href="http://www.exampro.co.uk" target="_blank">
+                    <div class="gk-logo-new"><img class="logo-image-new"
+                            src="https://app.doublestruck.eu/img/exampro.png">
+                        <h1 class="gatekeeper-header">Gatekeeper</h1>
+                    </div>
+                </a>
+            </div>
+			
+			
+            <div class="username-new">
+                <div class="no-mobile">
+                    <div class="admin-button" id="admin-button">
+                        <a href="#" id="adminLink">
+                            <p class="admin-text" style="white-space:nowrap">
+                                <i class="fas fa-question admin-icon"></i>Help - Login required?
+                            </p>
+                        </a>
+                    </div>
+					
+                </div>
+				
+            </div>
+
+            <style>
+                .username-new {
+                    padding-right: 8px;
+                }
+            </style>
+
+
+        </header>
+
+
+        <div class="sidebar clear" id="pageSidebar">
+            <nav class="nav" role="navigation">
+                <ul class="nav-tabs" id="buttonNavigation">
+
+                    <!-- SG replace with buttons from customer data  see /js/app/gate.js -->
+
+
+
+
+
+                    <li>
+                        <a href="#" data-search="ALL" data-brand="EP" class="btn-link selected log-this"
+                            data-type="GK_NAV" data-log="Clicked EP All subjects">
+                            <span class="nav-icon-span">
+                                <i class="nav-icon fas fa-eye fa-stack-1x"></i>
+                            </span>
+                            All subjects
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-brand="EP" data-search="F8" class="btn-link log-this">
+                            <span class="nav-icon-span">
+                                <i class="nav-icon fas fa-sitemap fa-stack-1x"></i>
+                            </span>
+                            <span class="nav-title">
+                                Computer Science
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-brand="EP" data-search="F10" class="btn-link log-this">
+                            <span class="nav-icon-span">
+                                <i class="nav-icon fas fa-crop fa-stack-1x"></i>
+                            </span>
+                            <span class="nav-title">
+                                Design and Technology
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-brand="EP" data-search="F11" class="btn-link log-this">
+                            <span class="nav-icon-span">
+                                <i class="nav-icon fas fa-briefcase fa-stack-1x"></i>
+                            </span>
+                            <span class="nav-title">
+                                Economics and Business
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-brand="EP" data-search="F3" class="btn-link log-this">
+                            <span class="nav-icon-span">
+                                <i class="nav-icon fas fa-book-open fa-stack-1x"></i>
+                            </span>
+                            <span class="nav-title">
+                                English
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-brand="EP" data-search="F4" class="btn-link log-this">
+                            <span class="nav-icon-span">
+                                <i class="nav-icon fas fa-globe-africa fa-stack-1x"></i>
+                            </span>
+                            <span class="nav-title">
+                                Geography and History
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-brand="EP" data-search="F5" class="btn-link log-this"">
+                            <span class=" nav-icon-span">
+                            <i class="nav-icon fas fa-comments fa-stack-1x"></i>
+                            </span>
+                            <span class="nav-title">
+                                Languages
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-brand="EP" data-search="F2" class="btn-link log-this">
+                            <span class="nav-icon-span">
+                                <i class="nav-icon fas fa-cube fa-stack-1x"></i>
+                            </span>
+                            <span class="nav-title">
+                                Mathematics
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-brand="EP" data-search="F9" class="btn-link log-this">
+                            <span class="nav-icon-span">
+                                <i class="nav-icon fas fa-brain fa-stack-1x"></i>
+                            </span>
+                            <span class="nav-title">
+                                Psychology
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-brand="EP" data-search="F6" class="btn-link log-this">
+                            <span class="nav-icon-span">
+                                <i class="nav-icon fas fa-futbol fa-stack-1x"></i>
+                            </span>
+                            <span class="nav-title">
+                                Physical Education
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-brand="EP" data-search="F1" class="btn-link log-this">
+                            <span class="nav-icon-span">
+                                <i class="nav-icon fas fa-flask fa-stack-1x"></i>
+                            </span>
+                            <span class="nav-title">
+                                Science
+                            </span>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+
+
+        </div><!-- .sidebar -->
+
+
+
+
+
+        <div class="gk-content">
+            <main class="gk-main" role="main">
+                <div class="launchpad">
+                    <div class="entry-content">
+
+
+
+                        <div class="cd-tabs">
+                            <nav>
+                                <ul class="cd-tabs-navigation tabs-all" id="tabNavigation">
+                                    <li id="currentTabHeader">
+                                        <a data-content="new" class="first-tab current-header selected"
+                                            href="#0">Current</a>
+                                    </li>
+                                    <li id="archivedTabHeader">
+                                        <a data-content="archive" class="last-tab" href="#0">Archive</a>
+                                    </li>
+
+                                </ul> <!-- cd-tabs-navigation -->
+                            </nav>
+
+                            <ul class="head-row head-row-all" id="headRow">
+
+                            </ul>
+
+                            <ul class="cd-tabs-content" style="height: auto;">
+
+                                <li data-content="new" class="selected" id="currentProductsTab">
+
+                                    <!-- SG CURRENT subs here, see /js/app/gate.js -->
+                                    <section class="_ALL _F8">
+                                        <h3> <span class="section-title">Computer Science</span></h3>
+                                        <section>
+                                            <div class="gk-group-core gkg-title"><span class="gkg-image-span"><svg
+                                                        class="gkg-icon" xmlns="http://www.w3.org/2000/svg" width="16"
+                                                        height="14" viewBox="0 0 16 14" fill="none">
+                                                        <path
+                                                            d="M7.60564 9.0705L5.69014 11.0987L4.16901 9.0705H4.11268L0 13.4649H3.60563L5.69014 11.0987L7.26761 13.5212H10.8732L7.60564 9.0705Z"
+                                                            fill="#412878"></path>
+                                                        <path
+                                                            d="M7.60578 9.07042L16.0001 0.056338L12.4509 0L6.14099 6.76056L4.50719 4.50704H0.845215L4.16916 9.07042L5.69029 11.0986L7.60578 9.07042Z"
+                                                            fill="#C8194B"></path>
+                                                    </svg></span>Core</div>
+                                            <ul>
+                                                <li class="none"><a href="./subjects/F8/AA_COM.html"
+                                                        target="_blank"><span class="product">A-level Computer
+                                                            Science</span></a></li>
+                                                <li class="none"><a href="./subjects/F8/AG_COMP.html"
+                                                        target="_blank"><span class="product">GCSE Computer
+                                                            Science</span></a>
+                                                </li>
+
+                                            </ul>
+                                        </section>
+                                    </section>
+
+                                    <section class="_ALL _F10">
+                                        <h3> <span class="section-title">Design and Technology</span></h3>
+                                        <section>
+                                            <div class="gk-group-core gkg-title"><span class="gkg-image-span"><svg
+                                                        class="gkg-icon" xmlns="http://www.w3.org/2000/svg" width="16"
+                                                        height="14" viewBox="0 0 16 14" fill="none">
+                                                        <path
+                                                            d="M7.60564 9.0705L5.69014 11.0987L4.16901 9.0705H4.11268L0 13.4649H3.60563L5.69014 11.0987L7.26761 13.5212H10.8732L7.60564 9.0705Z"
+                                                            fill="#412878"></path>
+                                                        <path
+                                                            d="M7.60578 9.07042L16.0001 0.056338L12.4509 0L6.14099 6.76056L4.50719 4.50704H0.845215L4.16916 9.07042L5.69029 11.0986L7.60578 9.07042Z"
+                                                            fill="#C8194B"></path>
+                                                    </svg></span>Core</div>
+                                            <ul>
+                                                <li class="none"><a href="./subjects/design and technology/AA_DTFT.html"
+                                                        target="_blank"><span class="product">A-level D&amp;T: Fashion
+                                                            and Textiles</span></a></li>
+                                                <li class="none"><a href="./subjects/design and technology/AA_DTPD.html"
+                                                        target="_blank"><span class="product">A-level D&amp;T: Product
+                                                            Design</span></a>
+                                                </li>
+                                                <li class="none"><a href="./subjects/design and technology/AG_DT.html"
+                                                        target="_blank"><span class="product">GCSE Design and
+                                                            Technology</span></a>
+                                                </li>
+                                                <li class="none"><a href="./subjects/design and technology/AG_FPN.html"
+                                                        target="_blank"><span class="product">GCSE Food Preparation and
+                                                            Nutrition</span></a>
+                                                </li>
+
+
+                                            </ul>
+                                        </section>
+                                    </section>
+
+                                    <section class="_ALL _F11">
+                                        <h3> <span class="section-title">Economics and Business</span></h3>
+                                        <section>
+                                            <div class="gk-group-core gkg-title"><span class="gkg-image-span"><svg
+                                                        class="gkg-icon" xmlns="http://www.w3.org/2000/svg" width="16"
+                                                        height="14" viewBox="0 0 16 14" fill="none">
+                                                        <path
+                                                            d="M7.60564 9.0705L5.69014 11.0987L4.16901 9.0705H4.11268L0 13.4649H3.60563L5.69014 11.0987L7.26761 13.5212H10.8732L7.60564 9.0705Z"
+                                                            fill="#412878"></path>
+                                                        <path
+                                                            d="M7.60578 9.07042L16.0001 0.056338L12.4509 0L6.14099 6.76056L4.50719 4.50704H0.845215L4.16916 9.07042L5.69029 11.0986L7.60578 9.07042Z"
+                                                            fill="#C8194B"></path>
+                                                    </svg></span>Core</div>
+                                            <ul>
+
+                                                <li class="none"><a href="./subjects/economics and business/AA_ECO.html"
+                                                        target="_blank"><span class="product">A-level
+                                                            Economics</span></a>
+                                                </li>
+                                                <li class="none"><a href="./subjects/economics and business/AG_BUS.html"
+                                                        target="_blank"><span class="product">GCSE Business</span></a>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </section>
+
+                                    <section class="_ALL _F3">
+                                        <h3> <span class="section-title">English</span></h3>
+                                        <section>
+                                            <div class="gk-group-core gkg-title"><span class="gkg-image-span"><svg
+                                                        class="gkg-icon" xmlns="http://www.w3.org/2000/svg" width="16"
+                                                        height="14" viewBox="0 0 16 14" fill="none">
+                                                        <path
+                                                            d="M7.60564 9.0705L5.69014 11.0987L4.16901 9.0705H4.11268L0 13.4649H3.60563L5.69014 11.0987L7.26761 13.5212H10.8732L7.60564 9.0705Z"
+                                                            fill="#412878"></path>
+                                                        <path
+                                                            d="M7.60578 9.07042L16.0001 0.056338L12.4509 0L6.14099 6.76056L4.50719 4.50704H0.845215L4.16916 9.07042L5.69029 11.0986L7.60578 9.07042Z"
+                                                            fill="#C8194B"></path>
+                                                    </svg></span>Core</div>
+                                            <ul>
+                                                <li class="none"><a href="./subjects/english/K1_READ.html"
+                                                        target="_blank"><span class="product">KS1 Reading</span></a>
+                                                </li>
+                                                <li class="none"><a href="./subjects/english/K1_SP.html"
+                                                        target="_blank"><span class="product">KS1 Spelling</span></a>
+                                                </li>
+                                                <li class="none"><a href="./subjects/english/K2_READ.html"
+                                                        target="_blank"><span class="product">KS2 Reading</span></a>
+                                                </li>
+
+                                                <li class="none"><a href="./subjects/english/K3_ENG.html"
+                                                        target="_blank"><span class="product">KS3 English</span></a>
+                                                </li>
+                                                <li class="none"><a href="./subjects/english/K_SP.html"
+                                                        target="_blank"><span class="product">Primary
+                                                            Spelling</span></a></li>
+                                                <li class="none"><a href="./subjects/english/K1_PHON.html"
+                                                        target="_blank"><span class="product">Year 1 Phonics</span></a>
+                                                </li>
+                                                <li class="none"><a href="./subjects/english/K_GPS.html"
+                                                        target="_blank"><span class="product">Primary Grammar and
+                                                            Punctuation</span></a>
+                                                </li>
+                                                <li class="none"><a href="./subjects/english/K_READ.html"
+                                                        target="_blank"><span class="product">Reading by Content
+                                                            Domain</span></a>
+                                                </li>
+
+
+                                            </ul>
+                                        </section>
+                                        <section>
+                                            <div class="gk-groups-readymade gkg-title"><span class="gkg-image-span"><i
+                                                        class="gkg-icon fas fa-plus"></i></span>Highlights
+                                            </div>
+                                            <ul>
+                                                <li class="none">
+                                                    <a href="https://resources.doublestruck.eu/resources/res-ag-eng.php?otheme=EP"
+                                                        target="_blank">
+                                                        <span class="product">GCSE English Highlights</span>
+                                                    </a>
+                                                </li>
+
+                                            </ul>
+                                        </section>
+                                    </section>
+
+                                    <section class="_ALL _F4">
+                                        <h3> <span class="section-title">Geography and History</span></h3>
+                                        <section>
+                                            <div class="gk-group-core gkg-title"><span class="gkg-image-span"><svg
+                                                        class="gkg-icon" xmlns="http://www.w3.org/2000/svg" width="16"
+                                                        height="14" viewBox="0 0 16 14" fill="none">
+                                                        <path
+                                                            d="M7.60564 9.0705L5.69014 11.0987L4.16901 9.0705H4.11268L0 13.4649H3.60563L5.69014 11.0987L7.26761 13.5212H10.8732L7.60564 9.0705Z"
+                                                            fill="#412878"></path>
+                                                        <path
+                                                            d="M7.60578 9.07042L16.0001 0.056338L12.4509 0L6.14099 6.76056L4.50719 4.50704H0.845215L4.16916 9.07042L5.69029 11.0986L7.60578 9.07042Z"
+                                                            fill="#C8194B"></path>
+                                                    </svg></span>Core</div>
+                                            <ul>
+                                                <li class="none"><a href="./subjects/geography/AA_GEO.html"
+                                                        target="_blank"><span class="product">A-level
+                                                            Geography</span></a>
+                                                </li>
+                                                <li class="none"><a href="./subjects/geography/AG_GEO.html"
+                                                        target="_blank"><span class="product">GCSE Geography</span></a>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                        <section>
+                                            <div class="gk-groups-readymade gkg-title"><span class="gkg-image-span"><i
+                                                        class="gkg-icon fas fa-plus"></i></span>Ready-made assessments
+                                            </div>
+                                            <ul>
+                                                <li class="none">
+                                                    <a href="https://resources.doublestruck.eu/resources/res-aa-geo-mat.php"
+                                                        target="_blank">
+                                                        <span class="product">A-level Geography - Mathematical Skills</span>
+                                                    </a>
+                                                </li>
+												<li class="none">
+                                                    <a href="https://resources.doublestruck.eu/resources/res-ag-geo-tt.php"
+                                                        target="_blank">
+                                                        <span class="product">GCSE Geography topic tests</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </section>
+
+                                    <section class="_ALL _F5">
+                                        <h3> <span class="section-title">Languages</span></h3>
+                                        <section>
+                                            <div class="gk-group-core gkg-title"><span class="gkg-image-span"><svg
+                                                        class="gkg-icon" xmlns="http://www.w3.org/2000/svg" width="16"
+                                                        height="14" viewBox="0 0 16 14" fill="none">
+                                                        <path
+                                                            d="M7.60564 9.0705L5.69014 11.0987L4.16901 9.0705H4.11268L0 13.4649H3.60563L5.69014 11.0987L7.26761 13.5212H10.8732L7.60564 9.0705Z"
+                                                            fill="#412878"></path>
+                                                        <path
+                                                            d="M7.60578 9.07042L16.0001 0.056338L12.4509 0L6.14099 6.76056L4.50719 4.50704H0.845215L4.16916 9.07042L5.69029 11.0986L7.60578 9.07042Z"
+                                                            fill="#C8194B"></path>
+                                                    </svg></span>Core</div>
+                                            <ul>
+                                                <li class="none">
+                                                    <a href="./subjects/F5/AA_FREN.html" target="_blank">
+                                                        <span class="product">A-level French</span>
+                                                    </a>
+                                                </li>
+                                                <li class="none">
+                                                    <a href="./subjects/F5/AA_GERM.html" target="_blank">
+                                                        <span class="product">A-level German</span>
+                                                    </a>
+                                                </li>
+                                                <li class="none">
+                                                    <a href="./subjects/F5/AA_SPAN.html" target="_blank">
+                                                        <span class="product">A-level Spanish</span>
+                                                    </a>
+                                                </li>
+                                                <li class="none">
+                                                    <a href="./subjects/mfl/AG_FREN.html" target="_blank">
+                                                        <span class="product">GCSE French</span>
+                                                    </a>
+                                                </li>
+                                                <li class="none">
+                                                    <a href="./subjects/mfl/AG_GERM.html" target="_blank">
+                                                        <span class="product">GCSE German</span>
+                                                    </a>
+                                                </li>
+                                                <li class="none">
+                                                    <a href="./subjects/mfl/AG_SPAN.html" target="_blank">
+                                                        <span class="product">GCSE Spanish</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                        <section>
+                                            <div class="gk-groups-readymade gkg-title"><span class="gkg-image-span"><i
+                                                        class="gkg-icon fas fa-plus"></i></span>Ready-made assessments
+                                            </div>
+                                            <ul>
+                                                <li class="none">
+                                                    <a href="https://resources.doublestruck.eu/resources/res-aa-lang-tt.php?otheme=EP"
+                                                        target="_blank">
+                                                        <span class="product">A-level Languages topic tests</span>
+                                                    </a>
+                                                </li>
+                                                <li class="none">
+                                                    <a href="https://resources.doublestruck.eu/resources/res-ag-lang-tt.php?otheme=EP"
+                                                        target="_blank">
+                                                        <span class="product">GCSE Languages topic tests</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </section>
+                                    <section class="_ALL _F2">
+                                        <h3> <span class="section-title">Mathematics</span></h3>
+                                        <section>
+                                            <div class="gk-group-core gkg-title"><span class="gkg-image-span"><svg
+                                                        class="gkg-icon" xmlns="http://www.w3.org/2000/svg" width="16"
+                                                        height="14" viewBox="0 0 16 14" fill="none">
+                                                        <path
+                                                            d="M7.60564 9.0705L5.69014 11.0987L4.16901 9.0705H4.11268L0 13.4649H3.60563L5.69014 11.0987L7.26761 13.5212H10.8732L7.60564 9.0705Z"
+                                                            fill="#412878"></path>
+                                                        <path
+                                                            d="M7.60578 9.07042L16.0001 0.056338L12.4509 0L6.14099 6.76056L4.50719 4.50704H0.845215L4.16916 9.07042L5.69029 11.0986L7.60578 9.07042Z"
+                                                            fill="#C8194B"></path>
+                                                    </svg></span>Core</div>
+                                            <ul>
+                                                <li class="none"><a href="./subjects/F2/AA_FMA.html"
+                                                        target="_blank"><span class="product">A-Level Further
+                                                            Mathematics</span></a>
+                                                </li>
+                                                <li class="none"><a href="./subjects/F2/AA_MAT.html"
+                                                        target="_blank"><span class="product">A-Level
+                                                            Mathematics</span></a>
+                                                </li>
+                                                <li class="none"><a href="./subjects/F2/AG_MAT.html"
+                                                        target="_blank"><span class="product">GCSE
+                                                            Mathematics</span></a>
+                                                </li>
+                                                <li class="none"><a href="./subjects/F2/K3_ARK.html"
+                                                        target="_blank"><span class="product">KS3 Mathematics &
+                                                            Reasoning</span></a>
+                                                </li>
+                                                <li class="none"><a href="./subjects/F2/A2_FM.html"
+                                                        target="_blank"><span class="product">Level 2 Further
+                                                            Mathematics</span></a>
+                                                </li>
+                                                <li class="none"><a href="./subjects/F2/A3_MAT.html"
+                                                        target="_blank"><span class="product">Level 3 (Core)
+                                                            Mathematics</span></a>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                        <section>
+                                            <div class="gk-groups-readymade gkg-title"><span class="gkg-image-span"><i
+                                                        class="gkg-icon fas fa-plus"></i></span>Ready-made assessments
+                                            </div>
+                                            <ul>
+                                                <li class="none">
+                                                    <a href="https://resources.doublestruck.eu/resources/res-ag-mat.php"
+                                                        target="_blank">
+                                                        <span class="product">GCSE Maths Half Term Tests</span>
+                                                    </a>
+                                                </li>
+												<li class="none">
+                                                    <a href="https://resources.doublestruck.eu/resources/res-ag-aa-mat.php"
+                                                        target="_blank">
+                                                        <span class="product">GCSE to A-level Transition Maths Worksheets</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+											
+                                        </section>
+                                    </section>
+                                    <section class="_ALL _F6">
+                                        <h3> <span class="section-title">Physical Education</span></h3>
+                                        <section>
+                                            <div class="gk-group-core gkg-title"><span class="gkg-image-span"><svg
+                                                        class="gkg-icon" xmlns="http://www.w3.org/2000/svg" width="16"
+                                                        height="14" viewBox="0 0 16 14" fill="none">
+                                                        <path
+                                                            d="M7.60564 9.0705L5.69014 11.0987L4.16901 9.0705H4.11268L0 13.4649H3.60563L5.69014 11.0987L7.26761 13.5212H10.8732L7.60564 9.0705Z"
+                                                            fill="#412878"></path>
+                                                        <path
+                                                            d="M7.60578 9.07042L16.0001 0.056338L12.4509 0L6.14099 6.76056L4.50719 4.50704H0.845215L4.16916 9.07042L5.69029 11.0986L7.60578 9.07042Z"
+                                                            fill="#C8194B"></path>
+                                                    </svg></span>Core</div>
+                                            <ul>
+                                                <li class="none"><a href="./subjects/physical education/AA_PE.html"
+                                                        target="_blank"><span class="product">A-level Physical
+                                                            Education</span></a>
+                                                </li>
+                                                <li class="none"><a href="./subjects/physical education/AG_PE.html"
+                                                        target="_blank"><span class="product">GCSE Physical
+                                                            Education</span></a>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                        <section>
+                                            <div class="gk-groups-readymade gkg-title"><span class="gkg-image-span"><i
+                                                        class="gkg-icon fas fa-plus"></i></span>Ready-made assessments
+                                            </div>
+                                            <ul>
+                                                <li class="none">
+                                                    <a href="https://resources.doublestruck.eu/resources/res-aa-pe-tt.php"
+                                                        target="_blank">
+                                                        <span class="product">A-level Physical Education topic
+                                                            tests</span>
+                                                    </a>
+                                                </li>
+                                                <li class="none">
+                                                    <a href="https://resources.doublestruck.eu/resources/res-ag-pe-tt.php"
+                                                        target="_blank">
+                                                        <span class="product">GCSE Physical Education topic tests</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </section>
+
+                                    <section class="_ALL _F9">
+                                        <h3> <span class="section-title">Psychology</span></h3>
+                                        <section>
+                                            <div class="gk-group-core gkg-title"><span class="gkg-image-span"><svg
+                                                        class="gkg-icon" xmlns="http://www.w3.org/2000/svg" width="16"
+                                                        height="14" viewBox="0 0 16 14" fill="none">
+                                                        <path
+                                                            d="M7.60564 9.0705L5.69014 11.0987L4.16901 9.0705H4.11268L0 13.4649H3.60563L5.69014 11.0987L7.26761 13.5212H10.8732L7.60564 9.0705Z"
+                                                            fill="#412878"></path>
+                                                        <path
+                                                            d="M7.60578 9.07042L16.0001 0.056338L12.4509 0L6.14099 6.76056L4.50719 4.50704H0.845215L4.16916 9.07042L5.69029 11.0986L7.60578 9.07042Z"
+                                                            fill="#C8194B"></path>
+                                                    </svg></span>Core</div>
+                                            <ul>
+                                                <li class="none"><a href="./subjects/psychology/AA_PSY.html"
+                                                        target="_blank"><span class="product">A-level
+                                                            Psychology</span></a>
+                                                </li>
+                                                <li class="none"><a href="./subjects/psychology/AG_PSY.html"
+                                                        target="_blank"><span class="product">GCSE Psychology</span></a>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </section>
+
+                                    <section class="_ALL _F1">
+                                        <h3> <span class="section-title">Science</span></h3>
+                                        <section>
+                                            <div class="gk-group-core gkg-title"><span class="gkg-image-span"><svg
+                                                        class="gkg-icon" xmlns="http://www.w3.org/2000/svg" width="16"
+                                                        height="14" viewBox="0 0 16 14" fill="none">
+                                                        <path
+                                                            d="M7.60564 9.0705L5.69014 11.0987L4.16901 9.0705H4.11268L0 13.4649H3.60563L5.69014 11.0987L7.26761 13.5212H10.8732L7.60564 9.0705Z"
+                                                            fill="#412878"></path>
+                                                        <path
+                                                            d="M7.60578 9.07042L16.0001 0.056338L12.4509 0L6.14099 6.76056L4.50719 4.50704H0.845215L4.16916 9.07042L5.69029 11.0986L7.60578 9.07042Z"
+                                                            fill="#C8194B"></path>
+                                                    </svg></span>Core</div>
+                                            <ul>
+                                                <li class="none"><a href="./subjects/science/AA_BIOL.html"
+                                                        target="_blank"><span class="product">A-Level Biology</span></a>
+                                                </li>
+                                                <li class="none"><a href="./subjects/science/AA_CHEM.html"
+                                                        target="_blank"><span class="product">A-Level
+                                                            Chemistry</span></a>
+                                                </li>
+                                                <li class="none"><a href="./subjects/science/AA_PHYS.html"
+                                                        target="_blank"><span class="product">A-Level Physics</span></a>
+                                                </li>
+                                                <li class="none"><a href="./subjects/science/AG_BLG.html"
+                                                        target="_blank"><span class="product">GCSE Biology</span></a>
+                                                </li>
+
+                                                <li class="none"><a href="./subjects/science/AG_CHM.html"
+                                                        target="_blank"><span class="product">GCSE Chemistry</span></a>
+                                                </li>
+                                                <li class="none"><a href="./subjects/science/AG_SCC.html"
+                                                        target="_blank"><span class="product">GCSE Combined
+                                                            Science</span></a>
+                                                </li>
+                                                <li class="none"><a href="./subjects/science/AG_PHS.html"
+                                                        target="_blank"><span class="product">GCSE Physics</span></a>
+                                                </li>
+                                                <li class="none"><a href="./subjects/science/K2_SCI.html"
+                                                        target="_blank"><span class="product">KS2 Science</span></a>
+                                                </li>
+                                                <li class="none"><a href="./subjects/F1/K3_SCI.html"
+                                                        target="_blank"><span class="product">KS3 Science</span></a>
+                                                </li>
+
+                                            </ul>
+                                        </section>
+                                        <section>
+                                            <div class="gk-groups-readymade gkg-title"><span class="gkg-image-span"><i
+                                                        class="gkg-icon fas fa-plus"></i></span>Ready-made assessments
+                                            </div>
+                                            <ul>
+                                                <li class="none">
+                                                    <a href="https://resources.doublestruck.eu/resources/res-ag-sci.php"
+                                                        target="_blank">
+                                                        <span class="product">GCSE Science topic tests</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </section>
+
+                                </li>
+
+                                <li data-content="archive" id="archivedProductsTab">
+                                    <section class="_ALL _F8">
+                                        <h3> <span class="section-title">Computer Science</span></h3>
+                                        <section>
+                                            <div class="gk-group-core gkg-title"><span class="gkg-image-span"><svg
+                                                        class="gkg-icon" xmlns="http://www.w3.org/2000/svg" width="16"
+                                                        height="14" viewBox="0 0 16 14" fill="none">
+                                                        <path
+                                                            d="M7.60564 9.0705L5.69014 11.0987L4.16901 9.0705H4.11268L0 13.4649H3.60563L5.69014 11.0987L7.26761 13.5212H10.8732L7.60564 9.0705Z"
+                                                            fill="#412878"></path>
+                                                        <path
+                                                            d="M7.60578 9.07042L16.0001 0.056338L12.4509 0L6.14099 6.76056L4.50719 4.50704H0.845215L4.16916 9.07042L5.69029 11.0986L7.60578 9.07042Z"
+                                                            fill="#C8194B"></path>
+                                                    </svg></span>Core</div>
+                                            <ul>
+                                                <li class="none"><a href="./subjects/computer science/AG_ICT.html"
+                                                        target="_blank"><span class="product">GCSE ICT (Old
+                                                            Spec)</span></a>
+                                                </li>
+                                                <li class="none"><a href="./subjects/computer science/AG_ICT.html"
+                                                        target="_blank"><span class="product">A-level ICT (Old
+                                                            Spec)</span></a>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </section>
+                                    <section class="_ALL _F10">
+                                        <h3> <span class="section-title">Design and Technology</span></h3>
+                                        <section>
+                                            <div class="gk-group-core gkg-title"><span class="gkg-image-span"><svg
+                                                        class="gkg-icon" xmlns="http://www.w3.org/2000/svg" width="16"
+                                                        height="14" viewBox="0 0 16 14" fill="none">
+                                                        <path
+                                                            d="M7.60564 9.0705L5.69014 11.0987L4.16901 9.0705H4.11268L0 13.4649H3.60563L5.69014 11.0987L7.26761 13.5212H10.8732L7.60564 9.0705Z"
+                                                            fill="#412878"></path>
+                                                        <path
+                                                            d="M7.60578 9.07042L16.0001 0.056338L12.4509 0L6.14099 6.76056L4.50719 4.50704H0.845215L4.16916 9.07042L5.69029 11.0986L7.60578 9.07042Z"
+                                                            fill="#C8194B"></path>
+                                                    </svg></span>Core</div>
+                                            <ul>
+                                                <li class="none"><a href="./subjects/design and technology/AG_GP.html"
+                                                        target="_blank"><span class="product">GCSE Graphic Products (Old
+                                                            Spec)</span></a>
+                                                </li>
+                                                <li class="none"><a href="./subjects/design and technology/AG_PD.html"
+                                                        target="_blank"><span class="product">GCSE Product Design (Old
+                                                            Spec)</span></a>
+                                                </li>
+                                                <li class="none"><a href="./subjects/design and technology/AG_RM.html"
+                                                        target="_blank"><span class="product">GCSE Resistant Materials
+                                                            (Old Spec)</span></a>
+                                                </li>
+                                                <li class="none"><a href="./subjects/design and technology/AG_SC.html"
+                                                        target="_blank"><span class="product">GCSE Systems and Control
+                                                            Technology
+                                                            (Old Spec)</span></a>
+                                                </li>
+                                                <li class="none"><a href="./subjects/design and technology/AG_EP.html"
+                                                        target="_blank"><span class="product">GCSE Electronic Products
+                                                            (Old Spec)</span></a>
+                                                </li>
+                                                <li class="none"><a href="./subjects/design and technology/AG_FT.html"
+                                                        target="_blank"><span class="product">GCSE Food Technology
+                                                            (Old Spec)</span></a>
+                                                </li>
+                                                <li class="none"><a href="./subjects/design and technology/AG_TT.html"
+                                                        target="_blank"><span class="product">GCSE Textiles Technology
+                                                            (Old Spec)</span></a>
+                                                </li>
+
+                                            </ul>
+                                        </section>
+                                    </section>
+                                    <!-- SG ARCHIVED subs here, see /js/app/gate.js -->
+                                    <section class="_ALL _F3">
+                                        <h3> <span class="section-title">English</span></h3>
+                                        <section>
+                                            <div class="gk-group-core gkg-title"><span class="gkg-image-span"><svg
+                                                        class="gkg-icon" xmlns="http://www.w3.org/2000/svg" width="16"
+                                                        height="14" viewBox="0 0 16 14" fill="none">
+                                                        <path
+                                                            d="M7.60564 9.0705L5.69014 11.0987L4.16901 9.0705H4.11268L0 13.4649H3.60563L5.69014 11.0987L7.26761 13.5212H10.8732L7.60564 9.0705Z"
+                                                            fill="#412878"></path>
+                                                        <path
+                                                            d="M7.60578 9.07042L16.0001 0.056338L12.4509 0L6.14099 6.76056L4.50719 4.50704H0.845215L4.16916 9.07042L5.69029 11.0986L7.60578 9.07042Z"
+                                                            fill="#C8194B"></path>
+                                                    </svg></span>Core</div>
+                                            <ul>
+                                                <li class="none">
+                                                    <a href="./subjects/F3/AG_ENG.html" target="_blank">
+                                                        <span class="product">GCSE English Language Highlights (Old
+                                                            Spec)</span>
+                                                    </a>
+                                                </li>
+                                                <li class="none">
+                                                    <a href="./subjects/english/AG_LIT.html" target="_blank">
+                                                        <span class="product">GCSE English Literature Highlights (Old
+                                                            Spec)</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </section>
+                                    <section class="_ALL _F4">
+                                        <h3> <span class="section-title">Geography and History</span></h3>
+                                        <section>
+                                            <div class="gk-group-core gkg-title"><span class="gkg-image-span"><svg
+                                                        class="gkg-icon" xmlns="http://www.w3.org/2000/svg" width="16"
+                                                        height="14" viewBox="0 0 16 14" fill="none">
+                                                        <path
+                                                            d="M7.60564 9.0705L5.69014 11.0987L4.16901 9.0705H4.11268L0 13.4649H3.60563L5.69014 11.0987L7.26761 13.5212H10.8732L7.60564 9.0705Z"
+                                                            fill="#412878"></path>
+                                                        <path
+                                                            d="M7.60578 9.07042L16.0001 0.056338L12.4509 0L6.14099 6.76056L4.50719 4.50704H0.845215L4.16916 9.07042L5.69029 11.0986L7.60578 9.07042Z"
+                                                            fill="#C8194B"></path>
+                                                    </svg></span>Core</div>
+                                            <ul>
+                                                <li class="none">
+                                                    <a href="./subjects/english/AG_ENG.html" target="_blank">
+                                                        <span class="product">GCSE History A (Old Spec)</span>
+                                                    </a>
+                                                </li>
+                                                <li class="none">
+                                                    <a href="./subjects/english/AG_LIT.html" target="_blank">
+                                                        <span class="product">GCSE History B (Old
+                                                            Spec)</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </section>
+                                    <section class="_ALL _F5">
+                                        <h3> <span class="section-title">Languages</span></h3>
+                                        <section>
+                                            <div class="gk-group-core gkg-title"><span class="gkg-image-span"><svg
+                                                        class="gkg-icon" xmlns="http://www.w3.org/2000/svg" width="16"
+                                                        height="14" viewBox="0 0 16 14" fill="none">
+                                                        <path
+                                                            d="M7.60564 9.0705L5.69014 11.0987L4.16901 9.0705H4.11268L0 13.4649H3.60563L5.69014 11.0987L7.26761 13.5212H10.8732L7.60564 9.0705Z"
+                                                            fill="#412878"></path>
+                                                        <path
+                                                            d="M7.60578 9.07042L16.0001 0.056338L12.4509 0L6.14099 6.76056L4.50719 4.50704H0.845215L4.16916 9.07042L5.69029 11.0986L7.60578 9.07042Z"
+                                                            fill="#C8194B"></path>
+                                                    </svg></span>Core</div>
+                                            <ul>
+                                                <li class="none"><a href="./subjects/mfl/AA_GER.html"
+                                                        target="_blank"><span class="product">A-level German
+                                                            (2660) (Old Spec)</span></a>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </section>
+                                </li>
+
+                            </ul> <!-- cd-tabs-content -->
+                        </div> <!-- cd-tabs -->
+                    </div>
+
+
+                    <div class="clear"></div>
+
+
+
+
+                    <footer class="entry-footer">
+                        Licenced to - <b></b><br>
+                        © Doublestruck Ltd. 2017
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </footer>
+                </div>
+            </main>
+        </div>
+    </div>
+
+
+
+
+    <div class="modal profile">
+        <div id="userProfile">
+            <div class="close" onclick="$('.profile').fadeOut()"><i class="fa fa-times" aria-hidden="true"></i></div>
+
+
+            <div class="profile-header">
+                User profile and settings
+            </div>
+
+
+            <div class="row">
+                <div class="twelve columns">
+                    <ul class="tab-nav">
+                        <li>
+                            <a class="profile-settings button active" href="#tab1"><i class="fa fa-user prof"
+                                    aria-hidden="true"></i>User details</a>
+                        </li>
+                        <!--
+           <li>
+            <a class="button" href="#tab2"><i class="fa fa-cogs prof" aria-hidden="true"></i>&nbsp;&nbsp;Settings</a>
+          </li>
+            -->
+                        <li>
+                            <a class="profile-settings button" href="#tab3"><i class="fa fa-bolt prof"
+                                    aria-hidden="true"></i>Sessions</a>
+                        </li>
+
+
+                    </ul>
+                    <div class="tab-content">
+
+                        <div class="tab-pane active" id="tab1">
+                            <div class="profile-content">
+
+
+
+                            </div>
+                        </div>
+
+                        <!--
+                  <div class="tab-pane" id="tab2">
+                       <div class="row"><div class="twelve columns"><hr class="separator"/></div></div>
+                       <div class="row"><div class="twelve columns"><div class="pro-title">Email preferences</div></div></div>
+                       <div class="row"><div class="twelve columns"><hr class="separator"/></div></div>
+
+                                    <div class="row row-small">
+                                    <div class="one column"><input type="radio" class="r-button" name="marketingPrefs" id="mktYes" value="1"></div>
+                                    <div class="eleven columns">Please keep me informed about products, services and offers.</div>
+                                    </div>
+
+                                    <div class="row row-small">
+                                    <div class="one column"><input type="radio" class="r-button" name="marketingPrefs" id="mktNo" value="0"></div>
+                                    <div class="eleven columns">No, I do not want to be informed about products, services and offers.</div>
+                                    </div>
+
+                       <div class="row"><div class="twelve columns"><hr class="separator"/></div></div>
+                  </div>
+                -->
+
+                        <div class="tab-pane" id="tab3">
+                            <div class="usage-content">
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Admin Modal -->
+    <div class="modal admin" id="admin-modal">
+        <div id="adminDetails">
+            <div class="close"><i class="fa fa-times" aria-hidden="true"></i></div>
+            <div class="profile-header">Important Information <br>
+                Need to be logged in to view resource pages?</div>
+
+            <div class="row">
+                <div class="twelve columns">
+                    <div class="admin-content">
+                        <div class="description-modal">
+                            <p>Some of the resource pages may not work if you're not logged into Exampro in some way.
+                                <br>Either using:<br>
+                                <br>To fix this, you can go to <a
+                                    href="https://www.exampro.co.uk/mathematics/demo/thanks-for-signing-up/"
+                                    target="faq">THIS PAGE</a> and select "Access your taster demo here", which should
+                                allow you to view the resource pages.
+                                <br><br>OR <br>
+                                Access any other demo that you have access to.
+                                <br><br> OR Log in using:
+                                <br>Username: internationaldemo
+                                <br>Password: password1
+                                <br>(or alternativly if you have an account, just log in)
+                                <br><br>After taking one of these steps you should be able to open up the resource pages
+                                normally
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Admin Modal  -->
+
+    <script src="https://ds-vendor.doublestruck.eu/jquery/jquery-3.6.1.min.js"></script>
+    <script src="https://ds-vendor.doublestruck.eu/jquery/jquery-migrate-3.1.0.min.js"></script>
+
+    <script src="https://app.doublestruck.eu/gate-tb/js/plugins.js?v=21.02.2020"></script>
+    <script src="https://app.doublestruck.eu/gate-tb/js/cd-tabs.js?v=21.02.2020"></script>
+    <script src="https://app.doublestruck.eu/gate-tb/js/scripts.js?v=21.02.2020"></script>
+    <script src="https://app.doublestruck.eu/js/lib/proxy.js?v=21.02.2020"></script>
+    <script src="https://app.doublestruck.eu/js/lib/log.js?v=21.02.2020"></script>
+
+
+    <script src="https://app.doublestruck.eu/js/lib/skeleton-tabs.js?v=21.02.2020"></script>
+
+
+    <script src="https://app.doublestruck.eu/js/app/gateconfig.js?v=21.02.2020"></script>
+    <!-- added configuration script -->
+
+    <script src="https://app.doublestruck.eu/js/app/gate-ep.js?s=21.02.2020"></script>
+    <!-- added main program script for EP -->
+
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <script src="https://app.doublestruck.eu/js/app/gate-common.js?s=21.02.2020"></script>
+
+    <script>
+
+        function setupModal(buttonId, modalId) {
+            const btn = document.getElementById(buttonId);
+            const modal = document.getElementById(modalId);
+            const closeButton = modal.querySelector('.close');
+
+            // Open modal when button is clicked
+            btn.onclick = function () {
+                modal.style.display = 'block';
+            };
+
+            // Close modal when close button is clicked
+            closeButton.onclick = function () {
+                modal.style.display = 'none';
+            };
+
+        }
+
+        // Set up multiple modals
+        setupModal('admin-button', 'admin-modal');
+
+    </script>
+
+
+</body>
+
+</html>
