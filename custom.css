@@ -1,0 +1,10 @@
+#closeButton {
+    background-color: #ffffff !important;
+    color: #2f71ac !important;
+    border: none;
+    border-bottom: 0px !important;
+    position: absolute;
+    right: 13px;
+    top: 0px;
+    bottom: 1px;
+}
