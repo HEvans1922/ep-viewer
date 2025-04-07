@@ -1,0 +1,1539 @@
+<html>
+
+<head>
+	<!-- Google Tag Manager -->
+	<script type="text/javascript" async=""
+		src="https://www.googletagmanager.com/gtag/js?id=G-QTGH2T1CNR&amp;l=dataLayer&amp;cx=c&amp;gtm=45He53j1h1v9123571401za200&amp;tag_exp=102015665~102482433~102788824~102803279~102813109"></script>
+	<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-5X4MMJ6"></script>
+	<script>(function (w, d, s, l, i) {
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start':
+					new Date().getTime(), event: 'gtm.js'
+			}); var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-5X4MMJ6');</script>
+	<!-- End Google Tag Manager -->
+	
+	<style>
+		@font-face {
+    font-family: "Century Gothic";
+    src: url("../../custom/GOTHIC.TTF") format("ttf");
+}
+
+		
+		.welcome-title {
+			font-family: "Century Gothic", sans-serif;
+		}
+
+	</style>
+	<script>
+		/**
+		* Function that tracks a click on an outbound link in Analytics.
+		* This function takes a valid URL string as an argument, and uses that URL string
+		* as the event label. Setting the transport method to 'beacon' lets the hit be sent
+		* using 'navigator.sendBeacon' in browser that support it.
+		*/
+		window.dataLayer = window.dataLayer || [];
+
+		var trackGuidance = function (download) {
+			window.dataLayer.push({
+				'event': 'click',
+				'event_category': 'EP TT - Guidance download',
+				'event_label': download
+				//'transport_type': 'beacon',
+				//'event_callback': function(){document.location = url;}
+				//note: also removed  return false; on the links in body code
+			});
+		}
+
+		var trackNav = function (nav) {
+			window.dataLayer.push({
+				'event': 'click',
+				'event_category': 'EP TT - Navigation',
+				'event_label': nav
+			});
+		}
+
+		var trackTest = function (download) {
+			window.dataLayer.push({
+				'event': 'click',
+				'event_category': 'EP TT - Test download',
+				'event_label': download
+				// 'transport_type': 'beacon',
+				// 'event_callback': function(){document.location = url;}
+				//note: also removed  return false; on the links in body code
+			});
+		}
+
+		var trackMarkScheme = function (download) {
+			window.dataLayer.push({
+				'event': 'click',
+				'event_category': 'EP TT - Mark scheme download',
+				'event_label': download
+				// 'transport_type': 'beacon',
+				// 'event_callback': function(){document.location = url;}
+				//note: also removed  return false; on the links in body code
+			});
+		}
+
+		var trackTranscript = function (download) {
+			window.dataLayer.push({
+				'event': 'click',
+				'event_category': 'EP TT - Transcript download',
+				'event_label': download
+				// 'transport_type': 'beacon',
+				// 'event_callback': function(){document.location = url;}
+				//note: also removed  return false; on the links in body code
+			});
+		}
+	</script>
+
+
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- include css from file -->
+	<!-- links to include external css in header -->
+
+	<link href="https://ds-vendor.doublestruck.eu/bootstrap/bootstrap-4.5.3/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://ds-vendor.doublestruck.eu/fontawesome/font-awesome-5.15.4/css/all.min.css" rel="stylesheet">
+	<link href="https://resources.doublestruck.eu/resources/styles-welcome-resources.css?v=220623" rel="stylesheet">
+	<link href="../../resources/styles-welcome.css?v=021024" rel="stylesheet">
+	<link rel="icon" href="../favicon-ep.ico" type="image/x-icon">
+
+	<title>GCSE English Language Papers</title>
+</head>
+
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5X4MMJ6" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+	<!-- START SECTION FOR SAL -->
+	<div class="welcome-ep res-ep purple container-fluid">
+
+		<!-- Terms Modal -->
+		<div class="modal fade" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="Reminder"
+			aria-hidden="true" data-backdrop="static">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="Reminder">Reminder</h5>
+					</div>
+					<div class="modal-body">
+						<p>You have already agreed to the <a href="https://www.doublestruck.co.uk/terms-and-conditions/"
+								target="_blank" onclick="trackOutboundLink()" https:="" www.doublestruck.co.uk=""
+								terms-and-conditions="" ",="" " terms="" of="" use");"="">Terms of Use</a>.</p>
+						<p>To ensure that these resources remain protected, you may only share them with your students
+							via email or a secure login. They can only be used by your school and cannot be shared with
+							any third party.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-blue" id="modal-ok" data-dismiss="modal"
+							aria-label="Agree"><i class="fa fa-check"></i> OK</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="welcome-page-container-fluid">
+			<main class="welcome-page ep-tt nav-2tier">
+				<div class="welcome-resources-container welcome-resources-container-full">
+
+					<header class="welcome-header clearfix" role="banner">
+						<h1 class="welcome-title custom_title">GCSE English Language Papers</h1>
+
+					</header>
+
+					<article class="welcome-content">
+
+
+						<!-- TOP LEVEL FILTER -->
+						<ul class="nav nav-tabs tt-nav-tabs row" role="tablist">
+							<li class="nav-item col-6 col-md-4" role="presentation">
+								<a class="dkblue active" data-toggle="tab" href="#tt-fren" role="tab"
+									aria-controls="tt-fren" onclick="trackNav('AG Fren');">Specimen Papers (2014)</a>
+							</li>
+							<li class="nav-item col-6 col-md-4" role="presentation">
+								<a class="dkbrick" data-toggle="tab" href="#tt-germ" role="tab" aria-controls="tt-germ"
+									onclick="trackNav('AG Germ');">KS3 Packs</a>
+							</li>
+						</ul>
+
+						<div class="tab-content">
+
+							<!-- GCSE FRENCH TESTS -->
+							<!-- SECOND LEVEL FILTER -->
+							<div class="tab-pane active" id="tt-fren" role="tabpanel">
+								<ul class="nav nav-tabs tt-nav-tabs nav-tier-2" role="tablist">
+									<li class="nav-item col-6 col-sm-3" role="presentation"><a class="dkblue active"
+											data-toggle="tab" href="#tt-fren-foundation" role="tab"
+											aria-controls="tt-fren-foundation"
+											onclick="trackNav('AG Fren Foundation');">Paper 1</a></li>
+									<li class="nav-item col-6 col-sm-3" role="presentation"><a class="dkblue"
+											data-toggle="tab" href="#tt-fren-higher" role="tab"
+											aria-controls="tt-fren-higher" onclick="trackNav('AG Fren Higher');">Paper
+											2</a></li>
+								</ul>
+
+								<div class="tab-content">
+									<!-- GCSE Foundation French -->
+									<div class="tab-pane active" id="tt-fren-foundation" role="tabpanel">
+										<ul class="ep-tt-table ep-table-onefile">
+											<li class="table-head light d-none d-sm-block">
+												<ul class="row">
+													<li class="table-topic col-sm-6" style="padding-top: 20px">Paper
+													</li>
+													<li class="table-type col-sm">Question<br>paper</li>
+													<li class="table-type col-sm">Mark<br>scheme</li>
+													<li class="table-type col-sm">Insert</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic col-sm-6">Specimen Material 1</li>
+													<li class="table-btn dkblue col-sm">
+														<p class="table-type d-block d-sm-none">Question Paper and
+															Insert</p>
+														<a href="../../documents/AG_ENG/GCSE/Specimen%202014/Specimen%20Material%201/GCSE%20Language%20P1%20specimen%201%20QP+INSERT.PDF"
+															target="_blank"
+															onclick="trackTest('AG FREN F - Free-time activities (F&amp;O)');"><img
+																src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkblue tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="../../documents/AG_ENG/GCSE/Specimen%202014/Specimen%20Material%201/GCSE%20Language%20P1%20specimen%201%20MS.PDF"
+															target="_blank"
+															onclick="trackMarkScheme('AG FREN F - Free-time activities (F&amp;O)');"><img
+																src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkblue tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Insert</p>
+														<p class="d-none d-sm-block"
+															style="padding-top: 12px; font-size: 16px;">N/A</p>
+														<!-- <p class="table-type d-block d-sm-none">Transcripts</p>
+													<a href="https://app.doublestruck.eu/res/pdf/aa-germ/topic-tests/XXX.docx" target="_blank" onclick="trackTranscript('AA GERM - Literary extracts');"><img src="assets/images/ep-icons/ico-tt-r.svg" alt="transcript icon" class="ico-tt-thumb"></a> -->
+													</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic col-sm-6">Specimen Material 2</li>
+													<li class="table-btn dkblue col-sm">
+														<p class="table-type d-block d-sm-none">Question Paper</p>
+														<a href="../../documents/AG_ENG/GCSE/Specimen%202014/Specimen%20Material%202/GCSE Language P1 specimen 2 QP.pdf	"
+															target="_blank"
+															onclick="trackTest('AG FREN F - Free-time activities (F&amp;O)');"><img
+																src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkblue tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="../../documents/AG_ENG/GCSE/Specimen%202014/Specimen%20Material%202/GCSE Language P1 specimen 2 MS.pdf"
+															target="_blank"
+															onclick="trackMarkScheme('AG FREN F - Home, town, neighbourhood and region (F&amp;O)');"><img
+																src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkblue tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Insert</p>
+														<a href="../../documents/AG_ENG/GCSE/Specimen%202014/Specimen%20Material%202/GCSE Language P1 specimen 2 INSERT.pdf"
+															target="_blank"
+															onclick="trackTranscript('AG FREN F - Home, town, neighbourhood and region (F&amp;O)');"><img
+																src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-r.svg"
+																alt="transcript icon" class="ico-tt-thumb"></a>
+													</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic col-sm-6">Specimen Material 3</li>
+													<li class="table-btn dkblue col-sm">
+														<p class="table-type d-block d-sm-none">Question Paper</p>
+														<a href="../../documents/AG_ENG/GCSE/Specimen%202014/Specimen%20Material%203/GCSE Language P1 specimen 3 QP.pdf"
+															target="_blank"
+															onclick="trackTest('AG FREN F - Free-time activities (F&amp;O)');"><img
+																src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkblue tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="../../documents/AG_ENG/GCSE/Specimen%202014/Specimen%20Material%203/GCSE Language P1 specimen 3 MS.pdf"
+															target="_blank"
+															onclick="trackMarkScheme('AG FREN F - Home, town, neighbourhood and region (F&amp;O)');"><img
+																src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkblue tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Insert</p>
+														<a href="../../documents/AG_ENG/GCSE/Specimen%202014/Specimen%20Material%203/GCSE Language P1 specimen 3 INSERT.pdf"
+															target="_blank"
+															onclick="trackTranscript('AG FREN F - Home, town, neighbourhood and region (F&amp;O)');"><img
+																src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-r.svg"
+																alt="transcript icon" class="ico-tt-thumb"></a>
+													</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic col-sm-6">Specimen Material 4</li>
+													<li class="table-btn dkblue col-sm">
+														<p class="table-type d-block d-sm-none">Question Paper</p>
+														<a href="../../documents/AG_ENG/GCSE/Specimen%202014/Specimen%20Material%204/Paper 1/GCSE Language P1 specimen 4 QP.pdf"
+															target="_blank"
+															onclick="trackTest('AG FREN F - Free-time activities (F&amp;O)');"><img
+																src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkblue tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="../../documents/AG_ENG/GCSE/Specimen%202014/Specimen%20Material%204/Paper 1/GCSE Language P1 specimen 4 MS.pdf"
+															target="_blank"
+															onclick="trackMarkScheme('AG FREN F - Home, town, neighbourhood and region (F&amp;O)');"><img
+																src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkblue tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Insert</p>
+														<a href="../../documents/AG_ENG/GCSE/Specimen%202014/Specimen%20Material%204/Paper 1/GCSE Language P1 specimen 4 INSERT.pdf"
+															target="_blank"
+															onclick="trackTranscript('AG FREN F - Home, town, neighbourhood and region (F&amp;O)');"><img
+																src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-r.svg"
+																alt="transcript icon" class="ico-tt-thumb"></a>
+													</li>
+												</ul>
+											</li>
+
+
+
+										</ul>
+									</div> <!-- end tt-foundation -->
+									<!-- GCSE Higher French -->
+									<div class="tab-pane" id="tt-fren-higher" role="tabpanel">
+										<ul class="ep-tt-table ep-table-onefile">
+											<li class="table-head light d-none d-sm-block">
+												<ul class="row">
+													<li class="table-topic col-sm-6" style="padding-top: 20px">Topic
+													</li>
+													<li class="table-type col-sm">Test and<br>feedback form</li>
+													<li class="table-type col-sm">Mark<br>scheme</li>
+													<li class="table-type col-sm">Transcripts</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic col-sm-6">Global issues (H&amp;O)</li>
+													<li class="table-btn dkblue col-sm">
+														<p class="table-type d-block d-sm-none">Test and feedback form
+														</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-fren/topic-tests/AG_FREN_Global_issues_H&amp;O.docx"
+															target="_blank"
+															onclick="trackTest('AG FREN H - Global issues (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkblue tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark<br>scheme</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-fren/topic-tests/AG_FREN_Global_issues_H&amp;O_MS.docx"
+															target="_blank"
+															onclick="trackMarkScheme('AG FREN H - Global issues (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkblue tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Transcripts</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-fren/topic-tests/AG_FREN_Global_issues_H&amp;O_TR.docx"
+															target="_blank"
+															onclick="trackTranscript('AG FREN H - Global issues (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-r.svg"
+																alt="transcript icon" class="ico-tt-thumb"></a>
+													</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic col-sm-6">Life at school/college (H&amp;O)
+													</li>
+													<li class="table-btn dkblue col-sm">
+														<p class="table-type d-block d-sm-none">Test and feedback form
+														</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-fren/topic-tests/AG_FREN_Life_at_School_H&amp;O.docx"
+															target="_blank"
+															onclick="trackTest('AG FREN H - Life at school/college (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkblue tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-fren/topic-tests/AG_FREN_Life_at_School_H&amp;O_MS.docx"
+															target="_blank"
+															onclick="trackMarkScheme('AG FREN H - Life at school/college (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkblue tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Transcripts</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-fren/topic-tests/AG_FREN_Life_at_School_H&amp;O_TR.docx"
+															target="_blank"
+															onclick="trackTranscript('AG FREN H - Life at school/college (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-r.svg"
+																alt="transcript icon" class="ico-tt-thumb"></a>
+													</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic col-sm-6">Relationships with family and
+														friends (H&amp;O)</li>
+													<li class="table-btn dkblue col-sm">
+														<p class="table-type d-block d-sm-none">Test and feedback form
+														</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-fren/topic-tests/AG_FREN_Relationships_family_friends_H&amp;O.docx"
+															target="_blank"
+															onclick="trackTest('AG FREN H - Relationships with family and friends (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkblue tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-fren/topic-tests/AG_FREN_Relationships_family_friends_H&amp;O_MS.docx"
+															target="_blank"
+															onclick="trackMarkScheme('AG FREN H - Relationships with family and friends (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkblue tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Transcripts</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-fren/topic-tests/AG_FREN_Relationships_family_friends_H&amp;O_TR.docx"
+															target="_blank"
+															onclick="trackTranscript('AG FREN H - Relationships with family and friends (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-r.svg"
+																alt="transcript icon" class="ico-tt-thumb"></a>
+													</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic col-sm-6">Travel and tourism (H&amp;O)</li>
+													<li class="table-btn dkblue col-sm">
+														<p class="table-type d-block d-sm-none">Test and feedback form
+														</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-fren/topic-tests/AG_FREN_Travel_and_Tourism_H&amp;O.docx"
+															target="_blank"
+															onclick="trackTest('AG FREN H - Travel and tourism (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkblue tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-fren/topic-tests/AG_FREN_Travel_and_Tourism_H&amp;O_MS.docx"
+															target="_blank"
+															onclick="trackMarkScheme('AG FREN H - Travel and tourism (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkblue tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Transcripts</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-fren/topic-tests/AG_FREN_Travel_and_Tourism_H&amp;O_TR.docx"
+															target="_blank"
+															onclick="trackTranscript('AG FREN H - Travel and tourism (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-r.svg"
+																alt="transcript icon" class="ico-tt-thumb"></a>
+													</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic col-sm-6">Jobs and ambitions (H&amp;O)</li>
+													<!-- <li class="table-btn purple tint20 col-sm">
+															<p class="tt-coming-soon">Coming soon!</p>
+														</li> -->
+													<li class="table-btn dkblue col-sm">
+														<p class="table-type d-block d-sm-none">Test and feedback form
+														</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-fren/topic-tests/AG_FREN_Jobs_and_ambitions_H&amp;O.docx"
+															target="_blank"
+															onclick="trackTest('AG FREN H - Jobs and ambitions (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkblue tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-fren/topic-tests/AG_FREN_Jobs_and_ambitions_H&amp;O_MS.docx"
+															target="_blank"
+															onclick="trackMarkScheme('AG FREN H - Jobs and ambitions (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkblue tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Transcripts</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-fren/topic-tests/AG_FREN_Jobs_and_ambitions_H&amp;O_TR.docx"
+															target="_blank"
+															onclick="trackTranscript('AG FREN H - Jobs and ambitions (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-r.svg"
+																alt="transcript icon" class="ico-tt-thumb"></a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</div> <!-- end tt-higher -->
+								</div> <!-- end FRENCH SECOND LEVEL tab-content -->
+							</div> <!-- end FRENCH SECOND LEVEL tab-panel -->
+
+							<!-- GCSE GERMAN TESTS -->
+							<!-- SECOND LEVEL FILTER -->
+							<div class="tab-pane" id="tt-germ" role="tabpanel">
+								<ul class="nav nav-tabs tt-nav-tabs nav-tier-2" role="tablist">
+									<li class="nav-item col-6 col-sm-3" role="presentation"><a class="dkbrick active"
+											data-toggle="tab" href="#tt-germ-foundation" role="tab"
+											aria-controls="tt-germ-foundation"
+											onclick="trackNav('AG German Foundation');">Foundation</a></li>
+									<li class="nav-item col-6 col-sm-3" role="presentation"><a class="dkbrick"
+											data-toggle="tab" href="#tt-germ-higher" role="tab"
+											aria-controls="tt-germ-higher"
+											onclick="trackNav('AG German Higher');">Higher</a></li>
+								</ul>
+
+								<div class="tab-content">
+									<!-- GCSE Foundation German -->
+									<div class="tab-pane active" id="tt-germ-foundation" role="tabpanel">
+										<ul class="ep-tt-table ep-table-onefile">
+											<li class="table-head light d-none d-sm-block">
+												<ul class="row">
+													<li class="table-topic col-sm-6" style="padding-top: 20px">Topic
+													</li>
+													<li class="table-type col-sm">Test and<br>feedback form</li>
+													<li class="table-type col-sm">Mark<br>scheme</li>
+													<li class="table-type col-sm">Transcripts</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic col-sm-6">Identity and culture (F&amp;O)</li>
+													<li class="table-btn dkbrick col-sm">
+														<p class="table-type d-block d-sm-none">Test and feedback form
+														</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-germ/topic-tests/AG_GERM_Identity_and_Culture_F&amp;O.docx"
+															target="_blank"
+															onclick="trackTest('AG GERM F - Identity and culture (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkbrick tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-germ/topic-tests/AG_GERM_Identity_and_Culture_F&amp;O_MS.docx"
+															target="_blank"
+															onclick="trackMarkScheme('AG GERM F - Identity and culture (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkbrick tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Transcripts</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-germ/topic-tests/AG_GERM_Identity_and_Culture_F&amp;O_TR.docx"
+															onclick="trackTranscript('AG GERM F - Identity and culture (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-r.svg"
+																alt="transcript icon" class="ico-tt-thumb"></a>
+													</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic col-sm-6">Global areas of interest (F&amp;O)
+													</li>
+													<li class="table-btn dkbrick col-sm">
+														<p class="table-type d-block d-sm-none">Test and feedback form
+														</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-germ/topic-tests/AG_GERM_Global_areas_of_interest_F&amp;O.docx"
+															target="_blank"
+															onclick="trackTest('AG GERM F - Local, national, international and global areas of interest (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkbrick tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-germ/topic-tests/AG_GERM_Global_areas_of_interest_F&amp;O_MS.docx"
+															target="_blank"
+															onclick="trackMarkScheme('AG GERM F - Local, national, international and global areas of interest (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkbrick tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Transcripts</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-germ/topic-tests/AG_GERM_Global_areas_of_interest_F&amp;O_TR.docx"
+															target="_blank"
+															onclick="trackTranscript('AG GERM F - Local, national, international and global areas of interest (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-r.svg"
+																alt="transcript icon" class="ico-tt-thumb"></a>
+													</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic col-sm-6">Jobs, career choices and ambitions
+														(F&amp;O)</li>
+													<li class="table-btn dkbrick col-sm">
+														<p class="table-type d-block d-sm-none">Test and feedback form
+														</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-germ/topic-tests/AG_GERM_Jobs_career_ambitions_F&amp;O.docx"
+															target="_blank"
+															onclick="trackTest('AG GERM F - Jobs, career choices and ambitions (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkbrick tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-germ/topic-tests/AG_GERM_Jobs_career_ambitions_F&amp;O_MS.docx"
+															target="_blank"
+															onclick="trackMarkScheme('AG GERM F - Jobs, career choices and ambitions (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkbrick tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Transcripts</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-germ/topic-tests/AG_GERM_Jobs_career_ambitions_F&amp;O_TR.docx"
+															target="_blank"
+															onclick="trackTranscript('AG GERM F - Jobs, career choices and ambitions (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-r.svg"
+																alt="transcript icon" class="ico-tt-thumb"></a>
+													</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic col-sm-6">Identity, culture and school
+														(F&amp;O)</li>
+													<li class="table-btn dkbrick col-sm">
+														<p class="table-type d-block d-sm-none">Test and feedback form
+														</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-germ/topic-tests/AG_GERM_Identity_culture_and_school_F&amp;O.docx"
+															target="_blank"
+															onclick="trackTest('AG GERM F - Identity, culture and school (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkbrick tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-germ/topic-tests/AG_GERM_Identity_culture_and_school_F&amp;O_MS.docx"
+															target="_blank"
+															onclick="trackMarkScheme('AG GERM F - Identity, culture and school (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkbrick tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Transcripts</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-germ/topic-tests/AG_GERM_Identity_culture_and_school_F&amp;O_TR.docx"
+															target="_blank"
+															onclick="trackTranscript('AG GERM F - Identity, culture and school (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-r.svg"
+																alt="transcript icon" class="ico-tt-thumb"></a>
+													</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic col-sm-6">Global issues and future plans
+														(F&amp;O)</li>
+													<li class="table-btn dkbrick col-sm">
+														<p class="table-type d-block d-sm-none">Test and feedback form
+														</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-germ/topic-tests/AG_GERM_Global_issues_and_future_plans_F&amp;O.docx"
+															target="_blank"
+															onclick="trackTest('AG GERM F - Global issues and future plans (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkbrick tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-germ/topic-tests/AG_GERM_Global_issues_and_future_plans_F&amp;O_MS.docx"
+															target="_blank"
+															onclick="trackMarkScheme('AG GERM F - Global issues and future plans (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkbrick tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Transcripts</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-germ/topic-tests/AG_GERM_Global_issues_and_future_plans_F&amp;O_TR.docx"
+															target="_blank"
+															onclick="trackTranscript('AG GERM F - Global issues and future plans (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-r.svg"
+																alt="transcript icon" class="ico-tt-thumb"></a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</div> <!-- end tt-foundation -->
+									<!-- GCSE Higher German -->
+									<div class="tab-pane" id="tt-germ-higher" role="tabpanel">
+										<ul class="ep-tt-table ep-table-onefile">
+											<li class="table-head light d-none d-sm-block">
+												<ul class="row">
+													<li class="table-topic col-sm-6" style="padding-top: 20px">Topic
+													</li>
+													<li class="table-type col-sm">Test and<br>feedback form</li>
+													<li class="table-type col-sm">Mark<br>scheme</li>
+													<li class="table-type col-sm">Transcripts</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic col-sm-6">Identity and culture (H&amp;O)</li>
+													<li class="table-btn dkbrick col-sm">
+														<p class="table-type d-block d-sm-none">Test and feedback form
+														</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-germ/topic-tests/AG_GERM_Identity_and_Culture_H&amp;O.docx"
+															target="_blank"
+															onclick="trackTest('AG GERM H - Identity and culture (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkbrick tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-germ/topic-tests/AG_GERM_Identity_and_Culture_H&amp;O_MS.docx"
+															target="_blank"
+															onclick="trackMarkScheme('AG GERM H - Identity and culture (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkbrick tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Transcripts</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-germ/topic-tests/AG_GERM_Identity_and_Culture_H&amp;O_TR.docx"
+															target="_blank"
+															onclick="trackTranscript('AG GERM H - Identity and culture (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-r.svg"
+																alt="transcript icon" class="ico-tt-thumb"></a>
+													</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic col-sm-6">Global areas of interest (H&amp;O)
+													</li>
+													<li class="table-btn dkbrick col-sm">
+														<p class="table-type d-block d-sm-none">Test and feedback form
+														</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-germ/topic-tests/AG_GERM_Global_areas_of_interest_H&amp;O.docx"
+															target="_blank"
+															onclick="trackTest('AG GERM H - Local, national, international and global areas of interest (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkbrick tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-germ/topic-tests/AG_GERM_Global_areas_of_interest_H&amp;O_MS.docx"
+															target="_blank"
+															onclick="trackMarkScheme('AG GERM H - Local, national, international and global areas of interest (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkbrick tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Transcripts</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-germ/topic-tests/AG_GERM_Global_areas_of_interest_H&amp;O_TR.docx"
+															target="_blank"
+															onclick="trackTranscript('AG GERM H - Local, national, international and global areas of interest (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-r.svg"
+																alt="transcript icon" class="ico-tt-thumb"></a>
+													</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic col-sm-6">Jobs, career choices and ambitions
+														(H&amp;O)</li>
+													<li class="table-btn dkbrick col-sm">
+														<p class="table-type d-block d-sm-none">Test and feedback form
+														</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-germ/topic-tests/AG_GERM_Jobs_career_ambitions_H&amp;O.docx"
+															target="_blank"
+															onclick="trackTest('AG GERM H - Jobs, career choices and ambitions (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkbrick tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-germ/topic-tests/AG_GERM_Jobs_career_ambitions_H&amp;O_MS.docx"
+															target="_blank"
+															onclick="trackMarkScheme('AG GERM H - Jobs, career choices and ambitions (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkbrick tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Transcripts</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-germ/topic-tests/AG_GERM_Jobs_career_ambitions_H&amp;O_TR.docx"
+															target="_blank"
+															onclick="trackTranscript('AG GERM H - Jobs, career choices and ambitions (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-r.svg"
+																alt="transcript icon" class="ico-tt-thumb"></a>
+													</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic col-sm-6">Identity, culture and school
+														(H&amp;O)</li>
+													<li class="table-btn dkbrick col-sm">
+														<p class="table-type d-block d-sm-none">Test and feedback form
+														</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-germ/topic-tests/AG_GERM_Identity_culture_and_school_H&amp;O.docx"
+															target="_blank"
+															onclick="trackTest('AG GERM H - Identity, culture and school (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkbrick tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-germ/topic-tests/AG_GERM_Identity_culture_and_school_H&amp;O_MS.docx"
+															target="_blank"
+															onclick="trackMarkScheme('AG GERM H - Identity, culture and school (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkbrick tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Transcripts</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-germ/topic-tests/AG_GERM_Identity_culture_and_school_H&amp;O_TR.docx"
+															target="_blank"
+															onclick="trackTranscript('AG GERM H - Identity, culture and school (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-r.svg"
+																alt="transcript icon" class="ico-tt-thumb"></a>
+													</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic col-sm-6">Global issues and future plans
+														(H&amp;O)</li>
+													<li class="table-btn dkbrick col-sm">
+														<p class="table-type d-block d-sm-none">Test and feedback form
+														</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-germ/topic-tests/AG_GERM_Global_issues_and_future_plans_H&amp;O.docx"
+															target="_blank"
+															onclick="trackTest('AG GERM H - Global issues and future plans (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkbrick tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-germ/topic-tests/AG_GERM_Global_issues_and_future_plans_H&amp;O_MS.docx"
+															target="_blank"
+															onclick="trackMarkScheme('AG GERM H - Global issues and future plans (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkbrick tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Transcripts</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-germ/topic-tests/AG_GERM_Global_issues_and_future_plans_H&amp;O_TR.docx"
+															target="_blank"
+															onclick="trackTranscript('AG GERM H - Global issues and future plans (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-r.svg"
+																alt="transcript icon" class="ico-tt-thumb"></a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</div> <!-- end tt-higher -->
+								</div> <!-- end GERMAN SECOND LEVEL tab-content -->
+							</div> <!-- end GERMAN SECOND LEVEL tab-panel -->
+
+
+							<!-- GCSE SPANISH TESTS -->
+							<!-- SECOND LEVEL FILTER -->
+							<!-- Higher vs Foundation -->
+							<div class="tab-pane" id="tt-span" role="tabpanel">
+								<ul class="nav nav-tabs tt-nav-tabs nav-tier-2" role="tablist">
+									<li class="nav-item col-6 col-sm-3" role="presentation"><a class="dkyellow active"
+											data-toggle="tab" href="#tt-span-foundation" role="tab"
+											aria-controls="tt-span-foundation"
+											onclick="trackNav('AG Spanish Foundation');">Foundation</a></li>
+									<li class="nav-item col-6 col-sm-3" role="presentation"><a class="dkyellow"
+											data-toggle="tab" href="#tt-span-higher" role="tab"
+											aria-controls="tt-span-higher"
+											onclick="trackNav('AG Spanish Higher');">Higher</a></li>
+								</ul>
+
+								<div class="tab-content">
+									<!-- GCSE Foundation Spanish -->
+									<div class="tab-pane active" id="tt-span-foundation" role="tabpanel">
+										<ul class="ep-tt-table ep-table-onefile">
+											<li class="table-head light d-none d-sm-block">
+												<ul class="row">
+													<li class="table-topic col-sm-6" style="padding-top: 20px">Topic
+													</li>
+													<li class="table-type col-sm">Test and<br>feedback form</li>
+													<li class="table-type col-sm">Mark<br>scheme</li>
+													<li class="table-type col-sm">Transcripts</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic col-sm-6">Free-time activities (F&amp;O)</li>
+													<li class="table-btn dkyellow col-sm">
+														<p class="table-type d-block d-sm-none">Test and feedback form
+														</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Free_time_activities_F&amp;O.docx"
+															target="_blank"
+															onclick="trackTest('AG SPAN F - Free-time activities (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Free_time_activities_F&amp;O_MS.docx"
+															target="_blank"
+															onclick="trackMarkScheme('AG SPAN F - Free-time activities (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Transcripts</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Free_time_activities_F&amp;O_TR.docx"
+															target="_blank"
+															onclick="trackTranscript('AG SPAN F - Free-time activities (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-r.svg"
+																alt="transcript icon" class="ico-tt-thumb"></a>
+													</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic col-sm-6">Customs and festivals (F&amp;O)
+													</li>
+													<li class="table-btn dkyellow col-sm">
+														<p class="table-type d-block d-sm-none">Test and feedback form
+														</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Customs_and_Festivals_F&amp;O.docx"
+															target="_blank"
+															onclick="trackTest('AG SPAN F - Customs and festivals (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Customs_and_Festivals_F&amp;O_MS.docx"
+															target="_blank"
+															onclick="trackMarkScheme('AG SPAN F - Customs and festivals (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Transcripts</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Customs_and_Festivals_F&amp;O_TR.docx"
+															target="_blank"
+															onclick="trackTranscript('AG SPAN F - Customs and festivals (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-r.svg"
+																alt="transcript icon" class="ico-tt-thumb"></a>
+													</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic col-sm-6">Home, town, neighbourhood and
+														region (F&amp;O)</li>
+													<li class="table-btn dkyellow col-sm">
+														<p class="table-type d-block d-sm-none">Test and feedback form
+														</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Home_town_neighbourhood_and_region_F&amp;O.docx"
+															target="_blank"
+															onclick="trackTest('AG SPAN F - Home, town, neighbourhood and region (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Home_town_neighbourhood_and_region_F&amp;O_MS.docx"
+															target="_blank"
+															onclick="trackMarkScheme('AG SPAN F - Home, town, neighbourhood and region (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Transcripts</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Home_town_neighbourhood_and_region_F&amp;O_TR.docx"
+															target="_blank"
+															onclick="trackTranscript('AG SPAN F - Home, town, neighbourhood and region (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-r.svg"
+																alt="transcript icon" class="ico-tt-thumb"></a>
+													</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic dkyellow-12 col-sm-6">Jobs and future plans
+														(F&amp;O)</li>
+													<li class="table-btn dkyellow col-sm">
+														<p class="table-type d-block d-sm-none">Test and feedback form
+														</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Jobs_and_future_plans_F&amp;O.docx"
+															target="_blank"
+															onclick="trackTest('AG SPAN F - Jobs and future plans (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Jobs_and_future_plans_F&amp;O_MS.docx"
+															target="_blank"
+															onclick="trackMarkScheme('AG SPAN F - Jobs and future plans (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Transcripts</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Jobs_and_future_plans_F&amp;O_TR.docx"
+															target="_blank"
+															onclick="trackTranscript('AG SPAN F - Jobs and future plans (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-r.svg"
+																alt="transcript icon" class="ico-tt-thumb"></a>
+													</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic col-sm-6">Technology in everyday life
+														(F&amp;O)</li>
+													<li class="table-btn dkyellow col-sm">
+														<p class="table-type d-block d-sm-none">Test and feedback form
+														</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Technology_in_everyday_life_F&amp;O.docx"
+															target="_blank"
+															onclick="trackTest('AG SPAN F - Technology in everyday life (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Technology_in_everyday_life_F&amp;O_MS.docx"
+															target="_blank"
+															onclick="trackMarkScheme('AG SPAN F - Technology in everyday life (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Transcripts</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Technology_in_everyday_life_F&amp;O_TR.docx"
+															target="_blank"
+															onclick="trackTranscript('AG SPAN F - Technology in everyday life (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-r.svg"
+																alt="transcript icon" class="ico-tt-thumb"></a>
+													</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic col-sm-6">Travel and tourism (F&amp;O)</li>
+													<li class="table-btn dkyellow col-sm">
+														<p class="table-type d-block d-sm-none">Test and feedback form
+														</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Travel_and_tourism_F&amp;O.docx"
+															target="_blank"
+															onclick="trackTest('AG SPAN F - Travel and tourism (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Travel_and_tourism_F&amp;O_MS.docx"
+															target="_blank"
+															onclick="trackMarkScheme('AG SPAN F - Travel and tourism (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Transcripts</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Travel_and_tourism_F&amp;O_TR.docx"
+															target="_blank"
+															onclick="trackTranscript('AG SPAN F - Travel and tourism (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-r.svg"
+																alt="transcript icon" class="ico-tt-thumb"></a>
+													</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic col-sm-6">My studies and life at school
+														(F&amp;O)</li>
+													<li class="table-btn dkyellow col-sm">
+														<p class="table-type d-block d-sm-none">Test and feedback form
+														</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_My_studies_and_life_at_school_F&amp;O.docx"
+															target="_blank"
+															onclick="trackTest('AG SPAN F - My studies and life at school (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_My_studies_and_life_at_school_F&amp;O_MS.docx"
+															target="_blank"
+															onclick="trackMarkScheme('AG SPAN F - My studies and life at school (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Transcripts</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_My_studies_and_life_at_school_F&amp;O_TR.docx"
+															target="_blank"
+															onclick="trackTranscript('AG SPAN F - My studies and life at school (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-r.svg"
+																alt="transcript icon" class="ico-tt-thumb"></a>
+													</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic col-sm-6">Relationships and marriage
+														(F&amp;O)</li>
+													<li class="table-btn dkyellow col-sm">
+														<p class="table-type d-block d-sm-none">Test and feedback form
+														</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Relationships_and_marriage_F&amp;O.docx"
+															target="_blank"
+															onclick="trackTest('AG SPAN F - Relationships and marriage (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Relationships_and_marriage_F&amp;O_MS.docx"
+															target="_blank"
+															onclick="trackMarkScheme('AG SPAN F - Relationships and marriage (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Transcripts</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Relationships_and_marriage_F&amp;O_TR.docx"
+															target="_blank"
+															onclick="trackTranscript('AG SPAN F - Relationships and marriage (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-r.svg"
+																alt="transcript icon" class="ico-tt-thumb"></a>
+													</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic col-sm-6">Social issues (F&amp;O)</li>
+													<li class="table-btn dkyellow col-sm">
+														<p class="table-type d-block d-sm-none">Test and feedback form
+														</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Social_issues_F&amp;O.docx"
+															target="_blank"
+															onclick="trackTest('AG SPAN F - Social issues (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Social_issues_F&amp;O_MS.docx"
+															target="_blank"
+															onclick="trackMarkScheme('AG SPAN F - Social issues (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Transcripts</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Social_issues_F&amp;O_TR.docx"
+															target="_blank"
+															onclick="trackTranscript('AG SPAN F - Social issues (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-r.svg"
+																alt="transcript icon" class="ico-tt-thumb"></a>
+													</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic col-sm-6">Global issues (F&amp;O)</li>
+													<li class="table-btn dkyellow col-sm">
+														<p class="table-type d-block d-sm-none">Test and feedback form
+														</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Global_issues_F&amp;O.docx"
+															target="_blank"
+															onclick="trackTest('AG SPAN F - Global issues (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Global_issues_F&amp;O_MS.docx"
+															target="_blank"
+															onclick="trackMarkScheme('AG SPAN F - Global issues (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Transcripts</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Global_issues_F&amp;O_TR.docx"
+															target="_blank"
+															onclick="trackTranscript('AG SPAN F - Global issues (F&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-r.svg"
+																alt="transcript icon" class="ico-tt-thumb"></a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</div> <!-- end tt-foundation -->
+									<!-- GCSE Higher Spanish -->
+									<div class="tab-pane" id="tt-span-higher" role="tabpanel">
+										<ul class="ep-tt-table ep-table-onefile">
+											<li class="table-head light d-none d-sm-block">
+												<ul class="row">
+													<li class="table-topic col-sm-6" style="padding-top: 20px">Topic
+													</li>
+													<li class="table-type col-sm">Test and<br>feedback form</li>
+													<li class="table-type col-sm">Mark<br>scheme</li>
+													<li class="table-type col-sm">Transcripts</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic col-sm-6">Free-time activities (H&amp;O)</li>
+													<li class="table-btn dkyellow col-sm">
+														<p class="table-type d-block d-sm-none">Test and feedback form
+														</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Free_time_activities_H&amp;O.docx"
+															target="_blank"
+															onclick="trackTest('AG SPAN H - Free-time activities (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Free_time_activities_H&amp;O_MS.docx"
+															target="_blank"
+															onclick="trackMarkScheme('AG SPAN H - Free-time activities (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Transcripts</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Free_time_activities_H&amp;O_TR.docx"
+															target="_blank"
+															onclick="trackTranscript('AG SPAN H - Free-time activities (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-r.svg"
+																alt="transcript icon" class="ico-tt-thumb"></a>
+													</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic col-sm-6">Customs and festivals (H&amp;O)
+													</li>
+													<li class="table-btn dkyellow col-sm">
+														<p class="table-type d-block d-sm-none">Test and feedback form
+														</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Customs_and_Festivals_H&amp;O.docx"
+															target="_blank"
+															onclick="trackTest('AG SPAN H - Customs and festivals (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Customs_and_Festivals_H&amp;O_MS.docx"
+															target="_blank"
+															onclick="trackMarkScheme('AG SPAN H - Customs and festivals (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Transcripts</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Customs_and_Festivals_H&amp;O_TR.docx"
+															target="_blank"
+															onclick="trackTranscript('AG SPAN H - Customs and festivals (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-r.svg"
+																alt="transcript icon" class="ico-tt-thumb"></a>
+													</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic col-sm-6">Home, town, neighbourhood and
+														region (H&amp;O)</li>
+													<li class="table-btn dkyellow col-sm">
+														<p class="table-type d-block d-sm-none">Test and feedback form
+														</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Home_town_neighbourhood_and_region_H&amp;O.docx"
+															target="_blank"
+															onclick="trackTest('AG SPAN H - Home, town, neighbourhood and region (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Home_town_neighbourhood_and_region_H&amp;O_MS.docx"
+															target="_blank"
+															onclick="trackMarkScheme('AG SPAN H - Home, town, neighbourhood and region (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Transcripts</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Home_town_neighbourhood_and_region_H&amp;O_TR.docx"
+															target="_blank"
+															onclick="trackTranscript('AG SPAN H - Home, town, neighbourhood and region (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-r.svg"
+																alt="transcript icon" class="ico-tt-thumb"></a>
+													</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic col-sm-6">Jobs and future plans (H&amp;O)
+													</li>
+													<li class="table-btn dkyellow col-sm">
+														<p class="table-type d-block d-sm-none">Test and feedback form
+														</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Jobs_and_future_plans_H&amp;O.docx"
+															target="_blank"
+															onclick="trackTest('AG SPAN H - Jobs and future plans (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Jobs_and_future_plans_H&amp;O_MS.docx"
+															target="_blank"
+															onclick="trackMarkScheme('AG SPAN H - Jobs and future plans (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Transcripts</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Jobs_and_future_plans_H&amp;O_TR.docx"
+															target="_blank"
+															onclick="trackTranscript('AG SPAN H - Jobs and future plans (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-r.svg"
+																alt="transcript icon" class="ico-tt-thumb"></a>
+													</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic col-sm-6">Technology in everyday life
+														(H&amp;O)</li>
+													<li class="table-btn dkyellow col-sm">
+														<p class="table-type d-block d-sm-none">Test and feedback form
+														</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Technology_in_everyday_life_H&amp;O.docx"
+															target="_blank"
+															onclick="trackTest('AG SPAN H - Technology in everyday life (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Technology_in_everyday_life_H&amp;O_MS.docx"
+															target="_blank"
+															onclick="trackMarkScheme('AG SPAN H - Technology in everyday life (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Transcripts</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Technology_in_everyday_life_H&amp;O_TR.docx"
+															target="_blank"
+															onclick="trackTranscript('AG SPAN H - Technology in everyday life (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-r.svg"
+																alt="transcript icon" class="ico-tt-thumb"></a>
+													</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic col-sm-6">Travel and tourism (H&amp;O)</li>
+													<li class="table-btn dkyellow col-sm">
+														<p class="table-type d-block d-sm-none">Test and feedback form
+														</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Travel_and_tourism_H&amp;O.docx"
+															target="_blank"
+															onclick="trackTest('AG SPAN H - Travel and tourism (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Travel_and_tourism_H&amp;O_MS.docx"
+															target="_blank"
+															onclick="trackMarkScheme('AG SPAN H - Travel and tourism (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Transcripts</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Travel_and_tourism_H&amp;O_TR.docx"
+															target="_blank"
+															onclick="trackTranscript('AG SPAN H - Travel and tourism (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-r.svg"
+																alt="transcript icon" class="ico-tt-thumb"></a>
+													</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic col-sm-6">My studies and life at school
+														(H&amp;O)</li>
+													<li class="table-btn dkyellow col-sm">
+														<p class="table-type d-block d-sm-none">Test and feedback form
+														</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_My_studies_and_life_at_school_H&amp;O.docx"
+															target="_blank"
+															onclick="trackTest('AG SPAN H - My studies and life at school (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_My_studies_and_life_at_school_H&amp;O_MS.docx"
+															target="_blank"
+															onclick="trackMarkScheme('AG SPAN H - My studies and life at school (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Transcripts</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_My_studies_and_life_at_school_H&amp;O_TR.docx"
+															target="_blank"
+															onclick="trackTranscript('AG SPAN H - My studies and life at school (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-r.svg"
+																alt="transcript icon" class="ico-tt-thumb"></a>
+													</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic col-sm-6">Relationships and marriage
+														(H&amp;O)</li>
+													<li class="table-btn dkyellow col-sm">
+														<p class="table-type d-block d-sm-none">Test and feedback form
+														</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Relationships_and_marriage_H&amp;O.docx"
+															target="_blank"
+															onclick="trackTest('AG SPAN H - Relationships and marriage (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Relationships_and_marriage_H&amp;O_MS.docx"
+															target="_blank"
+															onclick="trackMarkScheme('AG SPAN H - Relationships and marriage (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Transcripts</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Relationships_and_marriage_H&amp;O_TR.docx"
+															target="_blank"
+															onclick="trackTranscript('AG SPAN H - Relationships and marriage (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-r.svg"
+																alt="transcript icon" class="ico-tt-thumb"></a>
+													</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic col-sm-6">Social issues (H&amp;O)</li>
+													<li class="table-btn dkyellow col-sm">
+														<p class="table-type d-block d-sm-none">Test and feedback form
+														</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Social_issues_H&amp;O.docx"
+															target="_blank"
+															onclick="trackTest('AG SPAN H - Social issues (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Social_issues_H&amp;O_MS.docx"
+															target="_blank"
+															onclick="trackMarkScheme('AG SPAN H - Social issues (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Transcripts</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Social_issues_H&amp;O_TR.docx"
+															target="_blank"
+															onclick="trackTranscript('AG SPAN H - Social issues (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-r.svg"
+																alt="transcript icon" class="ico-tt-thumb"></a>
+													</li>
+												</ul>
+											</li>
+											<li class="table-body light">
+												<ul class="row">
+													<li class="table-topic col-sm-6">Global issues (H&amp;O)</li>
+													<!-- <li class="table-btn purple tint20 col-sm">
+															<p class="tt-coming-soon">Coming soon!</p>
+														</li> -->
+													<li class="table-btn dkyellow col-sm">
+														<p class="table-type d-block d-sm-none">Test and feedback form
+														</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Global_issues_H&amp;O.docx"
+															target="_blank"
+															onclick="trackTest('AG SPAN H - Global issues (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-q.svg"
+																alt="test icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Global_issues_H&amp;O_MS.docx"
+															target="_blank"
+															onclick="trackMarkScheme('AG SPAN H - Global issues (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-ms.svg"
+																alt="mark scheme icon" class="ico-tt-thumb"></a>
+													</li>
+													<li class="table-btn dkyellow tint20 col-6 col-sm">
+														<p class="table-type d-block d-sm-none">Transcripts</p>
+														<a href="https://app.doublestruck.eu/res/pdf/ag-span/topic-tests/AG_SPAN_Global_issues_H&amp;O_TR.docx"
+															target="_blank"
+															onclick="trackTranscript('AG SPAN H - Global issues (H&amp;O)');"><img
+																src="assets/images/ep-icons/ico-tt-r.svg"
+																alt="transcript icon" class="ico-tt-thumb"></a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</div> <!-- end tt-higher -->
+								</div> <!-- end SPANISH SECOND LEVEL tab-content -->
+							</div> <!-- end SPANISH SECOND LEVEL tab-panel -->
+
+						</div><!-- end TOP LEVEL tab-content -->
+					</article>
+
+					<footer class="welcome-footer">
+						© Doublestruck Ltd. 2020 | <a href="https://www.doublestruck.co.uk/terms-and-conditions/"
+							target="_blank"
+							onclick="trackOutboundLink('https://www.doublestruck.co.uk/terms-and-conditions/', 'Terms of Use footer');">Terms
+							of Use</a><br>
+						<noscript><strong>Reminder:</strong> You have already agreed to the Terms of Use. To ensure that
+							these resources remain protected, you may only share them with your students via email or a
+							secure login. They can only be used by your school and cannot be shared with any third
+							party.</noscript>
+					</footer>
+
+					<a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i
+							class="fa fa-chevron-up"></i></a>
+				</div>
+			</main>
+		</div><!-- end .welcome-page-container-fluid / important for bleeding bgcolors -->
+	</div>
+	<!-- END SECTION FOR SAL -->
+
+	<!-- include js from file -->
+	<!-- links to include external js at end of body -->
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ds-vendor.doublestruck.eu/jquery/jquery-3.7.0.min.js"></script>
+	<script src="https://ds-vendor.doublestruck.eu/bootstrap/bootstrap-4.5.3/js/bootstrap.bundle.js"></script>
+	<!-- bundle includes all components -->
+	<script src="https://resources.doublestruck.eu/resources/assets/js/myscript.js"></script>
+
+
+</body>
+
+</html>
