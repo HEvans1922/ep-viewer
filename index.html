@@ -2,35 +2,26 @@
 <html class="no-js" lang="en">
 
 <head>
+	<style>
+		.username-new {
+                    padding-right: 8px;
+                }
+        </style>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-
     <link rel="shortcut icon" href="https://app.doublestruck.eu/images/fav/EP.ico?v=1739233799" />
-
     <meta name="description" content="Exampro gatekeeper facility to launch products">
-
     <!-- Place favicon.ico in the root directory -->
-
     <link rel="stylesheet" href="https://app.doublestruck.eu/gate-tb/css/normalize.css">
     <link rel="stylesheet" href="https://app.doublestruck.eu/gate-tb/css/skeleton.css">
-
     <link rel="stylesheet" href="https://ds-vendor.doublestruck.eu/fontawesome/font-awesome-5.15.4/css/all.min.css">
-
     <link href="https://ds-welcome.doublestruck.eu/welcome/css/gatemessages.css" rel="stylesheet">
-
     <!-- gate-tb/css/font-awesome.min.css -->
-
     <link rel="stylesheet" href="https://app.doublestruck.eugate-tb/css/skeleton-tabs.css?s=as">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script>
         var reqid = "51da8882d6e9a7a69d8e10fef587ce47";
         const tbOrderForm = "https://forms.doublestruck.co.uk/?brand=TB";
@@ -38,17 +29,9 @@
         const supportLink = "https://support.exampro.co.uk/";
         const adminfaqs = "https://support.exampro.co.uk/kb/?lnd=JS";
     </script>
-
     <link rel="stylesheet" href="https://app.doublestruck.eu/css/gate-common2.css">
-
-
     <title>Exampro Gatekeeper</title>
     <link rel="stylesheet" href="https://app.doublestruck.eu/gate-ep/css/styles.css">
-
-
-
-
-
     <script src="https://app.doublestruck.eugate-tb/js/vendor/modernizr-2.8.3.min.js"></script>
     <script>
         var launched_theme = "EP";
@@ -56,7 +39,6 @@
         var teacherkey = "";
         var isteacher = "0";
     </script>
-
 </head>
 
 <body class="ep-root">
@@ -76,8 +58,6 @@
                 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
     <div class="gatekeeper">
-
-
         <header class="gk-header" role="banner" id="pageHeader">
             <div class="logo-container">
                 <a href="http://www.exampro.co.uk" target="_blank">
@@ -86,9 +66,7 @@
                         <h1 class="gatekeeper-header">Gatekeeper</h1>
                     </div>
                 </a>
-            </div>
-			
-			
+            </div>			
             <div class="username-new">
                 <div class="no-mobile">
                     <div class="admin-button" id="admin-button">
@@ -97,32 +75,14 @@
                                 <i class="fas fa-question admin-icon"></i>Help - Login required?
                             </p>
                         </a>
-                    </div>
-					
-                </div>
-				
+                    </div>	
+                </div>		
             </div>
-
-            <style>
-                .username-new {
-                    padding-right: 8px;
-                }
-            </style>
-
-
-        </header>
-
-
+	</header>
         <div class="sidebar clear" id="pageSidebar">
             <nav class="nav" role="navigation">
                 <ul class="nav-tabs" id="buttonNavigation">
-
                     <!-- SG replace with buttons from customer data  see /js/app/gate.js -->
-
-
-
-
-
                     <li>
                         <a href="#" data-search="ALL" data-brand="EP" class="btn-link selected log-this"
                             data-type="GK_NAV" data-log="Clicked EP All subjects">
@@ -235,22 +195,11 @@
 
                 </ul>
             </nav>
-
-
-
         </div><!-- .sidebar -->
-
-
-
-
-
         <div class="gk-content">
             <main class="gk-main" role="main">
                 <div class="launchpad">
                     <div class="entry-content">
-
-
-
                         <div class="cd-tabs">
                             <nav>
                                 <ul class="cd-tabs-navigation tabs-all" id="tabNavigation">
@@ -261,7 +210,6 @@
                                     <li id="archivedTabHeader">
                                         <a data-content="archive" class="last-tab" href="#0">Archive</a>
                                     </li>
-
                                 </ul> <!-- cd-tabs-navigation -->
                             </nav>
 
@@ -270,9 +218,7 @@
                             </ul>
 
                             <ul class="cd-tabs-content" style="height: auto;">
-
                                 <li data-content="new" class="selected" id="currentProductsTab">
-
                                     <!-- SG CURRENT subs here, see /js/app/gate.js -->
                                     <section class="_ALL _F8">
                                         <h3> <span class="section-title">Computer Science</span></h3>
@@ -288,14 +234,16 @@
                                                             fill="#C8194B"></path>
                                                     </svg></span>Core</div>
                                             <ul>
-                                                <li class="none"><a href="./subjects/F8/AA_COM.html"
-                                                        target="_blank"><span class="product">A-level Computer
-                                                            Science</span></a></li>
-                                                <li class="none"><a href="./subjects/F8/AG_COMP.html"
-                                                        target="_blank"><span class="product">GCSE Computer
-                                                            Science</span></a>
+                                                <li class="none">
+							<a href="./subjects/F8/AA_COM" target="_blank">
+								<span class="product">A-level Computer Science</span>
+							</a>
+						</li>
+                                                <li class="none">
+							<a href="./subjects/F8/AG_COMP" target="_blank">
+								<span class="product">GCSE Computer Science</span>
+							</a>
                                                 </li>
-
                                             </ul>
                                         </section>
                                     </section>
@@ -314,23 +262,26 @@
                                                             fill="#C8194B"></path>
                                                     </svg></span>Core</div>
                                             <ul>
-                                                <li class="none"><a href="./subjects/design and technology/AA_DTFT.html"
-                                                        target="_blank"><span class="product">A-level D&amp;T: Fashion
-                                                            and Textiles</span></a></li>
-                                                <li class="none"><a href="./subjects/design and technology/AA_DTPD.html"
-                                                        target="_blank"><span class="product">A-level D&amp;T: Product
-                                                            Design</span></a>
+                                                <li class="none">
+							<a href="./subjects/design and technology/AA_DTFT" target="_blank">
+								<span class="product">A-level D&amp;T: Fashion and Textiles</span>
+							</a>
+						</li>
+                                                <li class="none">
+							<a href="./subjects/design and technology/AA_DTPD" target="_blank">
+								<span class="product">A-level D&amp;T: Product Design</span>
+							</a>
                                                 </li>
-                                                <li class="none"><a href="./subjects/design and technology/AG_DT.html"
-                                                        target="_blank"><span class="product">GCSE Design and
-                                                            Technology</span></a>
+                                                <li class="none">
+							<a href="./subjects/design and technology/AG_DT" target="_blank">
+								<span class="product">GCSE Design and Technology</span>
+							</a>
                                                 </li>
-                                                <li class="none"><a href="./subjects/design and technology/AG_FPN.html"
-                                                        target="_blank"><span class="product">GCSE Food Preparation and
-                                                            Nutrition</span></a>
+                                                <li class="none">
+							<a href="./subjects/design and technology/AG_FPN" target="_blank">
+								<span class="product">GCSE Food Preparation and Nutrition</span>
+							</a>
                                                 </li>
-
-
                                             </ul>
                                         </section>
                                     </section>
@@ -350,12 +301,15 @@
                                                     </svg></span>Core</div>
                                             <ul>
 
-                                                <li class="none"><a href="./subjects/economics and business/AA_ECO.html"
-                                                        target="_blank"><span class="product">A-level
-                                                            Economics</span></a>
+                                                <li class="none">
+							<a href="./subjects/economics and business/AA_ECO" target="_blank">
+								<span class="product">A-level Economics</span>
+							</a>
                                                 </li>
-                                                <li class="none"><a href="./subjects/economics and business/AG_BUS.html"
-                                                        target="_blank"><span class="product">GCSE Business</span></a>
+                                                <li class="none">
+							<a href="./subjects/economics and business/AG_BUS" target="_blank">
+								<span class="product">GCSE Business</span>
+							</a>
                                                 </li>
                                             </ul>
                                         </section>
@@ -375,51 +329,65 @@
                                                             fill="#C8194B"></path>
                                                     </svg></span>Core</div>
                                             <ul>
-                                                <li class="none"><a href="./subjects/english/K1_READ.html"
-                                                        target="_blank"><span class="product">KS1 Reading</span></a>
+                                                <li class="none">
+							<a href="./subjects/english/K1_READ" target="_blank">
+								<span class="product">KS1 Reading</span>
+							</a>
                                                 </li>
-                                                <li class="none"><a href="./subjects/english/K1_SP.html"
-                                                        target="_blank"><span class="product">KS1 Spelling</span></a>
+                                                <li class="none">
+							<a href="./subjects/english/K1_SP" target="_blank">
+								<span class="product">KS1 Spelling</span>
+							</a>
                                                 </li>
-                                                <li class="none"><a href="./subjects/english/K2_READ.html"
-                                                        target="_blank"><span class="product">KS2 Reading</span></a>
+                                                <li class="none">
+							<a href="./subjects/english/K2_READ" target="_blank">
+								<span class="product">KS2 Reading</span>
+							</a>
                                                 </li>
 
-                                                <li class="none"><a href="./subjects/english/K3_ENG.html"
-                                                        target="_blank"><span class="product">KS3 English</span></a>
+                                                <li class="none">
+							<a href="./subjects/english/K3_ENG" target="_blank">
+								<span class="product">KS3 English</span>
+							</a>
                                                 </li>
-                                                <li class="none"><a href="./subjects/english/K_SP.html"
-                                                        target="_blank"><span class="product">Primary
-                                                            Spelling</span></a></li>
-                                                <li class="none"><a href="./subjects/english/K1_PHON.html"
-                                                        target="_blank"><span class="product">Year 1 Phonics</span></a>
+                                                <li class="none">
+							<a href="./subjects/english/K_SP" target="_blank">
+								<span class="product">Primary Spelling</span>
+							</a>
+						</li>
+                                                <li class="none">
+							<a href="./subjects/english/K1_PHON" target="_blank">
+								<span class="product">Year 1 Phonics</span>
+							</a>
                                                 </li>
-                                                <li class="none"><a href="./subjects/english/K_GPS.html"
-                                                        target="_blank"><span class="product">Primary Grammar and
-                                                            Punctuation</span></a>
+                                                <li class="none">
+							<a href="./subjects/english/K_GPS" target="_blank">
+								<span class="product">Primary Grammar and Punctuation</span>
+							</a>
                                                 </li>
-                                                <li class="none"><a href="./subjects/english/K_READ.html"
-                                                        target="_blank"><span class="product">Reading by Content
-                                                            Domain</span></a>
+                                                <li class="none">
+							<a href="./subjects/english/K_READ" target="_blank">
+								<span class="product">Reading by Content Domain</span>
+							</a>
                                                 </li>
 
 
                                             </ul>
                                         </section>
                                         <section>
-                                            <div class="gk-groups-readymade gkg-title"><span class="gkg-image-span"><i
-                                                        class="gkg-icon fas fa-plus"></i></span>Highlights
+                                            <div class="gk-groups-readymade gkg-title">
+						    <span class="gkg-image-span">
+							    <i class="gkg-icon fas fa-plus"></i>
+						    </span>Highlights
                                             </div>
                                             <ul>
                                                 <li class="none">
-                                                    <a href="https://resources.doublestruck.eu/resources/res-ag-eng.php?otheme=EP"
-                                                        target="_blank">
+                                                    <a href="https://resources.doublestruck.eu/resources/res-ag-eng.php?otheme=EP" target="_blank">
                                                         <span class="product">GCSE English Highlights</span>
                                                     </a>
                                                 </li>
 						<li class="none">
-                                                    <a href="./subjects/F3/AG_ENG_PAPERS"
-                                                        target="_blank">
+                                                    <a href="./subjects/F3/AG_ENG_PAPERS" target="_blank">
                                                         <span class="product">GCSE English Papers</span>
                                                     </a>
                                                 </li>
@@ -441,18 +409,24 @@
                                                             fill="#C8194B"></path>
                                                     </svg></span>Core</div>
                                             <ul>
-                                                <li class="none"><a href="./subjects/geography/AA_GEO.html"
-                                                        target="_blank"><span class="product">A-level
-                                                            Geography</span></a>
+                                                <li class="none">
+							<a href="./subjects/geography/AA_GEO" target="_blank">
+								<span class="product">A-level Geography</span>
+							</a>
                                                 </li>
-                                                <li class="none"><a href="./subjects/geography/AG_GEO.html"
-                                                        target="_blank"><span class="product">GCSE Geography</span></a>
+                                                <li class="none">
+							<a href="./subjects/geography/AG_GEO" target="_blank">
+								<span class="product">GCSE Geography</span>
+							</a>
                                                 </li>
                                             </ul>
                                         </section>
+					    
                                         <section>
-                                            <div class="gk-groups-readymade gkg-title"><span class="gkg-image-span"><i
-                                                        class="gkg-icon fas fa-plus"></i></span>Ready-made assessments
+                                            <div class="gk-groups-readymade gkg-title">
+						    <span class="gkg-image-span">
+							    <i class="gkg-icon fas fa-plus"></i>
+						    </span>Ready-made assessments
                                             </div>
                                             <ul>
                                                 <li class="none">
@@ -486,32 +460,32 @@
                                                     </svg></span>Core</div>
                                             <ul>
                                                 <li class="none">
-                                                    <a href="./subjects/F5/AA_FREN.html" target="_blank">
+                                                    <a href="./subjects/F5/AA_FREN" target="_blank">
                                                         <span class="product">A-level French</span>
                                                     </a>
                                                 </li>
                                                 <li class="none">
-                                                    <a href="./subjects/F5/AA_GERM.html" target="_blank">
+                                                    <a href="./subjects/F5/AA_GERM" target="_blank">
                                                         <span class="product">A-level German</span>
                                                     </a>
                                                 </li>
                                                 <li class="none">
-                                                    <a href="./subjects/F5/AA_SPAN.html" target="_blank">
+                                                    <a href="./subjects/F5/AA_SPAN" target="_blank">
                                                         <span class="product">A-level Spanish</span>
                                                     </a>
                                                 </li>
                                                 <li class="none">
-                                                    <a href="./subjects/mfl/AG_FREN.html" target="_blank">
+                                                    <a href="./subjects/F5/AG_FREN" target="_blank">
                                                         <span class="product">GCSE French</span>
                                                     </a>
                                                 </li>
                                                 <li class="none">
-                                                    <a href="./subjects/mfl/AG_GERM.html" target="_blank">
+                                                    <a href="./subjects/F5/AG_GERM" target="_blank">
                                                         <span class="product">GCSE German</span>
                                                     </a>
                                                 </li>
                                                 <li class="none">
-                                                    <a href="./subjects/mfl/AG_SPAN.html" target="_blank">
+                                                    <a href="./subjects/F5/AG_SPAN" target="_blank">
                                                         <span class="product">GCSE Spanish</span>
                                                     </a>
                                                 </li>
@@ -551,27 +525,27 @@
                                                             fill="#C8194B"></path>
                                                     </svg></span>Core</div>
                                             <ul>
-                                                <li class="none"><a href="./subjects/F2/AA_FMA.html"
+                                                <li class="none"><a href="./subjects/F2/AA_FMA"
                                                         target="_blank"><span class="product">A-Level Further
                                                             Mathematics</span></a>
                                                 </li>
-                                                <li class="none"><a href="./subjects/F2/AA_MAT.html"
+                                                <li class="none"><a href="./subjects/F2/AA_MAT"
                                                         target="_blank"><span class="product">A-Level
                                                             Mathematics</span></a>
                                                 </li>
-                                                <li class="none"><a href="./subjects/F2/AG_MAT.html"
+                                                <li class="none"><a href="./subjects/F2/AG_MAT"
                                                         target="_blank"><span class="product">GCSE
                                                             Mathematics</span></a>
                                                 </li>
-                                                <li class="none"><a href="./subjects/F2/K3_ARK.html"
+                                                <li class="none"><a href="./subjects/F2/K3_ARK"
                                                         target="_blank"><span class="product">KS3 Mathematics &
                                                             Reasoning</span></a>
                                                 </li>
-                                                <li class="none"><a href="./subjects/F2/A2_FM.html"
+                                                <li class="none"><a href="./subjects/F2/A2_FM"
                                                         target="_blank"><span class="product">Level 2 Further
                                                             Mathematics</span></a>
                                                 </li>
-                                                <li class="none"><a href="./subjects/F2/A3_MAT.html"
+                                                <li class="none"><a href="./subjects/F2/A3_MAT"
                                                         target="_blank"><span class="product">Level 3 (Core)
                                                             Mathematics</span></a>
                                                 </li>
@@ -612,11 +586,11 @@
                                                             fill="#C8194B"></path>
                                                     </svg></span>Core</div>
                                             <ul>
-                                                <li class="none"><a href="./subjects/physical education/AA_PE.html"
+                                                <li class="none"><a href="./subjects/physical education/AA_PE"
                                                         target="_blank"><span class="product">A-level Physical
                                                             Education</span></a>
                                                 </li>
-                                                <li class="none"><a href="./subjects/physical education/AG_PE.html"
+                                                <li class="none"><a href="./subjects/physical education/AG_PE"
                                                         target="_blank"><span class="product">GCSE Physical
                                                             Education</span></a>
                                                 </li>
@@ -658,11 +632,11 @@
                                                             fill="#C8194B"></path>
                                                     </svg></span>Core</div>
                                             <ul>
-                                                <li class="none"><a href="./subjects/psychology/AA_PSY.html"
+                                                <li class="none"><a href="./subjects/psychology/AA_PSY"
                                                         target="_blank"><span class="product">A-level
                                                             Psychology</span></a>
                                                 </li>
-                                                <li class="none"><a href="./subjects/psychology/AG_PSY.html"
+                                                <li class="none"><a href="./subjects/psychology/AG_PSY"
                                                         target="_blank"><span class="product">GCSE Psychology</span></a>
                                                 </li>
                                             </ul>
@@ -670,55 +644,74 @@
                                     </section>
 
                                     <section class="_ALL _F1">
-                                        <h3> <span class="section-title">Science</span></h3>
+                                        <h3> 
+						<span class="section-title">Science</span>
+					</h3>
                                         <section>
-                                            <div class="gk-group-core gkg-title"><span class="gkg-image-span"><svg
-                                                        class="gkg-icon" xmlns="http://www.w3.org/2000/svg" width="16"
-                                                        height="14" viewBox="0 0 16 14" fill="none">
-                                                        <path
-                                                            d="M7.60564 9.0705L5.69014 11.0987L4.16901 9.0705H4.11268L0 13.4649H3.60563L5.69014 11.0987L7.26761 13.5212H10.8732L7.60564 9.0705Z"
-                                                            fill="#412878"></path>
-                                                        <path
-                                                            d="M7.60578 9.07042L16.0001 0.056338L12.4509 0L6.14099 6.76056L4.50719 4.50704H0.845215L4.16916 9.07042L5.69029 11.0986L7.60578 9.07042Z"
-                                                            fill="#C8194B"></path>
-                                                    </svg></span>Core</div>
+                                            <div class="gk-group-core gkg-title">
+						    <span class="gkg-image-span">
+						    <svg class="gkg-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
+                                                        <path d="M7.60564 9.0705L5.69014 11.0987L4.16901 9.0705H4.11268L0 13.4649H3.60563L5.69014 11.0987L7.26761 13.5212H10.8732L7.60564 9.0705Z" fill="#412878"></path>
+                                                        <path d="M7.60578 9.07042L16.0001 0.056338L12.4509 0L6.14099 6.76056L4.50719 4.50704H0.845215L4.16916 9.07042L5.69029 11.0986L7.60578 9.07042Z" fill="#C8194B"></path>
+                                                    </svg>
+						    </span>Core
+					    </div>
                                             <ul>
-                                                <li class="none"><a href="./subjects/science/AA_BIOL.html"
-                                                        target="_blank"><span class="product">A-Level Biology</span></a>
+                                                <li class="none">
+							<a href="./subjects/science/AA_BIOL" target="_blank">
+								<span class="product">A-Level Biology</span>
+							</a>
                                                 </li>
-                                                <li class="none"><a href="./subjects/science/AA_CHEM.html"
-                                                        target="_blank"><span class="product">A-Level
-                                                            Chemistry</span></a>
+                                                <li class="none">
+							<a href="./subjects/science/AA_CHEM" target="_blank">
+								<span class="product">A-Level Chemistry</span>
+							</a>
                                                 </li>
-                                                <li class="none"><a href="./subjects/science/AA_PHYS.html"
-                                                        target="_blank"><span class="product">A-Level Physics</span></a>
+                                                <li class="none">
+							<a href="./subjects/science/AA_PHYS" target="_blank">
+								<span class="product">A-Level Physics</span>
+							</a>
                                                 </li>
-                                                <li class="none"><a href="./subjects/science/AG_BLG.html"
-                                                        target="_blank"><span class="product">GCSE Biology</span></a>
+                                                <li class="none">
+							<a href="./subjects/science/AG_BLG" target="_blank">
+								<span class="product">GCSE Biology</span>
+							</a>
                                                 </li>
 
-                                                <li class="none"><a href="./subjects/science/AG_CHM.html"
-                                                        target="_blank"><span class="product">GCSE Chemistry</span></a>
+                                                <li class="none">
+							<a href="./subjects/science/AG_CHM" target="_blank">
+								<span class="product">GCSE Chemistry</span>
+							</a>
                                                 </li>
-                                                <li class="none"><a href="./subjects/science/AG_SCC.html"
-                                                        target="_blank"><span class="product">GCSE Combined
-                                                            Science</span></a>
+                                                <li class="none">
+							<a href="./subjects/science/AG_SCC" target="_blank">
+								<span class="product">GCSE Combined Science</span>
+							</a>
                                                 </li>
-                                                <li class="none"><a href="./subjects/science/AG_PHS.html"
-                                                        target="_blank"><span class="product">GCSE Physics</span></a>
+                                                <li class="none">
+							<a href="./subjects/science/AG_PHS" target="_blank">
+								<span class="product">GCSE Physics</span>
+							</a>
                                                 </li>
-                                                <li class="none"><a href="./subjects/science/K2_SCI.html"
-                                                        target="_blank"><span class="product">KS2 Science</span></a>
+                                                <li class="none">
+							<a href="./subjects/science/K2_SCI" target="_blank">
+								<span class="product">KS2 Science</span>
+							</a>
                                                 </li>
-                                                <li class="none"><a href="./subjects/F1/K3_SCI.html"
-                                                        target="_blank"><span class="product">KS3 Science</span></a>
+                                                <li class="none">
+							<a href="./subjects/F1/K3_SCI" target="_blank">
+								<span class="product">KS3 Science</span>
+							</a>
                                                 </li>
 
                                             </ul>
                                         </section>
                                         <section>
-                                            <div class="gk-groups-readymade gkg-title"><span class="gkg-image-span"><i
-                                                        class="gkg-icon fas fa-plus"></i></span>Ready-made assessments
+                                            <div class="gk-groups-readymade gkg-title">
+						    <span class="gkg-image-span">
+							    <i class="gkg-icon fas fa-plus"></i>
+						    </span>
+						    Ready-made assessments
                                             </div>
                                             <ul>
                                                 <li class="none">
@@ -748,11 +741,11 @@
                                                             fill="#C8194B"></path>
                                                     </svg></span>Core</div>
                                             <ul>
-                                                <li class="none"><a href="./subjects/computer science/AG_ICT.html"
+                                                <li class="none"><a href="./subjects/computer science/AG_ICT"
                                                         target="_blank"><span class="product">GCSE ICT (Old
                                                             Spec)</span></a>
                                                 </li>
-                                                <li class="none"><a href="./subjects/computer science/AG_ICT.html"
+                                                <li class="none"><a href="./subjects/computer science/AA_ICT"
                                                         target="_blank"><span class="product">A-level ICT (Old
                                                             Spec)</span></a>
                                                 </li>
@@ -773,32 +766,32 @@
                                                             fill="#C8194B"></path>
                                                     </svg></span>Core</div>
                                             <ul>
-                                                <li class="none"><a href="./subjects/design and technology/AG_GP.html"
+                                                <li class="none"><a href="./subjects/design and technology/AG_GP"
                                                         target="_blank"><span class="product">GCSE Graphic Products (Old
                                                             Spec)</span></a>
                                                 </li>
-                                                <li class="none"><a href="./subjects/design and technology/AG_PD.html"
+                                                <li class="none"><a href="./subjects/design and technology/AG_PD"
                                                         target="_blank"><span class="product">GCSE Product Design (Old
                                                             Spec)</span></a>
                                                 </li>
-                                                <li class="none"><a href="./subjects/design and technology/AG_RM.html"
+                                                <li class="none"><a href="./subjects/design and technology/AG_RM"
                                                         target="_blank"><span class="product">GCSE Resistant Materials
                                                             (Old Spec)</span></a>
                                                 </li>
-                                                <li class="none"><a href="./subjects/design and technology/AG_SC.html"
+                                                <li class="none"><a href="./subjects/design and technology/AG_SC"
                                                         target="_blank"><span class="product">GCSE Systems and Control
                                                             Technology
                                                             (Old Spec)</span></a>
                                                 </li>
-                                                <li class="none"><a href="./subjects/design and technology/AG_EP.html"
+                                                <li class="none"><a href="./subjects/design and technology/AG_EP"
                                                         target="_blank"><span class="product">GCSE Electronic Products
                                                             (Old Spec)</span></a>
                                                 </li>
-                                                <li class="none"><a href="./subjects/design and technology/AG_FT.html"
+                                                <li class="none"><a href="./subjects/design and technology/AG_FT"
                                                         target="_blank"><span class="product">GCSE Food Technology
                                                             (Old Spec)</span></a>
                                                 </li>
-                                                <li class="none"><a href="./subjects/design and technology/AG_TT.html"
+                                                <li class="none"><a href="./subjects/design and technology/AG_TT"
                                                         target="_blank"><span class="product">GCSE Textiles Technology
                                                             (Old Spec)</span></a>
                                                 </li>
@@ -822,13 +815,13 @@
                                                     </svg></span>Core</div>
                                             <ul>
                                                 <li class="none">
-                                                    <a href="./subjects/F3/AG_ENG.html" target="_blank">
+                                                    <a href="./subjects/F3/AG_ENG" target="_blank">
                                                         <span class="product">GCSE English Language Highlights (Old
                                                             Spec)</span>
                                                     </a>
                                                 </li>
                                                 <li class="none">
-                                                    <a href="./subjects/english/AG_LIT.html" target="_blank">
+                                                    <a href="./subjects/english/AG_LIT" target="_blank">
                                                         <span class="product">GCSE English Literature Highlights (Old
                                                             Spec)</span>
                                                     </a>
@@ -851,14 +844,13 @@
                                                     </svg></span>Core</div>
                                             <ul>
                                                 <li class="none">
-                                                    <a href="./subjects/english/AG_ENG.html" target="_blank">
-                                                        <span class="product">GCSE History A (Old Spec)</span>
+                                                    <a href="./subjects/english/AG_HISA" target="_blank">
+                                                        <span class="product">GCSE History A</span>
                                                     </a>
                                                 </li>
                                                 <li class="none">
-                                                    <a href="./subjects/english/AG_LIT.html" target="_blank">
-                                                        <span class="product">GCSE History B (Old
-                                                            Spec)</span>
+                                                    <a href="./subjects/english/AG_HISB" target="_blank">
+                                                        <span class="product">GCSE History B</span>
                                                     </a>
                                                 </li>
                                             </ul>
@@ -878,9 +870,10 @@
                                                             fill="#C8194B"></path>
                                                     </svg></span>Core</div>
                                             <ul>
-                                                <li class="none"><a href="./subjects/mfl/AA_GER.html"
-                                                        target="_blank"><span class="product">A-level German
-                                                            (2660) (Old Spec)</span></a>
+                                                <li class="none">
+							<a href="./subjects/mfl/AA_GER" target="_blank">
+								<span class="product">A-level German (2660)</span>
+							</a>
                                                 </li>
                                             </ul>
                                         </section>
