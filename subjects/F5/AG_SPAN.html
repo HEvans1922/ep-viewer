@@ -1,0 +1,625 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="https://app.doublestruck.eu/images/fav/EP.ico?v=1739229503" />
+
+	<!--<script src="https://ds-vendor.doublestruck.eu/bootstrap/bootstrap-5.3/js/bootstrap.min.js"></script>-->
+
+	<link rel="stylesheet" href="https://app.doublestruck.eu/css/jquery-ui.css" />
+	<link rel="stylesheet" href="https://app.doublestruck.eu/css/dropdown-menu.css" />
+	<link rel="stylesheet" href="https://app.doublestruck.eu/data/ds.css?ser=50" />
+	<link rel="stylesheet" href="https://app.doublestruck.eu/help/css/help.css" />
+	<link rel="stylesheet" href="https://app.doublestruck.eu/css/style.php?theme=EP" />
+	<!--	<link rel="stylesheet" href="css/tables/themes/blue/style.css" /> -->
+	<link rel="stylesheet" href="https://app.doublestruck.eu/js/themes/default/style.min.css" />
+	<link href="https://ds-welcome.doublestruck.eu/welcome/css/welcome-screens.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://app.doublestruck.eu/css/documentExport.css">
+
+	<link rel="stylesheet" href="../../font-awesome-4.6.3/css/font-awesome.min.css" />
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+	
+	<!-- Custom scripts and styles -->
+	<link rel="stylesheet" href="../../custom/custom.css">
+	<script src="../../custom/custom.js"></script>
+	
+	
+	<style>
+		* {
+			-webkit-box-sizing: content-box;
+			-moz-box-sizing: content-box;
+			box-sizing: content-box;
+		}
+
+		*:before,
+		*:after {
+			-webkit-box-sizing: content-box;
+			-moz-box-sizing: content-box;
+			box-sizing: content-box;
+		}
+	</style>
+
+	<script>var launch_key = "";
+		var launched_subject = "AG_SPAN";
+		var launched_subject_key = "";
+		var launched_theme = "EP";
+		var launched_brand = "EP";
+		var environment = "";
+		var web_root = "https://app.doublestruck.eu/"
+		var json_path = "https://ds-content.doublestruck.eu/";
+		var json_index_path = "https://ds-questionindex.doublestruck.eu/";
+		var resources_url = "https://ds-resources.doublestruck.eu/";
+		var viewer_template = "https://#docid#.exampro.net";
+		var enableCache = "5";
+		var maxyear = null;
+		var serial = "";
+		var limitbyflag = 0;
+		var isosa = "0";
+		var osasubject = "";
+		var osa_path = "https://osa.exampro.co.uk/proxy/content2.php";
+		var studentcount = "0";
+		var draftContent = "0";
+
+	</script>
+
+	<!-- libraries -->
+	<script src="https://app.doublestruck.eu/help/videolist.js"></script>
+
+
+	<script src="https://ds-vendor.doublestruck.eu/jquery/jquery-3.6.1.min.js"></script>
+	<script src="https://ds-vendor.doublestruck.eu/jquery/jquery-migrate-3.1.0.min.js"></script>
+
+
+	<script src="https://ds-vendor.doublestruck.eu/jquery_ui/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+
+	<script src="https://app.doublestruck.eu/js/lib/jquery-collision.min.js"></script>
+	<script src="https://app.doublestruck.eu/js/lib/dropdown-menu.js"></script>
+	<script src="https://app.doublestruck.eu/js/lib/jquery.tablesorter.min.js"></script>
+	<script src="https://app.doublestruck.eu/js/lib/jstree.min.js"></script>
+	<script src="https://app.doublestruck.eu/js/lib/jquery.alphanum.js"></script>
+	<script src="https://app.doublestruck.eu/js/lib/jquery.cookie.js"></script>
+	<script src="https://app.doublestruck.eu/js/lib/vex.combined.min.js"></script>
+	<script src="https://app.doublestruck.eu/js/lib/jquery.classyqr.min.js"></script>
+	<script></script>
+	<!-- OSA MODULE SCRIPTS -->
+	<script src="../../js/proxy.js"></script>
+
+	<script>
+		vex.defaultOptions.className = 'vex-theme-wireframe';
+	</script>
+	<link rel="stylesheet" href="https://app.doublestruck.eu/css/vex.css" />
+	<link rel="stylesheet" href="https://app.doublestruck.eu/css/vex-theme-wireframe.css" />
+
+	<!-- application scripts-->
+
+	<script src="https://app.doublestruck.eu/js/lib/log.js?s=27.09.2022"></script>
+
+	<script src="https://app.doublestruck.eu/js/app/help.js?s=1738857124"></script>
+	<script src="https://app.doublestruck.eu/js/app/utility.js?s=1738857124"></script>
+	<script src="../../js/documents.js"></script>
+	<script src="../../js/application.js"></script>
+
+
+	<script src="https://app.doublestruck.eu/js/lib/hammer.js"></script>
+</head>
+
+<body>
+
+	<!--======== MODAL BACKDROP ============ -->
+	<div id="docModal"></div>
+
+	<!--======== LOADER / SPINNER ============ -->
+
+	<div id="loading">
+		<div id="spinner">
+			<i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
+			<span class="sr-only">Loading...</span>
+		</div>
+	</div>
+
+	<div class="page">
+
+		<!--======== TOOLBAR  ============ -->
+
+		<div id="toolbar">
+
+			<div id="searchButton" class="toolbarButton toolbarButtonSearch roundedButton Blue"
+				title="Open the search window">
+				<i class="fa fa-search" aria-hidden="true"></i>
+				<div class="search-button-text">
+					Search
+				</div>
+			</div>
+
+			<div id="resetButton" class="toolbarButton toolbarClearSearchButton roundedButton Blue"
+				title="Reset the current search">
+				<i class="fa fa-refresh" aria-hidden="true"></i>
+			</div>
+
+			<div id="homeButton" class="toolbarButton roundedButton Blue" title="View the home screen">
+				<i class="fa fa-home" aria-hidden="true"></i>
+			</div>
+
+			<div id="newDocumentButton" class="toolbarButton roundedButton Blue makedoc"
+				title="Create a new, blank document">
+				<i class="fa fa-plus-circle" aria-hidden="true"></i>
+			</div>
+
+			<div id="sidebar"></div>
+
+			<div class="productTitle"></div>
+			<div id="closeButton" class="toolbarButton roundedButton Blue" onclick="close_window()" title="" aria-describedby="ui-id-10">
+				<i class="fa fa-times" aria-hidden="true"></i>
+			</div>
+
+		</div>
+
+		<!--======== QUESTIONLIST ============ -->
+
+		<div id="catalog" class="shadow roundedBox">
+			<div class="moveheader">
+				<div class="docTitle qpane-title ">
+					<span class="add-help" data-video="1"></span>&nbsp;&nbsp;Questions
+				</div>
+				<div class="panel-right-text question-count"></div>
+			</div>
+
+			<div class="search-crumbs">
+
+			</div>
+
+			<ul id="cataloglist"></ul>
+
+			<div class="listFooter" id="footerCatalog">
+
+				<span class="toggle-question-id docDetails">Question&nbsp;IDs</span>
+				<span class="add-items"><i class="fa fa-plus-square" aria-hidden="true"></i></span>
+
+			</div>
+		</div>
+
+		<!--======== DEFAULT DOCUMENT ============ -->
+
+		<div class="document shadow roundedBox doc-zero" id="docZero">
+			<div class="moveheader">
+				<span class="saved-sign">&nbsp;</span>
+				<div class="docTitle">
+					New Document 1
+				</div>
+
+				<div class="add-menu-bar">
+					<a href="#" class="menuitem" data-type="docClose" title="Close"><i class="fa fa-times-circle"
+							aria-hidden="true"></i></a>
+				</div>
+				<div class="add-menu-bar">
+					<a href="#" class="menuitem" data-type="docHide" title="Minimise"><i class="fa fa-minus-circle"
+							aria-hidden="true"></i></a>
+				</div>
+				<div class="add-menu-bar margin-top-1 external-icon">
+					<a href="#" class="menuitem" data-type="docSave" title="Export File"><i class="fa fa-external-link"
+							aria-hidden="true"></i></a>
+				</div>
+
+			</div>
+
+			<div class="listInstructions ">
+				Drag questions from the Question list or from other documents and drop them here
+			</div>
+
+			<div class="fixme">
+				<ul class="doclist dynamiclist" id="listZero"></ul>
+			</div>
+			<div class="listFooter" id="footerZero"></div>
+		</div>
+
+		<div class='no-border-box' id='helpPopUp'>
+			<div class="close-button close-help close-no-border-box">
+				<i class="fa fa-times-circle" aria-hidden="true"></i>
+			</div>
+			<div class='formBox' id="helpContent">
+				<div class="help-header">
+					<p class="help-title">
+						<i class="fa fa-question-circle"></i>&nbsp;&nbsp; <span id="helpWindowTitle"></span>
+					</p>
+					<hr class="help-hr" />
+				</div>
+				<div class="help-body">
+					<div style="text-align:center;">
+						<span id="helpWindowVideo"> <iframe id="helpWindowIframe" width="630" height="330" src=""
+								frameborder="0" allowfullscreen></iframe> </span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- ===== WELCOME SCREEN ============-->
+
+		<div class="right-container welcome-screen">
+
+						<div class="welcome-ep yellow">
+
+			<article class="welcome-page welcome-page-2020">
+				<div class="welcome-page-container">
+
+					<header class="welcome-header" role="banner">
+						<h1 class="welcome-title">Welcome to Exampro</h1>
+					</header>
+					
+									
+					<div class="welcome-resources">
+						<ul class="welcome-buttons-2020">
+							<li class="btn-bold search">
+								<a href="#" id="searchButton" class="welcome-btn-search log-this" data-type="WEL_SCREEN" data-log="Clicked start search">
+									<div class="btn-head"><span class="btn-ico"></span></div>
+									<div class="btn-body">
+										<h3>Search</h3>
+										<p>Search for questions, mark schemes and examiner comments</p>
+									</div>
+								</a>
+							</li>
+							<li class="btn-bold audio">
+								<a href="https://resources.doublestruck.eu/resources/res-ep-audio.php" target="_blank" class="log-this" data-type="WEL_SCREEN" data-log="Clicked audio guide">
+									<div class="btn-head"><span class="btn-ico"></span></div>
+									<div class="btn-body">
+										<h3>Audio guide</h3>
+										<p></p>
+									</div>
+								</a>
+							</li>
+							<li class="btn-bold tests">
+								<a href="https://resources.doublestruck.eu/resources/res-ag-lang-tt.php" target="_blank" class="log-this" data-type="WEL_SCREEN" data-log="Clicked topic tests">
+									<div class="btn-head"><span class="btn-ico"></span></div>
+									<div class="btn-body">
+										<h3>Topic tests</h3>
+										<p></p>
+									</div>
+								</a>
+							</li>
+							<li class="btn-paper ag-span">
+								<a href="https://www.aqa.org.uk/subjects/spanish/gcse/spanish-8698/specification" target="_blank" class="log-this" data-type="WEL_SCREEN" data-log="Clicked AQA spec">
+									<div class="btn-head"><span class="btn-flag">GCSE</span></div>
+									<div class="btn-body">
+										<h3>Specification</h3>
+										<p>GCSE Spanish <span class="btn-specnum">8698</span></p>
+									</div>
+								</a>
+							</li>
+							<li class="btn-spacer"></li>
+						</ul>
+					</div>
+
+					<footer class="welcome-footer">
+						<p>© Doublestruck Ltd. 2024</p>
+						<p><a href="https://ds-welcome.doublestruck.eu/welcome/documents/copyright/pdf/AA_GERM.pdf" target="_blank">Copyright information</a></p>
+					</footer>
+
+				</div>
+			</article>
+
+		</div>
+	
+
+
+			</div>
+
+		<!--======== CONTENT TAB AREA ============ -->
+
+		<div class="right-container shadow content-tabs" id="viewerWindow">
+
+			<div id="tabbox" class="roundedBox">
+
+				<div class="moveheader">
+					<div class="docTitle viewerTitle">
+						Content window
+					</div>
+
+					<div class="viewer-control">
+						<span class="viewer-button viewer-win-ctrl"></span>
+					</div>
+
+				</div>
+
+				<div id="tabs" class="tabs">
+
+					<ul>
+						<li class="tab1">
+							<a href="#tabs-1" id="t1">Question</a>
+						</li>
+						<li class="tab2">
+							<a href="#tabs-2" id="t2">Mark Scheme</a>
+						</li>
+						<li class="tab3">
+							<a href="#tabs-3" id="t3">Examiner's Report</a>
+						</li>
+						<li class="tab4">
+							<a href="#tabs-4" id="t4">Notes</a>
+						</li>
+						<li class="tab5">
+							<a href="#tabs-5" id="t5">Resource</a>
+						</li>
+
+					</ul>
+					<div id="contentTabs">
+						<div id="tabs-1" class="cTab tab1 htmlTab">
+							<p>
+								&nbsp;
+							</p>
+						</div>
+						<div id="tabs-2" class="cTab tab2 htmlTab">
+							<p>
+								&nbsp;
+							</p>
+						</div>
+						<div id="tabs-3" class="cTab  tab3 htmlTab">
+							<p>
+								&nbsp;
+							</p>
+						</div>
+						<div id="tabs-4" class="cTab  tab4 htmlTab">
+							<p>
+								&nbsp;
+							</p>
+						</div>
+						<div id="tabs-5" class="cTab  tab5">
+							<div id="iframeContainer">
+								<iframe id="resourceIframe"></iframe>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--======== SEARCH PANE ============ -->
+
+		<div class="shadow roundedBox searchbox-alt" id="searchbox">
+			<div class="moveheader moveheader-alt">
+				<div class="docTitle search-title">
+					<span class="add-help" data-video="6"></span>&nbsp;&nbsp;Search&nbsp;-&nbsp;<span
+						class="question-count"></span>
+				</div>
+				<div class="close-button close-search">
+					<i class="fa fa-times-circle" aria-hidden="true"></i>
+				</div>
+			</div>
+
+			<div id="searchHeader">
+
+				<div class="question-count-field">
+					<div class="question-count question-count-search"></div>
+					<div class="searchWindowClear clear-search" title="Reset the current search">
+						&nbsp;<i class="fa fa-refresh" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span
+							class='button-text'>reset search</span>
+					</div>
+				</div>
+
+				<div class="freetext-field">
+					<div class="qindex-title">
+						Quick Index search:
+					</div>
+					<div class="freetext-container">
+						<input type="text" class="ui-textfield freetext">
+					</div>
+					<div class="searchWindowButton clear-freetext" title="Reset the quick index search">
+						<i class="fa fa-times-circle-o" aria-hidden="true"></i>
+					</div>
+				</div>
+
+			</div>
+
+			<div id="indextabs">
+				<ul id="tabTab"></ul>
+
+				<div class="indexTabHolder" id="tabContent"></div>
+			</div>
+
+		</div>
+
+
+
+
+
+		<!--======== EDIT / SAVE DOCUMENT BOX ============ -->
+
+
+		<div class='no-border-box' id='editDocument'>
+			<div class="close-button close-editbox close-no-border-box">
+				<i class="fa fa-times-circle" aria-hidden="true"></i>
+			</div>
+
+			<div class='leftFormBox'>
+				<div class='no-border-header editDocumentBox'>
+					<span class="add-help" data-video="3"></span>&nbsp;&nbsp;Export
+				</div>
+				<div class="label-text">
+
+				</div>
+				<div class="form-container">
+
+					<div style="text-align: center;">
+						
+						<div class="print-options-container">
+
+							<!-- <span class="printBrowser"><button class="printButton" data-action="browser" title="Preview in web browser (a new window will open)"><img class="printImage" src="https://app.doublestruck.eu//images/print/browser.png"/></button></span> -->
+							<div id="pdf-button" class="printPDF buttonContainer">
+								<button class="printButton" data-action="pdf" title="Download as Adobe PDF"><img
+										class="printImage" src="https://app.doublestruck.eu//images/print/pdf.png" />
+								</button>
+							</div>
+
+							<div id="word-button" class="printWord buttonContainer">
+								<button class="printButton" data-action="word" title="Download as MS-Word RTF file"><img
+										class="printImage" src="https://app.doublestruck.eu//images/print/word.png" />
+								</button>
+							</div>
+
+							<br>
+							<div id="pdf-text" class="buttonContainer">
+								Ready to print
+							</div>
+							<div id="word-text" class="buttonContainer">
+								Ready to edit
+							</div>
+
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+
+
+			
+
+
+
+			<!--======== PRINT BOX ============ -->
+
+			<div class='no-border-box' id='printDocument'>
+
+				<div class="close-button close-printbox close-no-border-box">
+					<i class="fa fa-times-circle" aria-hidden="true"></i>
+				</div>
+
+				<div class='formBox'>
+
+					<div class='no-border-header'>
+						Export
+					</div>
+
+					<div id="export-options">
+						<div id="export-options-left">
+							<div class="small-header">
+								What should be included?
+							</div>
+							<ul class='checkbox-ul'>
+								<li>
+									<input type="checkbox" class="printCheckbox" value="Q" id="printQ" checked />
+									<label for="viewerQ">&nbsp;&nbsp;Question</label>
+								</li>
+								<li>
+									<input type="checkbox" class="printCheckbox" value="M" id="printM" />
+									<label for="printM">&nbsp;&nbsp;Mark scheme
+								</li>
+								<li>
+									<input type="checkbox" class="printCheckbox" value="E" id="printE" />
+									<label for="printE">&nbsp;&nbsp;Examiner remarks
+								</li>
+								<li>
+									<input type="checkbox" class="printCheckbox" value="N" id="printN" />
+									<label for="printN">&nbsp;&nbsp;Notes
+								</li>
+								<!--
+								<li>
+									<input type="checkbox" class="printCheckbox" value="I"  id="printI"/>
+									<label for="printI">&nbsp;&nbsp;Index
+								</li>
+								-->
+
+								<li>
+									<input type="checkbox" class="printCheckbox" value="C" id="printC" />
+									<label for="printC">&nbsp;&nbsp;Include cover page
+								</li>
+
+							</ul>
+						</div> <!-- End export-options-left -->
+						<div id="export-options-right">
+							<div id="compact-questions-radio">
+								<div>Answer lines</div>
+								<label>
+									<input type="radio" name="answer-lines" id="answer-lines-on" checked>On
+								</label>
+								<label>
+									<input type="radio" name="answer-lines" id="answer-lines-off">Off
+								</label>
+							</div>
+							<div class="word-warning">
+								NB Before printing, check that questions are not split inappropriately over a page.
+							</div>
+						</div> <!-- End export-options-right -->
+					</div> <!-- End export-options -->
+					<div id="coverPagePane">
+						<div class="small-header">
+							Specify cover page details
+						</div>
+
+						<div class="cover-page-container">
+
+							<div class="cover-page-labels">
+								<div class="ui-textfield-label">Title</div>
+								<div class="ui-textfield-label">Subtitle</div>
+								<div class="ui-textfield-label">Time&nbsp;allowed</div>
+								<div class="ui-textfield-label">Total&nbsp;marks</div>
+								<div class="ui-textfield-label">Comments</div>
+							</div>
+
+
+							<div class="cover-page-form">
+								<input id="pformTitle" class="ui-textfield" type="text" />
+								<input id="pformSubtitle" class="ui-textfield" type="text" />
+								<input id="pformTime" class="ui-textfield" type="text" />
+								<input id="pformMarks" class="ui-textfield" type="text" />
+								<input id="pformComments" class="ui-textfield" type="text" />
+							</div>
+
+						</div>
+
+					</div>
+					<br>
+					<div class="print-options-container">
+						<div class='application-button send-print'>
+							Export to <span class="print-type">PDF</span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			
+
+			
+
+			<!--======= PRINT FORM ===========-->
+
+			<div style="display:none;">
+				<iframe id="printTarget" name="printTarget"></iframe>
+				<form name="printForm" target="printTarget" id="printForm" method="POST">
+					<input type="hidden" id="p_questionlist" name="p_questionlist" />
+					<input type="hidden" id="p_folderlist" name="p_folderlist" />
+					<input type="hidden" id="p_types" name="p_types" />
+					<input type="hidden" id="p_key" name="p_key" value="" />
+					<input type="hidden" id="p_subject" name="p_subject" value="AA_MAT" />
+					<input type="hidden" id="p_title" name="p_title" value="" />
+					<input type="hidden" id="p_subtitle" name="p_subtitle" value="" />
+					<input type="hidden" id="p_time" name="p_time" value="" />
+					<input type="hidden" id="p_marks" name="p_marks" value="" />
+					<input type="hidden" id="p_comments" name="p_comments" value="" />
+					<input type="hidden" id="p_showcover" name="p_showcover" value="0" />
+					<input type="hidden" id="p_return" name="p_return" value="0" />
+					<input type="hidden" id="p_filename" name="p_filename" value="0" />
+					<input type="hidden" id="p_brand" name="p_brand" value="EP" />
+					<input type="hidden" id="p_launchkey" name="p_launchkey" value="" />
+					<input type="hidden" id="p_lines" name="p_lines" value="true" />
+
+				</form>
+			</div>
+
+			<div class="no-border-box" id="listItemPreview"></div>
+
+
+			<div class='no-border-box manager-message' id='studentDataPopUp'>
+				<div class="close-button close-no-border-box">
+					<i class="fa fa-times-circle" aria-hidden="true"></i>
+				</div>
+
+			</div>
+
+</body>
+
+</html>
