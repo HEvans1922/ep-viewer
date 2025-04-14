@@ -16,12 +16,12 @@
 	<!-- End Google Tag Manager -->
 	
 	<style>
-		.colour-blue {
+		#blue {
 			background-color: #0682c5; 
 			color: white;
 		}
-	
-		.colour-red {
+
+		#red {
 			background-color: #E33F50; 
 			color: white;
 		}
@@ -108,81 +108,37 @@
 </head>
 
 <body>
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5X4MMJ6" height="0" width="0"
-			style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
-
-	<!-- START SECTION FOR SAL -->
 	<div class="welcome-ep res-ep purple container-fluid">
-
-		<!-- Terms Modal -->
-		<div class="modal fade" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="Reminder"
-			aria-hidden="true" data-backdrop="static">
-			<div class="modal-dialog modal-lg" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="Reminder">Reminder</h5>
-					</div>
-					<div class="modal-body">
-						<p>You have already agreed to the <a href="https://www.doublestruck.co.uk/terms-and-conditions/"
-								target="_blank" onclick="trackOutboundLink()" https:="" www.doublestruck.co.uk=""
-								terms-and-conditions="" ",="" " terms="" of="" use");"="">Terms of Use</a>.</p>
-						<p>To ensure that these resources remain protected, you may only share them with your students
-							via email or a secure login. They can only be used by your school and cannot be shared with
-							any third party.</p>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-blue" id="modal-ok" data-dismiss="modal"
-							aria-label="Agree"><i class="fa fa-check"></i> OK</button>
-					</div>
-				</div>
-			</div>
-		</div>
-
 		<div class="welcome-page-container-fluid">
 			<main class="welcome-page ep-tt nav-2tier">
 				<div class="welcome-resources-container welcome-resources-container-full">
-
 					<header class="welcome-header clearfix" role="banner">
 						<h1 class="welcome-title custom_title">GCSE English Language Papers</h1>
-
 					</header>
 
 					<article class="welcome-content">
-
-
-						<!-- TOP LEVEL FILTER -->
 						<ul class="nav nav-tabs tt-nav-tabs row" role="tablist">
 							<li class="nav-item col-6 col-md-4" role="presentation">
-								<a class="dkblue active" data-toggle="tab" href="#tt-fren" role="tab"
-									aria-controls="tt-fren" onclick="trackNav('AG Fren');">Specimen Papers (2014)</a>
+								<a class="dkblue active" data-toggle="tab" href="#spec">Specimen Papers (2014)</a>
 							</li>
 							<li class="nav-item col-6 col-md-4" role="presentation">
-								<a class="dkbrick" data-toggle="tab" href="#tt-germ" role="tab" aria-controls="tt-germ"
-									onclick="trackNav('AG Germ');">KS3 Packs</a>
+								<a class="dkbrick" data-toggle="tab" href="#ks3">KS3 Packs</a>
 							</li>
 						</ul>
 
 						<div class="tab-content">
-
-							<!-- GCSE FRENCH TESTS -->
-							<!-- SECOND LEVEL FILTER -->
-							<div class="tab-pane active" id="tt-fren" role="tabpanel">
+							<div class="tab-pane active" id="spec" role="tabpanel">
 								<ul class="nav nav-tabs tt-nav-tabs nav-tier-2" role="tablist">
-									<li class="nav-item col-6 col-sm-3" role="presentation"><a class="dkblue active"
-											data-toggle="tab" href="#tt-fren-foundation" role="tab"
-											aria-controls="tt-fren-foundation"
-											onclick="trackNav('AG Fren Foundation');">Paper 1</a></li>
-									<li class="nav-item col-6 col-sm-3" role="presentation"><a class="dkblue"
-											data-toggle="tab" href="#tt-fren-higher" role="tab"
-											aria-controls="tt-fren-higher" onclick="trackNav('AG Fren Higher');">Paper
-											2</a></li>
+									<li class="nav-item col-6 col-sm-3" role="presentation">
+										<a class="dkblue active" data-toggle="tab" href="#paper-1" role="tab">Paper 1</a>
+									</li>
+									<li class="nav-item col-6 col-sm-3" role="presentation">
+										<a class="dkblue" data-toggle="tab" href="#paper-2" role="tab">Paper 2</a>
+									</li>
 								</ul>
 
 								<div class="tab-content">
-									<!-- GCSE Foundation French -->
-									<div class="tab-pane active" id="tt-fren-foundation" role="tabpanel">
+									<div class="tab-pane active" id="paper-1" role="tabpanel">
 										<ul class="ep-tt-table ep-table-onefile">
 											<li class="table-head light d-none d-sm-block">
 												<ul class="row">
@@ -198,24 +154,19 @@
 													<li class="table-topic col-sm-6">Specimen Material 1</li>
 													<li class="table-btn dkblue col-sm">
 														<p class="table-type d-block d-sm-none">Question Paper and Insert</p>
-														<a href="../../documents/AG_ENG/GCSE/Specimen%202014/Specimen%20Material%201/GCSE%20Language%20P1%20specimen%201%20QP+INSERT.PDF"
-															target="_blank">
-															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-q.svg" alt="test icon" class="ico-tt-thumb">
+														<a href="../../documents/AG_ENG/Specimen-Papers/Specimen-Material-1/Paper-1/SM1-Paper-1-QP-and-Insert.pdf" target="_blank">
+															<img src="../../img/ep-icons/ico-tt-q.svg" alt="test icon" class="ico-tt-thumb">
 														</a>
 													</li>
 													<li class="table-btn dkblue tint20 col-6 col-sm">
 														<p class="table-type d-block d-sm-none">Mark scheme</p>
-														<a href="../../documents/AG_ENG/GCSE/Specimen%202014/Specimen%20Material%201/GCSE%20Language%20P1%20specimen%201%20MS.PDF"
-															target="_blank"><img
-																src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-ms.svg"
-																alt="mark scheme icon" class="ico-tt-thumb"></a>
+														<a href="../../documents/AG_ENG/Specimen-Papers/Specimen-Material-1/Paper-1/SM1-Paper-1-MS-V3.pdf" target="_blank">
+															<img src="../../img/ep-icons/ico-tt-ms.svg" alt="mark scheme icon" class="ico-tt-thumb">
+														</a>
 													</li>
 													<li class="table-btn dkblue tint20 col-6 col-sm">
 														<p class="table-type d-block d-sm-none">Insert</p>
-														<p class="d-none d-sm-block"
-															style="padding-top: 12px; font-size: 16px;">N/A</p>
-														<!-- <p class="table-type d-block d-sm-none">Transcripts</p>
-													<a href="https://app.doublestruck.eu/res/pdf/aa-germ/topic-tests/XXX.docx" target="_blank" onclick="trackTranscript('AA GERM - Literary extracts');"><img src="assets/images/ep-icons/ico-tt-r.svg" alt="transcript icon" class="ico-tt-thumb"></a> -->
+														<p class="d-none d-sm-block" style="padding-top: 12px; font-size: 16px;">N/A</p>
 													</li>
 												</ul>
 											</li>
@@ -224,27 +175,22 @@
 													<li class="table-topic col-sm-6">Specimen Material 2</li>
 													<li class="table-btn dkblue col-sm">
 														<p class="table-type d-block d-sm-none">Question Paper</p>
-														<a href="../../documents/AG_ENG/GCSE/Specimen%202014/Specimen%20Material%202/GCSE Language P1 specimen 2 QP.pdf	"
-															target="_blank"
-															onclick="trackTest('AG FREN F - Free-time activities (F&amp;O)');"><img
-																src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-q.svg"
-																alt="test icon" class="ico-tt-thumb"></a>
+														<a href="../../documents/AG_ENG/Specimen-Papers/Specimen-Material-2/Paper-1/SM2-Paper-1-QP.pdf" target="_blank">
+															<img src="../../img/ep-icons/ico-tt-q.svg" alt="test icon" class="ico-tt-thumb">
+														</a>
 													</li>
 													<li class="table-btn dkblue tint20 col-6 col-sm">
 														<p class="table-type d-block d-sm-none">Mark scheme</p>
-														<a href="../../documents/AG_ENG/GCSE/Specimen%202014/Specimen%20Material%202/GCSE Language P1 specimen 2 MS.pdf"
-															target="_blank"
-															onclick="trackMarkScheme('AG FREN F - Home, town, neighbourhood and region (F&amp;O)');"><img
-																src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-ms.svg"
-																alt="mark scheme icon" class="ico-tt-thumb"></a>
+														<a href="../../documents/AG_ENG/Specimen-Papers/Specimen-Material-2/Paper-1/SM2-Paper-1-MS.pdf"
+															target="_blank">
+															<img src="../../img/ep-icons/ico-tt-ms.svg" alt="mark scheme icon" class="ico-tt-thumb">
+														</a>
 													</li>
 													<li class="table-btn dkblue tint20 col-6 col-sm">
 														<p class="table-type d-block d-sm-none">Insert</p>
-														<a href="../../documents/AG_ENG/GCSE/Specimen%202014/Specimen%20Material%202/GCSE Language P1 specimen 2 INSERT.pdf"
-															target="_blank"
-															onclick="trackTranscript('AG FREN F - Home, town, neighbourhood and region (F&amp;O)');"><img
-																src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-r.svg"
-																alt="transcript icon" class="ico-tt-thumb"></a>
+														<a href="../../documents/AG_ENG/Specimen-Papers/Specimen-Material-2/Paper-1/SM2-Paper-1-Insert.pdf" target="_blank">
+															<img src="../../img/ep-icons/ico-tt-r.svg" alt="transcript icon" class="ico-tt-thumb">
+														</a>
 													</li>
 												</ul>
 											</li>
@@ -253,27 +199,22 @@
 													<li class="table-topic col-sm-6">Specimen Material 3</li>
 													<li class="table-btn dkblue col-sm">
 														<p class="table-type d-block d-sm-none">Question Paper</p>
-														<a href="../../documents/AG_ENG/GCSE/Specimen%202014/Specimen%20Material%203/GCSE Language P1 specimen 3 QP.pdf"
-															target="_blank"
-															onclick="trackTest('AG FREN F - Free-time activities (F&amp;O)');"><img
-																src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-q.svg"
-																alt="test icon" class="ico-tt-thumb"></a>
+														<a href="../../documents/AG_ENG/Specimen-Papers/Specimen-Material-3/Paper-1/SM3-Paper-1-QP.pdf" target="_blank">
+															<img src="../../img/ep-icons/ico-tt-q.svg" alt="test icon" class="ico-tt-thumb">
+														</a>
 													</li>
 													<li class="table-btn dkblue tint20 col-6 col-sm">
 														<p class="table-type d-block d-sm-none">Mark scheme</p>
-														<a href="../../documents/AG_ENG/GCSE/Specimen%202014/Specimen%20Material%203/GCSE Language P1 specimen 3 MS.pdf"
-															target="_blank"
-															onclick="trackMarkScheme('AG FREN F - Home, town, neighbourhood and region (F&amp;O)');"><img
-																src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-ms.svg"
-																alt="mark scheme icon" class="ico-tt-thumb"></a>
+														<a href="../../documents/AG_ENG/Specimen-Papers/Specimen-Material-3/Paper-1/SM3-Paper-1-MS.pdf"
+															target="_blank">
+															<img src="../../img/ep-icons/ico-tt-ms.svg" alt="mark scheme icon" class="ico-tt-thumb">
+														</a>
 													</li>
 													<li class="table-btn dkblue tint20 col-6 col-sm">
 														<p class="table-type d-block d-sm-none">Insert</p>
-														<a href="../../documents/AG_ENG/GCSE/Specimen%202014/Specimen%20Material%203/GCSE Language P1 specimen 3 INSERT.pdf"
-															target="_blank"
-															onclick="trackTranscript('AG FREN F - Home, town, neighbourhood and region (F&amp;O)');"><img
-																src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-r.svg"
-																alt="transcript icon" class="ico-tt-thumb"></a>
+														<a href="../../documents/AG_ENG/Specimen-Papers/Specimen-Material-3/Paper-1/SM3-Paper-1-Insert.pdf" target="_blank">
+															<img src="../../img/ep-icons/ico-tt-r.svg" alt="transcript icon" class="ico-tt-thumb">
+														</a>
 													</li>
 												</ul>
 											</li>
@@ -282,37 +223,54 @@
 													<li class="table-topic col-sm-6">Specimen Material 4</li>
 													<li class="table-btn dkblue col-sm">
 														<p class="table-type d-block d-sm-none">Question Paper</p>
-														<a href="../../documents/AG_ENG/GCSE/Specimen%202014/Specimen%20Material%204/Paper 1/GCSE Language P1 specimen 4 QP.pdf"
-															target="_blank"
-															onclick="trackTest('AG FREN F - Free-time activities (F&amp;O)');"><img
-																src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-q.svg"
-																alt="test icon" class="ico-tt-thumb"></a>
+														<a href="../../documents/AG_ENG/Specimen-Papers/Specimen-Material-4/Paper-1/SM4-Paper-1-QP.pdf" target="_blank">
+															<img src="../../img/ep-icons/ico-tt-q.svg" alt="test icon" class="ico-tt-thumb">
+														</a>
 													</li>
 													<li class="table-btn dkblue tint20 col-6 col-sm">
 														<p class="table-type d-block d-sm-none">Mark scheme</p>
-														<a href="../../documents/AG_ENG/GCSE/Specimen%202014/Specimen%20Material%204/Paper 1/GCSE Language P1 specimen 4 MS.pdf"
-															target="_blank"
-															onclick="trackMarkScheme('AG FREN F - Home, town, neighbourhood and region (F&amp;O)');"><img
-																src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-ms.svg"
-																alt="mark scheme icon" class="ico-tt-thumb"></a>
+														<a href="../../documents/AG_ENG/Specimen-Papers/Specimen-Material-4/Paper-1/SM4-Paper-1-MS.pdf" target="_blank">
+															<img src="../../img/ep-icons/ico-tt-ms.svg" alt="mark scheme icon" class="ico-tt-thumb">
+														</a>
 													</li>
 													<li class="table-btn dkblue tint20 col-6 col-sm">
 														<p class="table-type d-block d-sm-none">Insert</p>
-														<a href="../../documents/AG_ENG/GCSE/Specimen%202014/Specimen%20Material%204/Paper 1/GCSE Language P1 specimen 4 INSERT.pdf"
-															target="_blank"
-															onclick="trackTranscript('AG FREN F - Home, town, neighbourhood and region (F&amp;O)');"><img
-																src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-r.svg"
-																alt="transcript icon" class="ico-tt-thumb"></a>
+														<a href="../../documents/AG_ENG/Specimen-Papers/Specimen-Material-4/Paper-1/SM4-Paper-1-Insert.pdf" target="_blank">
+															<img src="../../img/ep-icons/ico-tt-r.svg" alt="transcript icon" class="ico-tt-thumb">
+														</a>
 													</li>
 												</ul>
 											</li>
 
-
-
+											<li class="table-head light d-none d-sm-block">
+												<ul class="row">
+													<li class="table-topic col-sm-6" style="padding-top: 20px" id="red">Examplars</li>
+													<li class="table-type col-sm" id="red">Question 2
+														<a href="../../documents/AG_ENG/Specimen-Papers/Specimen-Material-4/Paper-1/SM4-Paper-1-EXAMPLAR-Q2.pdf" target="_blank">
+															<img src="../../img/ep-icons/ico-tt-ms.svg" alt="test icon" style="padding-top: 5px;" class="ico-tt-thumb">
+														</a>
+													</li>
+													<li class="table-type col-sm" id="red">Question 3
+														<a href="../../documents/AG_ENG/Specimen-Papers/Specimen-Material-4/Paper-1/SM4-Paper-1-EXAMPLAR-Q3.pdf" target="_blank">
+															<img src="../../img/ep-icons/ico-tt-ms.svg" alt="test icon" style="padding-top: 5px;" class="ico-tt-thumb">
+														</a>
+													</li>
+													<li class="table-type col-sm" id="red">Question 4
+														<a href="../../documents/AG_ENG/Specimen-Papers/Specimen-Material-4/Paper-1/SM4-Paper-1-EXAMPLAR-Q4.pdf" target="_blank">
+															<img src="../../img/ep-icons/ico-tt-ms.svg" alt="test icon" style="padding-top: 5px;" class="ico-tt-thumb">
+														</a>
+													</li>
+													<li class="table-type col-sm" id="red">Question 5
+														<a href="../../documents/AG_ENG/Specimen-Papers/Specimen-Material-4/Paper-1/SM4-Paper-1-EXAMPLAR-Q5.pdf" target="_blank">
+															<img src="../../img/ep-icons/ico-tt-ms.svg" alt="test icon" style="padding-top: 5px;" class="ico-tt-thumb">
+														</a>
+													</li>
+												</ul>
+											</li>
 										</ul>
-									</div> <!-- end tt-foundation -->
-									<!-- GCSE Higher French -->
-									<div class="tab-pane" id="tt-fren-higher" role="tabpanel">
+									</div>
+									
+									<div class="tab-pane" id="paper-2" role="tabpanel">
 										<ul class="ep-tt-table ep-table-onefile">
 											<li class="table-head light d-none d-sm-block">
 												<ul class="row">
@@ -327,26 +285,22 @@
 												<ul class="row">
 													<li class="table-topic col-sm-6">Specimen Material 1</li>
 													<li class="table-btn dkblue col-sm">
-														<p class="table-type d-block d-sm-none">Question Paper and Insert</p>
-														<a href="../../documents/AG_ENG/GCSE/Specimen%202014/Specimen%20Material%201/GCSE%20Language%20P1%20specimen%201%20QP+INSERT.PDF"
-															target="_blank">
-															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-q.svg" alt="test icon" class="ico-tt-thumb">
+														<p class="table-type d-block d-sm-none">Question Paper</p>
+														<a href="../../documents/AG_ENG/Specimen-Papers/Specimen-Material-1/Paper-2/SM1-Paper-2-QP.pdf" target="_blank">
+															<img src="../../img/ep-icons/ico-tt-q.svg" alt="test icon" class="ico-tt-thumb">
 														</a>
 													</li>
 													<li class="table-btn dkblue tint20 col-6 col-sm">
 														<p class="table-type d-block d-sm-none">Mark scheme</p>
-														<a href="../../documents/AG_ENG/GCSE/Specimen%202014/Specimen%20Material%201/GCSE%20Language%20P1%20specimen%201%20MS.PDF"
-															target="_blank"><img
-																src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-ms.svg"
-																alt="mark scheme icon" class="ico-tt-thumb"></a>
+														<a href="../../documents/AG_ENG/Specimen-Papers/Specimen-Material-1/Paper-2/SM1-Paper-2-MS.pdf" target="_blank">
+															<img src="../../img/ep-icons/ico-tt-ms.svg" alt="mark scheme icon" class="ico-tt-thumb">
+														</a>
 													</li>
 													<li class="table-btn dkblue tint20 col-6 col-sm">
 														<p class="table-type d-block d-sm-none">Insert</p>
-													<a href="../../documents/AG_ENG/GCSE/Specimen%202014/Specimen%20Material%202/GCSE Language P1 specimen 2 INSERT.pdf"
-															target="_blank"
-															onclick="trackTranscript('AG FREN F - Home, town, neighbourhood and region (F&amp;O)');"><img
-																src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-r.svg"
-																alt="transcript icon" class="ico-tt-thumb"></a>
+														<a href="../../documents/AG_ENG/Specimen-Papers/Specimen-Material-1/Paper-2/SM1-Paper-2-Insert.pdf" target="_blank">
+															<img src="../../img/ep-icons/ico-tt-r.svg" alt="transcript icon" class="ico-tt-thumb">
+														</a>
 													</li>
 												</ul>
 											</li>
@@ -355,27 +309,22 @@
 													<li class="table-topic col-sm-6">Specimen Material 2</li>
 													<li class="table-btn dkblue col-sm">
 														<p class="table-type d-block d-sm-none">Question Paper</p>
-														<a href="../../documents/AG_ENG/GCSE/Specimen%202014/Specimen%20Material%202/GCSE Language P1 specimen 2 QP.pdf	"
-															target="_blank"
-															onclick="trackTest('AG FREN F - Free-time activities (F&amp;O)');"><img
-																src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-q.svg"
-																alt="test icon" class="ico-tt-thumb"></a>
+														<a href="../../documents/AG_ENG/Specimen-Papers/Specimen-Material-2/Paper-2/SM2-Paper-2-QP.pdf" target="_blank">
+															<img src="../../img/ep-icons/ico-tt-q.svg" alt="test icon" class="ico-tt-thumb">
+														</a>
 													</li>
 													<li class="table-btn dkblue tint20 col-6 col-sm">
 														<p class="table-type d-block d-sm-none">Mark scheme</p>
-														<a href="../../documents/AG_ENG/GCSE/Specimen%202014/Specimen%20Material%202/GCSE Language P1 specimen 2 MS.pdf"
-															target="_blank"
-															onclick="trackMarkScheme('AG FREN F - Home, town, neighbourhood and region (F&amp;O)');"><img
-																src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-ms.svg"
-																alt="mark scheme icon" class="ico-tt-thumb"></a>
+														<a href="../../documents/AG_ENG/Specimen-Papers/Specimen-Material-2/Paper-2/SM2-Paper-2-MS.pdf"
+															target="_blank">
+															<img src="../../img/ep-icons/ico-tt-ms.svg" alt="mark scheme icon" class="ico-tt-thumb">
+														</a>
 													</li>
 													<li class="table-btn dkblue tint20 col-6 col-sm">
 														<p class="table-type d-block d-sm-none">Insert</p>
-														<a href="../../documents/AG_ENG/GCSE/Specimen%202014/Specimen%20Material%202/GCSE Language P1 specimen 2 INSERT.pdf"
-															target="_blank"
-															onclick="trackTranscript('AG FREN F - Home, town, neighbourhood and region (F&amp;O)');"><img
-																src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-r.svg"
-																alt="transcript icon" class="ico-tt-thumb"></a>
+														<a href="../../documents/AG_ENG/Specimen-Papers/Specimen-Material-2/Paper-2/SM2-Paper-2-Insert.pdf" target="_blank">
+															<img src="../../img/ep-icons/ico-tt-r.svg" alt="transcript icon" class="ico-tt-thumb">
+														</a>
 													</li>
 												</ul>
 											</li>
@@ -384,27 +333,22 @@
 													<li class="table-topic col-sm-6">Specimen Material 3</li>
 													<li class="table-btn dkblue col-sm">
 														<p class="table-type d-block d-sm-none">Question Paper</p>
-														<a href="../../documents/AG_ENG/GCSE/Specimen%202014/Specimen%20Material%203/GCSE Language P1 specimen 3 QP.pdf"
-															target="_blank"
-															onclick="trackTest('AG FREN F - Free-time activities (F&amp;O)');"><img
-																src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-q.svg"
-																alt="test icon" class="ico-tt-thumb"></a>
+														<a href="../../documents/AG_ENG/Specimen-Papers/Specimen-Material-3/Paper-2/SM3-Paper-2-QP.pdf" target="_blank">
+															<img src="../../img/ep-icons/ico-tt-q.svg" alt="test icon" class="ico-tt-thumb">
+														</a>
 													</li>
 													<li class="table-btn dkblue tint20 col-6 col-sm">
 														<p class="table-type d-block d-sm-none">Mark scheme</p>
-														<a href="../../documents/AG_ENG/GCSE/Specimen%202014/Specimen%20Material%203/GCSE Language P1 specimen 3 MS.pdf"
-															target="_blank"
-															onclick="trackMarkScheme('AG FREN F - Home, town, neighbourhood and region (F&amp;O)');"><img
-																src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-ms.svg"
-																alt="mark scheme icon" class="ico-tt-thumb"></a>
+														<a href="../../documents/AG_ENG/Specimen-Papers/Specimen-Material-3/Paper-2/SM3-Paper-2-MS.pdf"
+															target="_blank">
+															<img src="../../img/ep-icons/ico-tt-ms.svg" alt="mark scheme icon" class="ico-tt-thumb">
+														</a>
 													</li>
 													<li class="table-btn dkblue tint20 col-6 col-sm">
 														<p class="table-type d-block d-sm-none">Insert</p>
-														<a href="../../documents/AG_ENG/GCSE/Specimen%202014/Specimen%20Material%203/GCSE Language P1 specimen 3 INSERT.pdf"
-															target="_blank"
-															onclick="trackTranscript('AG FREN F - Home, town, neighbourhood and region (F&amp;O)');"><img
-																src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-r.svg"
-																alt="transcript icon" class="ico-tt-thumb"></a>
+														<a href="../../documents/AG_ENG/Specimen-Papers/Specimen-Material-3/Paper-2/SM3-Paper-2-Insert.pdf" target="_blank">
+															<img src="../../img/ep-icons/ico-tt-r.svg" alt="transcript icon" class="ico-tt-thumb">
+														</a>
 													</li>
 												</ul>
 											</li>
@@ -413,44 +357,60 @@
 													<li class="table-topic col-sm-6">Specimen Material 4</li>
 													<li class="table-btn dkblue col-sm">
 														<p class="table-type d-block d-sm-none">Question Paper</p>
-														<a href="../../documents/AG_ENG/GCSE/Specimen%202014/Specimen%20Material%204/Paper 1/GCSE Language P1 specimen 4 QP.pdf"
-															target="_blank"
-															onclick="trackTest('AG FREN F - Free-time activities (F&amp;O)');"><img
-																src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-q.svg"
-																alt="test icon" class="ico-tt-thumb"></a>
+														<a href="../../documents/AG_ENG/Specimen-Papers/Specimen-Material-4/Paper-2/SM4-Paper-2-QP.pdf" target="_blank">
+															<img src="../../img/ep-icons/ico-tt-q.svg" alt="test icon" class="ico-tt-thumb">
+														</a>
 													</li>
 													<li class="table-btn dkblue tint20 col-6 col-sm">
 														<p class="table-type d-block d-sm-none">Mark scheme</p>
-														<a href="../../documents/AG_ENG/GCSE/Specimen%202014/Specimen%20Material%204/Paper 1/GCSE Language P1 specimen 4 MS.pdf"
-															target="_blank"
-															onclick="trackMarkScheme('AG FREN F - Home, town, neighbourhood and region (F&amp;O)');"><img
-																src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-ms.svg"
-																alt="mark scheme icon" class="ico-tt-thumb"></a>
+														<a href="../../documents/AG_ENG/Specimen-Papers/Specimen-Material-4/Paper-2/SM4-Paper-2-MS.pdf"
+															target="_blank">
+															<img src="../../img/ep-icons/ico-tt-ms.svg" alt="mark scheme icon" class="ico-tt-thumb">
+														</a>
 													</li>
 													<li class="table-btn dkblue tint20 col-6 col-sm">
 														<p class="table-type d-block d-sm-none">Insert</p>
-														<a href="../../documents/AG_ENG/GCSE/Specimen%202014/Specimen%20Material%204/Paper 1/GCSE Language P1 specimen 4 INSERT.pdf"
-															target="_blank"
-															onclick="trackTranscript('AG FREN F - Home, town, neighbourhood and region (F&amp;O)');"><img
-																src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-r.svg"
-																alt="transcript icon" class="ico-tt-thumb"></a>
+														<a href="../../documents/AG_ENG/Specimen-Papers/Specimen-Material-4/Paper-2/SM4-Paper-2-Insert.pdf" target="_blank">
+															<img src="../../img/ep-icons/ico-tt-r.svg" alt="transcript icon" class="ico-tt-thumb">
+														</a>
 													</li>
 												</ul>
 											</li>
 
-
-
+											<li class="table-head light d-none d-sm-block">
+												<ul class="row">
+													<li class="table-topic col-sm-6" style="padding-top: 20px" id="red">Examplars</li>
+													<li class="table-type col-sm" id="red">Question 2
+														<a href="../../documents/AG_ENG/Specimen-Papers/Specimen-Material-4/Paper-2/SM4-Paper-2-EXAMPLAR-Q2.pdf" target="_blank">
+															<img src="../../img/ep-icons/ico-tt-ms.svg" alt="test icon" style="padding-top: 5px;" class="ico-tt-thumb">
+														</a>
+													</li>
+													<li class="table-type col-sm" id="red">Question 3
+														<a href="../../documents/AG_ENG/Specimen-Papers/Specimen-Material-4/Paper-2/SM4-Paper-2-EXAMPLAR-Q3.pdf" target="_blank">
+															<img src="../../img/ep-icons/ico-tt-ms.svg" alt="test icon" style="padding-top: 5px;" class="ico-tt-thumb">
+														</a>
+													</li>
+													<li class="table-type col-sm" id="red">Question 4
+														<a href="../../documents/AG_ENG/Specimen-Papers/Specimen-Material-4/Paper-2/SM4-Paper-2-EXAMPLAR-Q4.pdf" target="_blank">
+															<img src="../../img/ep-icons/ico-tt-ms.svg" alt="test icon" style="padding-top: 5px;" class="ico-tt-thumb">
+														</a>
+													</li>
+													<li class="table-type col-sm" id="red">Question 5
+														<a href="../../documents/AG_ENG/Specimen-Papers/Specimen-Material-4/Paper-2/SM4-Paper-2-EXAMPLAR-Q5.pdf" target="_blank">
+															<img src="../../img/ep-icons/ico-tt-ms.svg" alt="test icon" style="padding-top: 5px;" class="ico-tt-thumb">
+														</a>
+													</li>
+												</ul>
+											</li>
 										</ul>
-									</div> <!-- end tt-higher -->
-								</div> <!-- end FRENCH SECOND LEVEL tab-content -->
-							</div> <!-- end FRENCH SECOND LEVEL tab-panel -->
+									</div>
+								</div>
+							</div>
 
-							<!-- GCSE GERMAN TESTS -->
-							<!-- SECOND LEVEL FILTER -->
-							<div class="tab-pane" id="tt-germ" role="tabpanel">
+							<div class="tab-pane" id="ks3" role="tabpanel">
 								<ul class="nav nav-tabs tt-nav-tabs nav-tier-2" role="tablist">
 									<li class="nav-item col-6 col-sm-3">
-										<a class="dkbrick active" data-toggle="tab" href="#ks3-y7" role="tab" aria-controls="ks3-y7" >Year 7</a>
+										<a class="dkbrick active" data-toggle="tab" href="#ks3-y7" role="tab" aria-controls="ks3-y7">Year 7</a>
 									</li>
 									<li class="nav-item col-6 col-sm-3" role="presentation">
 										<a class="dkbrick" data-toggle="tab" href="#ks3-y8" role="tab" aria-controls="ks3-y8">Year 8</a>
@@ -460,25 +420,12 @@
 									</li>
 								</ul>
 
-								<style>
-									#blue {
-										background-color: #0682c5; 
-										color: white;
-									}
-
-									#red {
-										background-color: #E33F50; 
-										color: white;
-									}
-								</style>
-
 								<div class="tab-content">
-									<!-- GCSE Foundation German -->
 									<div class="tab-pane active" id="ks3-y7" role="tabpanel">
 										<ul class="ep-tt-table ep-table-onefile">
 											<li class="table-head light d-none d-sm-block">
 												<ul class="row">
-													<li class="table-topic col-sm-6" style="padding-top: 20px;">
+													<li class="table-topic col-sm-6" style="padding-top: 20px; ">
 													</li>
 													<li class="table-type col-sm" id="red">Paper 1</li>
 													<li class="table-type col-sm" id="blue">Paper 2</li>
@@ -499,36 +446,38 @@
 												<ul class="row">
 													<li class="table-topic col-sm-6">Pack 1</li>
 													<li class="table-btn col-sm" id="red">
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Paper.pdf" target="_blank">
+														<p class="table-type d-block d-sm-none">Question Paper</p>
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 7/Year 7 Pack 1/Paper 1/Year-7-Pack-1-Paper-1-QP.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-q.svg" alt="test icon" class="ico-tt-thumb">
 														</a>
 													</li>
 													<li class="table-btn tint20 col-6 col-sm" id="red">
 														<p class="table-type d-block d-sm-none">Mark scheme</p>
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Mark_Scheme.pdf" target="_blank">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 7/Year 7 Pack 1/Paper 1/Year-7-Pack-1-Paper-1-MS.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-ms.svg" alt="mark scheme icon" class="ico-tt-thumb">
 														</a>
 													</li>
 													<li class="table-btn tint20 col-6 col-sm" id="red">
 														<p class="table-type d-block d-sm-none">Insert</p>
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Insert.pdf" target="_blank">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 7/Year 7 Pack 1/Paper 1/Year-7-Pack-1-Paper-1-Insert.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-r.svg" alt="transcript icon" class="ico-tt-thumb">
 														</a>
 													</li>
 													<li class="table-btn dkbrick col-sm" id="blue">
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Paper.pdf" target="_blank">
+														<p class="table-type d-block d-sm-none">Question Paper</p>
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 7/Year 7 Pack 1/Paper 2/Year-7-Pack-1-Paper-2-QP.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-q.svg" alt="test icon" class="ico-tt-thumb">
 														</a>
 													</li>
 													<li class="table-btn tint20 col-6 col-sm" id="blue">
 														<p class="table-type d-block d-sm-none">Mark scheme</p>
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Mark_Scheme.pdf" target="_blank">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 7/Year 7 Pack 1/Paper 2/Year-7-Pack-1-Paper-2-MS.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-ms.svg" alt="mark scheme icon" class="ico-tt-thumb">
 														</a>
 													</li>
 													<li class="table-btn tint20 col-6 col-sm" id="blue">
 														<p class="table-type d-block d-sm-none">Insert</p>
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Insert.pdf" target="_blank">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 7/Year 7 Pack 1/Paper 2/Year-7-Pack-1-Paper-2-Insert.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-r.svg" alt="transcript icon" class="ico-tt-thumb">
 														</a>
 													</li>
@@ -540,19 +489,20 @@
 													<li class="table-topic col-sm-6">Pack 2
 													</li>
 													<li class="table-btn col-sm" id="red">
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Paper.pdf" target="_blank">
+														<p class="table-type d-block d-sm-none">Question paper</p>
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 7/Year 7 Pack 2/Paper 1/Year-7-Pack-2-Paper-1-QP.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-q.svg" alt="test icon" class="ico-tt-thumb">
 														</a>
 													</li>
 													<li class="table-btn tint20 col-6 col-sm" id="red">
 														<p class="table-type d-block d-sm-none">Mark scheme</p>
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Mark_Scheme.pdf" target="_blank">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 7/Year 7 Pack 2/Paper 1/Year-7-Pack-2-Paper-1-MS.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-ms.svg" alt="mark scheme icon" class="ico-tt-thumb">
 														</a>
 													</li>
 													<li class="table-btn tint20 col-6 col-sm" id="red">
 														<p class="table-type d-block d-sm-none">Insert</p>
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Insert.pdf" target="_blank">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 7/Year 7 Pack 2/Paper 1/Year-7-Pack-2-Paper-1-Insert.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-r.svg" alt="transcript icon" class="ico-tt-thumb">
 														</a>
 													</li>
@@ -571,19 +521,19 @@
 												<ul class="row">
 													<li class="table-topic col-sm-6">Pack 3</li>
 													<li class="table-btn col-sm" id="red">
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Paper.pdf" target="_blank">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 7/Year 7 Pack 3/Paper 1/Year-7-Pack-3-Paper-1-QP.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-q.svg" alt="test icon" class="ico-tt-thumb">
 														</a>
 													</li>
 													<li class="table-btn tint20 col-6 col-sm" id="red">
 														<p class="table-type d-block d-sm-none">Mark scheme</p>
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Mark_Scheme.pdf" target="_blank">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 7/Year 7 Pack 3/Paper 1/Year-7-Pack-3-Paper-1-MS.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-ms.svg" alt="mark scheme icon" class="ico-tt-thumb">
 														</a>
 													</li>
 													<li class="table-btn tint20 col-6 col-sm" id="red">
 														<p class="table-type d-block d-sm-none">Insert</p>
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Insert.pdf" target="_blank">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 7/Year 7 Pack 3/Paper 1/Year-7-Pack-3-Paper-1-Insert.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-r.svg" alt="transcript icon" class="ico-tt-thumb">
 														</a>
 													</li>
@@ -597,11 +547,10 @@
 														<p class="d-none d-sm-block" style="padding-top: 12px; font-size: 16px;">N/A</p>
 													</li>
 												</ul>
-											</li>
-											
+											</li>	
 										</ul>
-									</div> <!-- end tt-foundation -->
-									<!-- GCSE Higher German -->
+									</div>
+
 									<div class="tab-pane" id="ks3-y8" role="tabpanel">
 										<ul class="ep-tt-table ep-table-onefile">
 											<li class="table-head light d-none d-sm-block">
@@ -627,36 +576,33 @@
 												<ul class="row">
 													<li class="table-topic col-sm-6">Pack 1</li>
 													<li class="table-btn col-sm" id="red">
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Paper.pdf" target="_blank">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 8/Year 8 Pack 1/Paper 1/Year-8-Pack-1-Paper-1-QP.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-q.svg" alt="test icon" class="ico-tt-thumb">
 														</a>
 													</li>
 													<li class="table-btn tint20 col-6 col-sm" id="red">
 														<p class="table-type d-block d-sm-none">Mark scheme</p>
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Mark_Scheme.pdf" target="_blank">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 8/Year 8 Pack 1/Paper 1/yr8ks3p1markschemeboy.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-ms.svg" alt="mark scheme icon" class="ico-tt-thumb">
 														</a>
 													</li>
 													<li class="table-btn tint20 col-6 col-sm" id="red">
 														<p class="table-type d-block d-sm-none">Insert</p>
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Insert.pdf" target="_blank">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 8/Year 8 Pack 1/Paper 1/Year-8-Pack-1-Paper-1-Insert.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-r.svg" alt="transcript icon" class="ico-tt-thumb">
 														</a>
 													</li>
 													<li class="table-btn dkbrick col-sm" id="blue">
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Paper.pdf" target="_blank">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 8/Year 8 Pack 1/Paper 2/Year-8-Pack-1-Paper-2-QP.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-q.svg" alt="test icon" class="ico-tt-thumb">
 														</a>
 													</li>
-													<li class="table-btn tint20 col-6 col-sm" id="blue">
-														<p class="table-type d-block d-sm-none">Mark scheme</p>
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Mark_Scheme.pdf" target="_blank">
-															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-ms.svg" alt="mark scheme icon" class="ico-tt-thumb">
-														</a>
+													<li class="table-btn col-sm" id="blue">
+														<p class="d-none d-sm-block" style="padding-top: 12px; font-size: 16px;">N/A</p>
 													</li>
 													<li class="table-btn tint20 col-6 col-sm" id="blue">
 														<p class="table-type d-block d-sm-none">Insert</p>
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Insert.pdf" target="_blank">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 8/Year 8 Pack 1/Paper 2/Year-8-Pack-1-Paper-2-Insert.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-r.svg" alt="transcript icon" class="ico-tt-thumb">
 														</a>
 													</li>
@@ -668,36 +614,36 @@
 													<li class="table-topic col-sm-6">Pack 2
 													</li>
 													<li class="table-btn col-sm" id="red">
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Paper.pdf" target="_blank">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 8/Year 8 Pack 2/Paper 1/Year-8-Pack-2-Paper-1-QP.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-q.svg" alt="test icon" class="ico-tt-thumb">
 														</a>
 													</li>
 													<li class="table-btn tint20 col-6 col-sm" id="red">
 														<p class="table-type d-block d-sm-none">Mark scheme</p>
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Mark_Scheme.pdf" target="_blank">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 8/Year 8 Pack 2/Paper 1/Year-8-Pack-2-Paper-1-MS.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-ms.svg" alt="mark scheme icon" class="ico-tt-thumb">
 														</a>
 													</li>
 													<li class="table-btn tint20 col-6 col-sm" id="red">
 														<p class="table-type d-block d-sm-none">Insert</p>
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Insert.pdf" target="_blank">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 8/Year 8 Pack 2/Paper 1/Year-8-Pack-2-Paper-1-Insert.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-r.svg" alt="transcript icon" class="ico-tt-thumb">
 														</a>
 													</li>
 													<li class="table-btn dkbrick col-sm" id="blue">
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Paper.pdf" target="_blank">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 8/Year 8 Pack 2/Paper 2/Year-8-Pack-2-Paper-2-QP.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-q.svg" alt="test icon" class="ico-tt-thumb">
 														</a>
 													</li>
 													<li class="table-btn tint20 col-6 col-sm" id="blue">
 														<p class="table-type d-block d-sm-none">Mark scheme</p>
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Mark_Scheme.pdf" target="_blank">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 8/Year 8 Pack 2/Paper 2/Year-8-Pack-2-Paper-2-MS.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-ms.svg" alt="mark scheme icon" class="ico-tt-thumb">
 														</a>
 													</li>
 													<li class="table-btn tint20 col-6 col-sm" id="blue">
 														<p class="table-type d-block d-sm-none">Insert</p>
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Insert.pdf" target="_blank">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 8/Year 8 Pack 2/Paper 2/Year-8-Pack-2-Paper-2-Insert.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-r.svg" alt="transcript icon" class="ico-tt-thumb">
 														</a>
 													</li>
@@ -707,36 +653,36 @@
 												<ul class="row">
 													<li class="table-topic col-sm-6">Pack 3</li>
 													<li class="table-btn col-sm" id="red">
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Paper.pdf" target="_blank">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 8/Year 8 Pack 3/Paper 1/Year-8-Pack-3-Paper-1-QP.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-q.svg" alt="test icon" class="ico-tt-thumb">
 														</a>
 													</li>
 													<li class="table-btn tint20 col-6 col-sm" id="red">
 														<p class="table-type d-block d-sm-none">Mark scheme</p>
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Mark_Scheme.pdf" target="_blank">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 8/Year 8 Pack 3/Paper 1/Year-8-Pack-3-Paper-1-MS.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-ms.svg" alt="mark scheme icon" class="ico-tt-thumb">
 														</a>
 													</li>
 													<li class="table-btn tint20 col-6 col-sm" id="red">
 														<p class="table-type d-block d-sm-none">Insert</p>
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Insert.pdf" target="_blank">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 8/Year 8 Pack 3/Paper 1/Year-8-Pack-3-Paper-1-Insert.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-r.svg" alt="transcript icon" class="ico-tt-thumb">
 														</a>
 													</li>
 													<li class="table-btn dkbrick col-sm" id="blue">
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Paper.pdf" target="_blank">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 8/Year 8 Pack 3/Paper 2/Year-8-Pack-3-Paper-2-QP.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-q.svg" alt="test icon" class="ico-tt-thumb">
 														</a>
 													</li>
 													<li class="table-btn tint20 col-6 col-sm" id="blue">
 														<p class="table-type d-block d-sm-none">Mark scheme</p>
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Mark_Scheme.pdf" target="_blank">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 8/Year 8 Pack 3/Paper 2/Year-8-Pack-3-Paper-2-MS.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-ms.svg" alt="mark scheme icon" class="ico-tt-thumb">
 														</a>
 													</li>
 													<li class="table-btn tint20 col-6 col-sm" id="blue">
 														<p class="table-type d-block d-sm-none">Insert</p>
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Insert.pdf" target="_blank">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 8/Year 8 Pack 3/Paper 2/Year-8-Pack-3-Paper-2-Insert.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-r.svg" alt="transcript icon" class="ico-tt-thumb">
 														</a>
 													</li>
@@ -771,36 +717,36 @@
 												<ul class="row">
 													<li class="table-topic col-sm-6">Pack 1</li>
 													<li class="table-btn col-sm" id="red">
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Paper.pdf" target="_blank">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 9/Year 9 Pack 1/Paper 1/Year-9-Pack-1-Paper-1-QP.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-q.svg" alt="test icon" class="ico-tt-thumb">
 														</a>
 													</li>
 													<li class="table-btn tint20 col-6 col-sm" id="red">
 														<p class="table-type d-block d-sm-none">Mark scheme</p>
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Mark_Scheme.pdf" target="_blank">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 9/Year 9 Pack 1/Paper 1/yr9ks3paper1mscarrieswar.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-ms.svg" alt="mark scheme icon" class="ico-tt-thumb">
 														</a>
 													</li>
 													<li class="table-btn tint20 col-6 col-sm" id="red">
 														<p class="table-type d-block d-sm-none">Insert</p>
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Insert.pdf" target="_blank">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 9/Year 9 Pack 1/Paper 1/Year-9-Pack-1-Paper-1-Insert.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-r.svg" alt="transcript icon" class="ico-tt-thumb">
 														</a>
 													</li>
 													<li class="table-btn dkbrick col-sm" id="blue">
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Paper.pdf" target="_blank">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 9/Year 9 Pack 1/Paper 2/Year-9-Pack-1-Paper-2-QP.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-q.svg" alt="test icon" class="ico-tt-thumb">
 														</a>
 													</li>
 													<li class="table-btn tint20 col-6 col-sm" id="blue">
 														<p class="table-type d-block d-sm-none">Mark scheme</p>
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Mark_Scheme.pdf" target="_blank">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 9/Year 9 Pack 1/Paper 2/Year-9-Pack-1-Paper-2-MS.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-ms.svg" alt="mark scheme icon" class="ico-tt-thumb">
 														</a>
 													</li>
 													<li class="table-btn tint20 col-6 col-sm" id="blue">
 														<p class="table-type d-block d-sm-none">Insert</p>
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Insert.pdf" target="_blank">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 9/Year 9 Pack 1/Paper 2/Year-9-Pack-1-Paper-2-Insert.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-r.svg" alt="transcript icon" class="ico-tt-thumb">
 														</a>
 													</li>
@@ -812,30 +758,38 @@
 													<li class="table-topic col-sm-6">Pack 2
 													</li>
 													<li class="table-btn col-sm" id="red">
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Paper.pdf" target="_blank">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 9/Year 9 Pack 2/Paper 1/Year-9-Pack-2-Paper-1-QP.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-q.svg" alt="test icon" class="ico-tt-thumb">
 														</a>
 													</li>
 													<li class="table-btn tint20 col-6 col-sm" id="red">
 														<p class="table-type d-block d-sm-none">Mark scheme</p>
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Mark_Scheme.pdf" target="_blank">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 9/Year 9 Pack 2/Paper 1/Year-9-Pack-2-Paper-1-MS.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-ms.svg" alt="mark scheme icon" class="ico-tt-thumb">
 														</a>
 													</li>
 													<li class="table-btn tint20 col-6 col-sm" id="red">
 														<p class="table-type d-block d-sm-none">Insert</p>
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Insert.pdf" target="_blank">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 9/Year 9 Pack 2/Paper 1/Year-9-Pack-2-Paper-1-Insert.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-r.svg" alt="transcript icon" class="ico-tt-thumb">
 														</a>
 													</li>
-													<li class="table-btn col-sm" id="blue">
-														<p class="d-none d-sm-block" style="padding-top: 12px; font-size: 16px;">N/A</p>
+													<li class="table-btn dkbrick col-sm" id="blue">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 9/Year 9 Pack 2/Paper 2/Year-9-Pack-2-Paper-2-QP.pdf" target="_blank">
+															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-q.svg" alt="test icon" class="ico-tt-thumb">
+														</a>
 													</li>
-													<li class="table-btn col-sm" id="blue">
-														<p class="d-none d-sm-block" style="padding-top: 12px; font-size: 16px;">N/A</p>
+													<li class="table-btn tint20 col-6 col-sm" id="blue">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 9/Year 9 Pack 2/Paper 2/Year-9-Pack-2-Paper-2-MS.pdf" target="_blank">
+															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-ms.svg" alt="mark scheme icon" class="ico-tt-thumb">
+														</a>
 													</li>
-													<li class="table-btn col-sm" id="blue">
-														<p class="d-none d-sm-block" style="padding-top: 12px; font-size: 16px;">N/A</p>
+													<li class="table-btn tint20 col-6 col-sm" id="blue">
+														<p class="table-type d-block d-sm-none">Insert</p>
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 9/Year 9 Pack 2/Paper 2/Year-9-Pack-2-Paper-2-Insert.pdf" target="_blank">
+															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-r.svg" alt="transcript icon" class="ico-tt-thumb">
+														</a>
 													</li>
 												</ul>
 											</li>
@@ -843,43 +797,46 @@
 												<ul class="row">
 													<li class="table-topic col-sm-6">Pack 3</li>
 													<li class="table-btn col-sm" id="red">
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Paper.pdf" target="_blank">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 9/Year 9 Pack 3/Paper 1/Year-9-Pack-3-Paper-1-QP.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-q.svg" alt="test icon" class="ico-tt-thumb">
 														</a>
 													</li>
 													<li class="table-btn tint20 col-6 col-sm" id="red">
 														<p class="table-type d-block d-sm-none">Mark scheme</p>
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Mark_Scheme.pdf" target="_blank">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 9/Year 9 Pack 3/Paper 1/Year-9-Pack-3-Paper-1-MS.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-ms.svg" alt="mark scheme icon" class="ico-tt-thumb">
 														</a>
 													</li>
 													<li class="table-btn tint20 col-6 col-sm" id="red">
 														<p class="table-type d-block d-sm-none">Insert</p>
-														<a href="../../documents/AG_ENG/KS3 Packs/Year 7/Year 7 Pack 1/Yr_7___Paper_1___Boy_in_Pyjamas___Insert.pdf" target="_blank">
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 9/Year 9 Pack 3/Paper 1/Year-9-Pack-3-Paper-1-Insert.pdf" target="_blank">
 															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-r.svg" alt="transcript icon" class="ico-tt-thumb">
 														</a>
 													</li>
 													<li class="table-btn dkbrick col-sm" id="blue">
-														<p class="d-none d-sm-block" style="padding-top: 12px; font-size: 16px;">N/A</p>
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 9/Year 9 Pack 3/Paper 2/Year-9-Pack-3-Paper-2-QP.pdf" target="_blank">
+															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-q.svg" alt="test icon" class="ico-tt-thumb">
+														</a>
 													</li>
-													<li class="table-btn col-sm" id="blue">
-														<p class="d-none d-sm-block" style="padding-top: 12px; font-size: 16px;">N/A</p>
+													<li class="table-btn tint20 col-6 col-sm" id="blue">
+														<p class="table-type d-block d-sm-none">Mark scheme</p>
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 9/Year 9 Pack 3/Paper 2/Year-9-Pack-3-Paper-2-MS.pdf" target="_blank">
+															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-ms.svg" alt="mark scheme icon" class="ico-tt-thumb">
+														</a>
 													</li>
-													<li class="table-btn col-sm" id="blue">
-														<p class="d-none d-sm-block" style="padding-top: 12px; font-size: 16px;">N/A</p>
+													<li class="table-btn tint20 col-6 col-sm" id="blue">
+														<p class="table-type d-block d-sm-none">Insert</p>
+														<a href="../../documents/AG_ENG/KS3-Papers/Year 9/Year 9 Pack 3/Paper 2/Year-9-Pack-3-Paper-2-Insert.pdf" target="_blank">
+															<img src="https://resources.doublestruck.eu/resources/assets/images/ep-icons/ico-tt-r.svg" alt="transcript icon" class="ico-tt-thumb">
+														</a>
 													</li>
 												</ul>
 											</li>
-											
 										</ul>
-									</div> <!-- end tt-higher -->
-								</div> <!-- end GERMAN SECOND LEVEL tab-content -->
-							</div> <!-- end GERMAN SECOND LEVEL tab-panel -->
-
-
-						
-
-						</div><!-- end TOP LEVEL tab-content -->
+									</div>
+								</div>
+							</div>
+						</div>
 					</article>
 
 					<footer class="welcome-footer">
@@ -887,14 +844,11 @@
 							target="_blank"
 							onclick="trackOutboundLink('https://www.doublestruck.co.uk/terms-and-conditions/', 'Terms of Use footer');">Terms
 							of Use</a><br>
-						<noscript><strong>Reminder:</strong> You have already agreed to the Terms of Use. To ensure that
-							these resources remain protected, you may only share them with your students via email or a
-							secure login. They can only be used by your school and cannot be shared with any third
-							party.</noscript>
 					</footer>
 
-					<a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i
-							class="fa fa-chevron-up"></i></a>
+					<a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button">
+						<i class="fa fa-chevron-up"></i>
+					</a>
 				</div>
 			</main>
 		</div><!-- end .welcome-page-container-fluid / important for bleeding bgcolors -->
