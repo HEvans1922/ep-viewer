@@ -1,20 +1,6 @@
 <html>
 
 <head>
-	<!-- Google Tag Manager -->
-	<script type="text/javascript" async=""
-		src="https://www.googletagmanager.com/gtag/js?id=G-QTGH2T1CNR&amp;l=dataLayer&amp;cx=c&amp;gtm=45He53j1h1v9123571401za200&amp;tag_exp=102015665~102482433~102788824~102803279~102813109"></script>
-	<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-5X4MMJ6"></script>
-	<script>(function (w, d, s, l, i) {
-			w[l] = w[l] || []; w[l].push({
-				'gtm.start':
-					new Date().getTime(), event: 'gtm.js'
-			}); var f = d.getElementsByTagName(s)[0],
-				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-		})(window, document, 'script', 'dataLayer', 'GTM-5X4MMJ6');</script>
-	<!-- End Google Tag Manager -->
-	
 	<style>
 		#blue {
 			background-color: #0682c5; 
@@ -26,69 +12,6 @@
 			color: white;
 		}
 	</style>
-	<script>
-		/**
-		* Function that tracks a click on an outbound link in Analytics.
-		* This function takes a valid URL string as an argument, and uses that URL string
-		* as the event label. Setting the transport method to 'beacon' lets the hit be sent
-		* using 'navigator.sendBeacon' in browser that support it.
-		*/
-		window.dataLayer = window.dataLayer || [];
-
-		var trackGuidance = function (download) {
-			window.dataLayer.push({
-				'event': 'click',
-				'event_category': 'EP TT - Guidance download',
-				'event_label': download
-				//'transport_type': 'beacon',
-				//'event_callback': function(){document.location = url;}
-				//note: also removed  return false; on the links in body code
-			});
-		}
-
-		var trackNav = function (nav) {
-			window.dataLayer.push({
-				'event': 'click',
-				'event_category': 'EP TT - Navigation',
-				'event_label': nav
-			});
-		}
-
-		var trackTest = function (download) {
-			window.dataLayer.push({
-				'event': 'click',
-				'event_category': 'EP TT - Test download',
-				'event_label': download
-				// 'transport_type': 'beacon',
-				// 'event_callback': function(){document.location = url;}
-				//note: also removed  return false; on the links in body code
-			});
-		}
-
-		var trackMarkScheme = function (download) {
-			window.dataLayer.push({
-				'event': 'click',
-				'event_category': 'EP TT - Mark scheme download',
-				'event_label': download
-				// 'transport_type': 'beacon',
-				// 'event_callback': function(){document.location = url;}
-				//note: also removed  return false; on the links in body code
-			});
-		}
-
-		var trackTranscript = function (download) {
-			window.dataLayer.push({
-				'event': 'click',
-				'event_category': 'EP TT - Transcript download',
-				'event_label': download
-				// 'transport_type': 'beacon',
-				// 'event_callback': function(){document.location = url;}
-				//note: also removed  return false; on the links in body code
-			});
-		}
-	</script>
-
-
 
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -101,7 +24,7 @@
 	<link href="https://ds-vendor.doublestruck.eu/fontawesome/font-awesome-5.15.4/css/all.min.css" rel="stylesheet">
 	<link href="../../resources/styles-welcome-resources.css" rel="stylesheet">
 	<link href="../../resources/styles-welcome.css?v=021024" rel="stylesheet">
-	<link rel="icon" href="../favicon-ep.ico" type="image/x-icon">
+	<link rel="icon" href="../../img/favicon-ep.ico" type="image/x-icon">
 	<link rel="stylesheet" href="../../custom/custom.css">
 
 	<title>GCSE English Language Papers</title>
