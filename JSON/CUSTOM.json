@@ -16044,7 +16044,7 @@
         "qcount": 646,
         "board": "AQA",
         "contenttablabels": "Question, Markscheme, Examiner's report, Notes, Resource",
-        "maxquestions": 60,
+        "maxquestions": 0,
         "printword": 1,
         "printpdf": 1,
         "printcloud": 1,
