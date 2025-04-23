@@ -30,7 +30,7 @@ var hasLevels = 0;
 // if there are level icons to be shown
 var levelIds = {};
 var typeIds = {};
-var showQIDs = true;
+var showQIDs = false;
 // manage the state of the QIDs to reset after lazy loading the question list
 var maxQuestions = 15;
 // the max size of a document
