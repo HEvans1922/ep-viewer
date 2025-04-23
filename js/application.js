@@ -30,12 +30,12 @@ var hasLevels = 0;
 // if there are level icons to be shown
 var levelIds = {};
 var typeIds = {};
-var showQIDs = false;
+var showQIDs = true;
 // manage the state of the QIDs to reset after lazy loading the question list
-var maxQuestions = 15;
+var maxQuestions = 0;
 // the max size of a document
 var useCdn = 0;
-var touchDevice = false;
+var touchDevice = true;
 // if the device supports TOUCH (alternative add question features)
 var startpos;
 var serial = new Date().getTime();
