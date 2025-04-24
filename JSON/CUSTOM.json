@@ -1409,7 +1409,7 @@
             "ttext": "The Prime of Miss Jean Brodie - Muriel Speak",
             "fld": "CUSTOM",
             "fil": "QOTHER101",
-            "res": ""
+            "res": "/AG_ENG/Other/Prime_of_Miss_Jean_Brodie_Source.pdf"
           }
         ]
       }
@@ -1443,7 +1443,7 @@
     "board": "AQA",
     "contenttablabels": "Question, Markscheme, Examiner report, Notes, Resource",
     "maxquestions": 35,
-    "printword": 0,
+    "printword": 1,
     "printpdf": 1,
     "printcloud": 0,
     "printcompact": 0
