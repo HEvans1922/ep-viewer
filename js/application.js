@@ -32,10 +32,10 @@ var levelIds = {};
 var typeIds = {};
 var showQIDs = true;
 // manage the state of the QIDs to reset after lazy loading the question list
-var maxQuestions = 0;
+var maxQuestions = 15;
 // the max size of a document
 var useCdn = 0;
-var touchDevice = true;
+var touchDevice = false;
 // if the device supports TOUCH (alternative add question features)
 var startpos;
 var serial = new Date().getTime();
@@ -49,8 +49,8 @@ $(document).ready(function () {
 			if (ev.pointerType === "touch") {
 				addMultipleItems();
 			}
-		});
-	}
+	})	}
+
 
 	$("img").on("error", function (t) {
 		console.log(this, t);
@@ -107,75 +107,68 @@ $(document).ready(function () {
 	$("#loading").show();
 
 	// get the index file from the configured path
-	var json_url = json_index_path + launched_subject + ".json?ser=" + serial;
+	var json_url = "https://app.doublestruck.eu/data/getIndex.php?index=" + launched_subject;
+	if (draftindex == "true") {
+		json_url += "&draftindex=true";
+	}
+	
 
-	$.getJSON(json_url, function (data) {
-		$("#loading").hide();
-		if (data.index && data.product) {
-			product = data.product;
+$.ajax({
+    url: json_url,
+    type: "GET",
+    dataType: "json",
+    success:  function (data) {
+        if (data.index && data.product) {
+            product = data.product;
+            if (product.maxquestions) maxQuestions = product.maxquestions;
 
-			if (product.maxquestions) maxQuestions = product.maxquestions;
+            itemsRaw = data.index.QuestionIndex.content.q;
+            itemDatabase = [];
 
-			itemsRaw = data.index.QuestionIndex.content.q;
-			itemDatabase = [];
+            for (var ind in itemsRaw) {
+                var val = itemsRaw[ind];
+                if (maxyear && maxyear > 0) {
+                    if (val.year && parseInt(val.year) > parseInt(maxyear)) {
+                        continue;
+                    }
+                }
+                if (limitbyflag && limitbyflag == 1) {
+                    if (val.flag1 == 0) {
+                        continue;
+                    }
+                }
+                var rtt = val.des + "|" + val.ttext + "|" + val.qid;
+                val.ft = rtt.toLowerCase();
+                val.resource = null;
+                itemDatabase.push(val);
+            }
+            dbLength = itemDatabase.length;
 
-			for (var ind in itemsRaw) {
-				var val = itemsRaw[ind];
-				if (maxyear && maxyear > 0) {
-					if (val.year && parseInt(val.year) > parseInt(maxyear)) {
-						continue;
-					}
-				}
-				if (limitbyflag && limitbyflag == 1) {
-					if (val.flag1 == 0) {
-						continue;
-					}
-				}
-				// create the field to search with free text and add it to each item : this could be done server side but would inflate the index size by 2x
-				var rtt = val.des + "|" + val.ttext + "|" + val.qid;
-				val.ft = rtt.toLowerCase();
-				val.resource = null;
-				// build the index with items that pass the year filter
-				itemDatabase.push(val);
+            $(".productTitle").html(product.label);
+            document.title = product.label;
 
-				// add to the ft node for the item as lower case
-			}
-			dbLength = itemDatabase.length;
+            setupScreen();
+            makeMovable();
+            setupMenus();
+            updateDetails();
+            makeIndexTrees(data.index);
+            clearSearch();
 
-			$(".productTitle").html(product.label);
-			document.title = product.label;
+            if (isosa == 1) {
+                checkOsaStudents(); // check if this is an OSA student and set the OSA specific variables
+            }
+        } else {
+            vex.dialog.alert(
+                "<b>Sorry, incomplete index or bad product.</b><br><br>This product cannot currently be loaded and execution will now stop.<br><br>Product ID: <b>" +
+                    launched_subject +
+                    "</b><br><br>Request returned:<br> " +
+                    data
+            );
+            throw new Error("FATAL ERROR - Index or product description incomplete");
+            return false;
+        }
 
-			// set inital positioning
-			setupScreen();
-
-			// setup movable resizable, draggable
-			makeMovable();
-
-			// add listneners for menu items (must be called after creating new docs as well)
-			setupMenus();
-
-			//	set the count, marks and time display in the document footer(s)
-			updateDetails();
-
-			// make the index trees and set the catalog up
-			makeIndexTrees(data.index);
-			clearSearch();
-
-			if (isosa == 1) checkOsaStudents();
-		} else {
-			// If the index is invalid then we need to stop here.
-			// for staging, the retrieval of the JSON stuff is being converted from the legacy XML indices on the fly which causes a few issues in some products, mostly due to improper encoding of the XML. (ANSI as UTF8)
-			// when live, the JSON indices will exist statically and be tested for validity so this should never happen, but it is here as a failsafe for now.
-
-			vex.dialog.alert(
-				"<b>Sorry, incomplete index or bad product.</b><br><br>This product cannot currently be loaded and execution will now stop.<br><br>Product ID: <b>" +
-					launched_subject +
-					"</b><br><br>Request returned:<br> " +
-					data
-			);
-			throw new Error("FATAL ERROR - Index or product description incomplete");
-		}
-		// various interface listeners
+	// various interface listeners
 
 		$(".makedoc").on("click", function () {
 			log(launched_subject, "LOG", "New document clicked");
@@ -345,7 +338,7 @@ $(document).ready(function () {
 			$(".send-print").css("bottom", "0px");
 			// fixes problem of button overlapping input box in firefox
 		}
-	});
+
 
 	get("tb5_content", "getProduct", "json", [launched_subject_key], function (data) {
 		// if there are documents, set them up
@@ -500,7 +493,12 @@ $(document).ready(function () {
 			$("#" + target).fadeIn("fast");
 		});
 	}
-}); // end document.ready()
+    }
+});
+
+
+});
+
 
 // ==== LOAD CONTENT =========
 // the global database item array, itemDatabase, contains  2 nodes used for caching
@@ -533,7 +531,7 @@ function getContent(qid, dbindex, folder, res) {
 
 		let contentURL = "";
 		if (isosa == 0) {
-			contentURL = json_path + folder + "/" + filename + ".json?ser=" + serial;
+			contentURL = "/data/getQuestion.php?folder=" + folder + "&file=" + filename;
 		} else {
 			contentURL =
 				osa_path +
@@ -547,12 +545,17 @@ function getContent(qid, dbindex, folder, res) {
 				draftContent;
 		}
 
-		$.getJSON(contentURL, function (tab) {
+   $.ajax({
+	url: contentURL,
+	type: "GET",
+	dataType: "json",
+	success:  function (tab) {
 			if (isosa == 0) tab = fixImgs(tab);
 
 			itemDatabase[dbindex].content = tab;
 			return output(qid, tab, res);
-		}).fail(function () {
+	},
+	error: function () {
 			log(launched_subject, "CONTENT MISSING", qid);
 
 			// retrieve the custom error message
@@ -562,8 +565,12 @@ function getContent(qid, dbindex, folder, res) {
 				$("#tabs").tabs("option", "active", 0);
 				$("#tabs").tabs("disable");
 			});
+
 			return false;
-		});
+	}
+    });
+
+
 	} else {
 		// cached, get it from the local cache in this item
 
@@ -1644,13 +1651,13 @@ function fixResPath(path) {
 	//check for mp3 template
 	m = path.match(/([^\/]+)\/MP3\/([^.]+)/i);
 	if (m != null) {
-		return "https://app.doublestruck.eu/data/resource.php?s=" + m[1] + "&type=MP3&qid=" + m[2];
+		return "/data/resource.php?s=" + m[1] + "&type=MP3&qid=" + m[2];
 	}
 
 	//check for old mp3 path
 	m = path.match(/\/resources\/([^\/]+)\/([^\/]+)\/([^.]+).asp/i);
 	if (m != null) {
-		return "https://app.doublestruck.eu/data/resource.php?s=" + m[1] + "&type=" + m[2] + "&qid=" + m[3];
+		return "/data/resource.php?s=" + m[1] + "&type=" + m[2] + "&qid=" + m[3];
 	}
 
 	return path.replace(/\/resources\//i, resources_url);
