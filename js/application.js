@@ -531,7 +531,7 @@ function getContent(qid, dbindex, folder, res) {
 
 		let contentURL = "";
 		if (isosa == 0) {
-			contentURL = "/data/getQuestion.php?folder=" + folder + "&file=" + filename;
+			contentURL = "https://app.doublestruck.eu/data/getQuestion.php?folder=" + folder + "&file=" + filename;
 		} else {
 			contentURL =
 				osa_path +
@@ -559,7 +559,7 @@ function getContent(qid, dbindex, folder, res) {
 			log(launched_subject, "CONTENT MISSING", qid);
 
 			// retrieve the custom error message
-			$.get("/data/qerror/qerror.php?br=" + launched_brand + "&qid=" + qid, function (data) {
+			$.get("https://app.doublestruck.eu/data/qerror/qerror.php?br=" + launched_brand + "&qid=" + qid, function (data) {
 				$("#tabs-1").html(data);
 				itemDatabase[dbindex].content.question = data;
 				$("#tabs").tabs("option", "active", 0);
@@ -1664,7 +1664,7 @@ function fixResPath(path) {
 }
 
 function openManager(subject) {
-	let path = "/osa/?pid=" + subject;
+	let path = "https://app.doublestruck.eu/osa/?pid=" + subject;
 	// window.open(path, 'TeacherConsole');
 
 	var a = document.createElement("a");
