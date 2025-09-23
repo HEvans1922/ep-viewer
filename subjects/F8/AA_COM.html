@@ -1,242 +1,258 @@
-<!doctype html>
-<html lang="en">
+<html lang="en"><head>
+		<meta charset="utf-8">
+		<title>A-level German</title>
 
-<head>
-	<meta charset="utf-8" />
-	<title></title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="shortcut icon" href="https://app.doublestruck.eu/images/fav/EP.ico?v=1758586480">
 
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="shortcut icon" href="https://app.doublestruck.eu/images/fav/EP.ico?v=1739229503" />
+		<!--<script src="https://ds-vendor.doublestruck.eu/bootstrap/bootstrap-5.3/js/bootstrap.min.js"></script>-->
 
-	<!--<script src="https://ds-vendor.doublestruck.eu/bootstrap/bootstrap-5.3/js/bootstrap.min.js"></script>-->
-
-	<link rel="stylesheet" href="https://app.doublestruck.eu/css/jquery-ui.css" />
-	<link rel="stylesheet" href="https://app.doublestruck.eu/css/dropdown-menu.css" />
-	<link rel="stylesheet" href="https://app.doublestruck.eu/data/ds.css?ser=50" />
-	<link rel="stylesheet" href="https://app.doublestruck.eu/help/css/help.css" />
-	<link rel="stylesheet" href="https://app.doublestruck.eu/css/style.php?theme=EP" />
+		<link rel="stylesheet" href="https://app.doublestruck.eu/css/jquery-ui.css">
+		<link rel="stylesheet" href="https://app.doublestruck.eu/css/dropdown-menu.css">
+					<link rel="stylesheet" href="https://app.doublestruck.eu/data/ds.css?ser=50">
+				<link rel="stylesheet" href="https://app.doublestruck.eu/help/css/help.css">
+		<link rel="stylesheet" href="https://app.doublestruck.eu/css/style.php?theme=EP">
 	<!--	<link rel="stylesheet" href="css/tables/themes/blue/style.css" /> -->
-	<link rel="stylesheet" href="https://app.doublestruck.eu/js/themes/default/style.min.css" />
-	<link href="https://ds-welcome.doublestruck.eu/welcome/css/welcome-screens.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://app.doublestruck.eu/css/documentExport.css">
+		<link rel="stylesheet" href="https://app.doublestruck.eu/js/themes/default/style.min.css">
+		<link href="https://ds-welcome.doublestruck.eu/welcome/css/welcome-screens.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://app.doublestruck.eu/css/documentExport.css">
+       		<script>var reqid =  "9138353e2353a8db98a3e1b4f5791a1e";</script><style type="text/css" id="operaUserStyle">
+  img {
+    filter: -opera-shader(url(data:text/plain;base64,Ly8gaHR0cHM6Ly9naXRodWIuY29tL0dQVU9wZW4tRWZmZWN0cy9GaWRlbGl0eUZYLUNBUwovLyB2MwoKdW5pZm9ybSBzaGFkZXIgaUNodW5rOwp1bmlmb3JtIGZsb2F0MiBpQ2h1bmtTaXplOwp1bmlmb3JtIGZsb2F0MiBpTW91c2U7CnVuaWZvcm0gZmxvYXQgaUFyZ3NbMV07Cgpjb25zdCBmbG9hdCBFUFNJT04gPSAwLjE7CmNvbnN0IGZsb2F0IFZfTUlOID0gMDsKY29uc3QgZmxvYXQgVl9MT1cgPSAwLjI1Owpjb25zdCBmbG9hdCBWX01FRCA9IDAuNTsKY29uc3QgZmxvYXQgVl9ISUdIID0gMC43NTsKY29uc3QgZmxvYXQgVl9NQVggPSAxOwoKY29uc3QgZmxvYXQgVEhSRVNIT0xEX0FSRUEgPSA4MDAgKiA2MDA7CmNvbnN0IGZsb2F0IE1JTl9BUkVBID0gNDAwICogMTAwOwpjb25zdCBmbG9hdCBNSU5fU1RSSVAgPSAyMDsKY29uc3QgZmxvYXQgTUFSR0lOID0gMTsKCmZsb2F0MyBwaXhlbChpbnQgeCwgaW50IHksIGZsb2F0MiB4eSkgewogICAgcmV0dXJuIGlDaHVuay5ldmFsKHh5ICsgZmxvYXQyKHgsIHkpKS5yZ2I7Cn0KCmZsb2F0MyBzaGFycGVuKGZsb2F0MiB4eSkgewogICAgZmxvYXQzIGYgPQogICAgICAgIHBpeGVsKC0xLCAtMSwgeHkpICogIDEgKwogICAgICAgIHBpeGVsKCAwLCAtMSwgeHkpICogLTEgKwogICAgICAgIHBpeGVsKCAxLCAtMSwgeHkpICogIDEgKwoKICAgICAgICBwaXhlbCgtMSwgMCwgeHkpICogLTEgICsKICAgICAgICBwaXhlbCggMCwgMCwgeHkpICogLTEgICsKICAgICAgICBwaXhlbCggMSwgMCwgeHkpICogLTEgICsKCiAgICAgICAgcGl4ZWwoLTEsIDEsIHh5KSAqIDEgICArCiAgICAgICAgcGl4ZWwoIDAsIDEsIHh5KSAqIC0xICArCiAgICAgICAgcGl4ZWwoIDEsIDEsIHh5KSAqIDE7CiAgICByZXR1cm4gZiAvIC0xOwp9CgpmbG9hdDQgUkdYMihmbG9hdDIgeHkpIHsKICAgIGZsb2F0NCBjb2xvciA9IGlDaHVuay5ldmFsKHh5KTsKCiAgICBpZiAoaUNodW5rU2l6ZS54ICogaUNodW5rU2l6ZS55IDwgTUlOX0FSRUEpIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgaWYgKGlDaHVua1NpemUueSA8IE1JTl9TVFJJUCB8fCBpQ2h1bmtTaXplLnggPCBNSU5fU1RSSVApIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgaWYgKHh5LnggPCBNQVJHSU4gfHwgeHkueCA+IChpQ2h1bmtTaXplLnggLSBNQVJHSU4pIHx8CiAgICAgICAgeHkueSA8IE1BUkdJTiB8fCB4eS55ID4gKGlDaHVua1NpemUueSAtIE1BUkdJTikpIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgcmV0dXJuIGZsb2F0NChzaGFycGVuKHh5KSwgMSk7Cn0KCmZsb2F0IG1pbjMoZmxvYXQgeCwgZmxvYXQgeSwgZmxvYXQgeikgewogICAgcmV0dXJuIG1pbih4LCBtaW4oeSwgeikpOwp9CgpmbG9hdCBtYXgzKGZsb2F0IHgsIGZsb2F0IHksIGZsb2F0IHopIHsKICAgIHJldHVybiBtYXgoeCwgbWF4KHksIHopKTsKfQoKZmxvYXQgcmNwKGZsb2F0IHYpIHsKICAgIHJldHVybiAxIC8gdjsKfQoKZmxvYXQzIFJHWDMoZmxvYXQyIHh5LCBmbG9hdCBzdHJlbmd0aCkgewogICAgZmxvYXQzIGEgPSBwaXhlbCgtMSwgLTEsIHh5KTsKICAgIGZsb2F0MyBiID0gcGl4ZWwoIDAsIC0xLCB4eSk7CiAgICBmbG9hdDMgYyA9IHBpeGVsKCAxLCAtMSwgeHkpOwoKICAgIGZsb2F0MyBkID0gcGl4ZWwoLTEsIDAsIHh5KTsKICAgIGZsb2F0MyBlID0gcGl4ZWwoIDAsIDAsIHh5KTsKICAgIGZsb2F0MyBmID0gcGl4ZWwoIDEsIDAsIHh5KTsKCiAgICBmbG9hdDMgZyA9IHBpeGVsKC0xLCAxLCB4eSk7CiAgICBmbG9hdDMgaCA9IHBpeGVsKCAwLCAxLCB4eSk7CiAgICBmbG9hdDMgaSA9IHBpeGVsKCAxLCAxLCB4eSk7CgogICAgZmxvYXQgbW5SID0gbWluMyhtaW4zKGQuciwgZS5yLCBmLnIpLCBiLnIsIGgucik7CiAgICBmbG9hdCBtbkcgPSBtaW4zKG1pbjMoZC5nLCBlLmcsIGYuZyksIGIuZywgaC5nKTsKICAgIGZsb2F0IG1uQiA9IG1pbjMobWluMyhkLmIsIGUuYiwgZi5iKSwgYi5iLCBoLmIpOwoKICAgIGZsb2F0IG1uUjIgPSBtaW4zKG1pbjMobW5SLCBhLnIsIGMuciksIGcuciwgaS5yKTsKICAgIGZsb2F0IG1uRzIgPSBtaW4zKG1pbjMobW5HLCBhLmcsIGMuZyksIGcuZywgaS5nKTsKICAgIGZsb2F0IG1uQjIgPSBtaW4zKG1pbjMobW5CLCBhLmIsIGMuYiksIGcuYiwgaS5iKTsKCiAgICBtblIgPSBtblIgKyBtblIyOwogICAgbW5HID0gbW5HICsgbW5HMjsKICAgIG1uQiA9IG1uQiArIG1uQjI7CgogICAgZmxvYXQgbXhSID0gbWF4MyhtYXgzKGQuciwgZS5yLCBmLnIpLCBiLnIsIGgucik7CiAgICBmbG9hdCBteEcgPSBtYXgzKG1heDMoZC5nLCBlLmcsIGYuZyksIGIuZywgaC5nKTsKICAgIGZsb2F0IG14QiA9IG1heDMobWF4MyhkLmIsIGUuYiwgZi5iKSwgYi5iLCBoLmIpOwoKICAgIGZsb2F0IG14UjIgPSBtYXgzKG1heDMobXhSLCBhLnIsIGMuciksIGcuciwgaS5yKTsKICAgIGZsb2F0IG14RzIgPSBtYXgzKG1heDMobXhHLCBhLmcsIGMuZyksIGcuZywgaS5nKTsKICAgIGZsb2F0IG14QjIgPSBtYXgzKG1heDMobXhCLCBhLmIsIGMuYiksIGcuYiwgaS5iKTsKCiAgICBteFIgPSBteFIgKyBteFIyOwogICAgbXhHID0gbXhHICsgbXhHMjsKICAgIG14QiA9IG14QiArIG14QjI7CgogICAgZmxvYXQgcmNwTVIgPSByY3AobXhSKTsKICAgIGZsb2F0IHJjcE1HID0gcmNwKG14Ryk7CiAgICBmbG9hdCByY3BNQiA9IHJjcChteEIpOwoKICAgIGZsb2F0IGFtcFIgPSBzYXR1cmF0ZShtaW4obW5SLCAyIC0gbXhSKSAqIHJjcE1SKTsKICAgIGZsb2F0IGFtcEcgPSBzYXR1cmF0ZShtaW4obW5HLCAyIC0gbXhHKSAqIHJjcE1HKTsKICAgIGZsb2F0IGFtcEIgPSBzYXR1cmF0ZShtaW4obW5CLCAyIC0gbXhCKSAqIHJjcE1CKTsKCiAgICBhbXBSID0gc3FydChhbXBSKTsKICAgIGFtcEcgPSBzcXJ0KGFtcEcpOwogICAgYW1wQiA9IHNxcnQoYW1wQik7CgogICAgZmxvYXQgcGVhayA9IC1yY3AobWl4KDgsIDUsIHN0cmVuZ3RoKSk7CgogICAgZmxvYXQgd1IgPSBhbXBSICogcGVhazsKICAgIGZsb2F0IHdHID0gYW1wRyAqIHBlYWs7CiAgICBmbG9hdCB3QiA9IGFtcEIgKiBwZWFrOwoKICAgIGZsb2F0IHJjcFdlaWdodFIgPSByY3AoMSArIDQgKiB3Uik7CiAgICBmbG9hdCByY3BXZWlnaHRHID0gcmNwKDEgKyA0ICogd0cpOwogICAgZmxvYXQgcmNwV2VpZ2h0QiA9IHJjcCgxICsgNCAqIHdCKTsKCiAgICByZXR1cm4gZmxvYXQzKAogICAgICAgIHNhdHVyYXRlKChiLnIgKiB3UiArIGQuciAqIHdSICsgZi5yICogd1IgKyBoLnIgKiB3UiArIGUucikgKiByY3BXZWlnaHRSKSwKICAgICAgICBzYXR1cmF0ZSgoYi5nICogd0cgKyBkLmcgKiB3RyArIGYuZyAqIHdHICsgaC5nICogd0cgKyBlLmcpICogcmNwV2VpZ2h0RyksCiAgICAgICAgc2F0dXJhdGUoKGIuYiAqIHdCICsgZC5iICogd0IgKyBmLmIgKiB3QiArIGguYiAqIHdCICsgZS5iKSAqIHJjcFdlaWdodEIpKTsKfQoKCmZsb2F0NCBtYWluKGZsb2F0MiB4eSkgewoKICAgIGZsb2F0NCBvcmlnaW5hbENvbG9yID0gaUNodW5rLmV2YWwoeHkpOwogICAgaWYgKG9yaWdpbmFsQ29sb3IuYSA8IDEpIHsKICAgICAgICByZXR1cm4gaUNodW5rLmV2YWwoeHkpOwogICAgfQoKICAgIGZsb2F0IGludGVuc2l0eSA9IGlBcmdzWzBdOwogICAgZmxvYXQgc3RyZW5ndGggPSAwOwogICAgZmxvYXQzIGNvbG9yOwoKICAgIGlmIChpbnRlbnNpdHkgPCBWX01JTiArIEVQU0lPTikgewogICAgICAgIHN0cmVuZ3RoID0gMC4xMDsKICAgICAgICBjb2xvciA9IFJHWDMoeHksIHN0cmVuZ3RoKTsKCiAgICB9IGVsc2UgaWYgKGludGVuc2l0eSA+IFZfTE9XIC0gRVBTSU9OICYmIGludGVuc2l0eSA8IFZfTE9XICsgRVBTSU9OKSB7CiAgICAgICAgc3RyZW5ndGggPSAwLjMzOwogICAgICAgIGNvbG9yID0gUkdYMyh4eSwgc3RyZW5ndGgpOwoKICAgIH0gZWxzZSBpZiAoaW50ZW5zaXR5ID4gVl9NRUQgLSBFUFNJT04gJiYgaW50ZW5zaXR5IDwgVl9NRUQgKyBFUFNJT04pIHsKICAgICAgICBzdHJlbmd0aCA9IDAuNTsKICAgICAgICBjb2xvciA9IFJHWDMoeHksIHN0cmVuZ3RoKTsKCiAgICB9IGVsc2UgaWYgKGludGVuc2l0eSA+IFZfSElHSCAtIEVQU0lPTiAmJiBpbnRlbnNpdHkgPCBWX0hJR0ggKyBFUFNJT04pIHsKICAgICAgICBzdHJlbmd0aCA9IDAuOTk7CiAgICAgICAgY29sb3IgPSBSR1gzKHh5LCBzdHJlbmd0aCk7CgogICAgfSBlbHNlIGlmIChpbnRlbnNpdHkgPiBWX01BWCAtIEVQU0lPTikgewogICAgICAgIHN0cmVuZ3RoID0gMTsKICAgICAgICBjb2xvciA9IFJHWDIoeHkpLnJnYjsKICAgIH0KCiAgICByZXR1cm4gZmxvYXQ0KGNvbG9yLCBvcmlnaW5hbENvbG9yLmEpOwp9) -opera-args(0.50 calc(env(-opera-accent-color-r, 255)/255) calc(env(-opera-accent-color-g, 255)/255) calc(env(-opera-accent-color-b, 255)/255)));
+  }
+</style>
+		<script src="https://apis.google.com/js/platform.js" async="" defer="" gapi_processed="true">
+            { parsetags:'explicit' }
+		</script>
 
-	<link rel="stylesheet" href="../../font-awesome-4.6.3/css/font-awesome.min.css" />
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="../../custom/custom.css">
-	<style>
-		* {
-			-webkit-box-sizing: content-box;
-			-moz-box-sizing: content-box;
-			box-sizing: content-box;
-		}
+		<link rel="stylesheet" href="https://app.doublestruck.eu/css/font-awesome-4.6.3/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,500" rel="stylesheet" type="text/css">
+		
+				
+		
 
-		*:before,
-		*:after {
-			-webkit-box-sizing: content-box;
-			-moz-box-sizing: content-box;
-			box-sizing: content-box;
-		}
-	</style>
-
-	<script>var launch_key = "";
-		var launched_subject = "AA_COM";
-		var launched_subject_key = "";
-		var launched_theme = "EP";
-		var launched_brand = "EP";
-		var environment = "";
-		var web_root = "https://app.doublestruck.eu/"
-		var json_path = "https://ds-content.doublestruck.eu/";
-		var json_index_path = "https://ds-questionindex.doublestruck.eu/";
-		var resources_url = "https://ds-resources.doublestruck.eu/";
-		var viewer_template = "https://#docid#.exampro.net";
-		var enableCache = "5";
-		var maxyear = null;
-		var serial = "";
-		var limitbyflag = 0;
-		var isosa = "0";
-		var osasubject = "";
-		var osa_path = "https://osa.exampro.co.uk/proxy/content2.php";
-		var studentcount = "0";
-		var draftContent = "0";
-
-	</script>
-
-	<!-- libraries -->
-	<script src="https://app.doublestruck.eu/help/videolist.js"></script>
+		<style>
+				* {
+				-webkit-box-sizing: content-box;
+					-moz-box-sizing: content-box;
+						box-sizing: content-box;
+				}
+				*:before,
+				*:after {
+				-webkit-box-sizing: content-box;
+					-moz-box-sizing: content-box;
+						box-sizing: content-box;
+				}
 
 
-	<script src="https://ds-vendor.doublestruck.eu/jquery/jquery-3.6.1.min.js"></script>
-	<script src="https://ds-vendor.doublestruck.eu/jquery/jquery-migrate-3.1.0.min.js"></script>
+   	    </style>
+
+		<script>var launch_key =    "5c6b0af7930d98c4e5efa5228b062338 ";
+			var launched_subject =  "AA_GERM";
+			var launched_subject_key = "ff5e382f5b849bd79204d36500163e51";
+			var launched_theme = "EP";
+			var launched_brand = "EP";
+			var environment =   "LIVE";
+			var web_root =   "https://app.doublestruck.eu/"
+			var json_path =  "https://cpr.doublestruck.eu/";
+			var draftindex = "false";
+			var resources_url = "https://ds-resources.doublestruck.eu/";
+			var viewer_template = "https://#docid#.exampro.net";
+			var enableCache = "1";
+			var maxyear = null;
+			var serial = "2024";
+			var limitbyflag = 0;
+			var isosa = "0";
+			var osasubject = "";
+			var osa_path =  "https://osa.exampro.co.uk/proxy/content2.php";
+			var studentcount = "0";
+			var draftContent = "0";
+
+		</script>
+
+		<!-- libraries -->
+		<script src="https://app.doublestruck.eu/help/videolist.js"></script>
 
 
-	<script src="https://ds-vendor.doublestruck.eu/jquery_ui/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+		<script src="https://ds-vendor.doublestruck.eu/jquery/jquery-3.7.0.min.js"></script>
+		<script src="https://ds-vendor.s3.eu-west-2.amazonaws.com/jquery/jquery-migrate-3.5.0.min.js"></script> 
 
-	<script src="https://app.doublestruck.eu/js/lib/jquery-collision.min.js"></script>
-	<script src="https://app.doublestruck.eu/js/lib/dropdown-menu.js"></script>
-	<script src="https://app.doublestruck.eu/js/lib/jquery.tablesorter.min.js"></script>
-	<script src="https://app.doublestruck.eu/js/lib/jstree.min.js"></script>
-	<script src="https://app.doublestruck.eu/js/lib/jquery.alphanum.js"></script>
-	<script src="https://app.doublestruck.eu/js/lib/jquery.cookie.js"></script>
-	<script src="https://app.doublestruck.eu/js/lib/vex.combined.min.js"></script>
-	<script src="https://app.doublestruck.eu/js/lib/jquery.classyqr.min.js"></script>
+
+		<script src="https://ds-vendor.doublestruck.eu/jquery_ui/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+
+		<script src="https://app.doublestruck.eu/js/lib/jquery-collision.min.js"></script>
+  	    <script src="https://app.doublestruck.eu/js/lib/dropdown-menu.js"></script>
+		<script src="https://app.doublestruck.eu/js/lib/jquery.tablesorter.min.js"></script>
+		<script src="https://app.doublestruck.eu/js/lib/jstree.min.js"></script>
+		<script src="https://app.doublestruck.eu/js/lib/jquery.alphanum.js"></script>
+		<script src="https://app.doublestruck.eu/js/lib/jquery.cookie.js"></script>
+		<script src="https://app.doublestruck.eu/js/lib/vex.combined.min.js"></script>
+		<script src="https://app.doublestruck.eu/js/lib/jquery.classyqr.min.js"></script>
 
 	<!-- OSA MODULE SCRIPTS -->
-	<script src="../../js/proxy.js"></script>
 
-	<script>
-		vex.defaultOptions.className = 'vex-theme-wireframe';
-	</script>
-	<link rel="stylesheet" href="https://app.doublestruck.eu/css/vex.css" />
-	<link rel="stylesheet" href="https://app.doublestruck.eu/css/vex-theme-wireframe.css" />
+		
 
-	<!-- application scripts-->
+	    <script src="https://app.doublestruck.eu/js/lib/proxy.js?s=1756393706"></script>
 
-	<script src="https://app.doublestruck.eu/js/lib/log.js?s=27.09.2022"></script>
+		<script>
+            		vex.defaultOptions.className = 'vex-theme-wireframe';
+		</script>
+		<link rel="stylesheet" href="https://app.doublestruck.eu/css/vex.css">
+		<link rel="stylesheet" href="https://app.doublestruck.eu/css/vex-theme-wireframe.css">
 
-	<script src="https://app.doublestruck.eu/js/app/help.js?s=1738857124"></script>
-	<script src="https://app.doublestruck.eu/js/app/utility.js?s=1738857124"></script>
-	<script src="../../js/documents.js"></script>
-	<script src="../../js/application.js"></script>
+		<!-- application scripts-->
+
+		<script src="https://app.doublestruck.eu/js/lib/log.js?s=27.09.2022"></script>
+
+		<script src="https://app.doublestruck.eu/js/app/help.js?s=1756393706"></script>
+		<script src="jhttps://app.doublestruck.eu/js/app/utility.js?s=1756393706"></script>
+		<script src="https://app.doublestruck.eu/js/app/documents.js?s=1756393706"></script>
+		<script src="https://app.doublestruck.eu/js/app/application.js?s=1756393706"></script>
 
 
-	<script src="https://app.doublestruck.eu/js/lib/hammer.js"></script>
-</head>
+		<script src="https://app.doublestruck.eu/js/lib/hammer.js?s=27.09.2022"></script>
 
-<body>
 
-	<!--======== MODAL BACKDROP ============ -->
-	<div id="docModal"></div>
+	</head>
+	<body>
 
-	<!--======== LOADER / SPINNER ============ -->
+		<!--======== MODAL BACKDROP ============ -->
+		<div id="docModal"></div>
 
-	<div id="loading">
-		<div id="spinner">
-			<i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
-			<span class="sr-only">Loading...</span>
-		</div>
-	</div>
+		<!--======== LOADER / SPINNER ============ -->
 
-	<div class="page">
-
-		<!--======== TOOLBAR  ============ -->
-
-		<div id="toolbar">
-
-			<div id="searchButton" class="toolbarButton toolbarButtonSearch roundedButton Blue"
-				title="Open the search window">
-				<i class="fa fa-search" aria-hidden="true"></i>
-				<div class="search-button-text">
-					Search
-				</div>
-			</div>
-
-			<div id="resetButton" class="toolbarButton toolbarClearSearchButton roundedButton Blue"
-				title="Reset the current search">
-				<i class="fa fa-refresh" aria-hidden="true"></i>
-			</div>
-
-			<div id="homeButton" class="toolbarButton roundedButton Blue" title="View the home screen">
-				<i class="fa fa-home" aria-hidden="true"></i>
-			</div>
-
-			<div id="newDocumentButton" class="toolbarButton roundedButton Blue makedoc"
-				title="Create a new, blank document">
-				<i class="fa fa-plus-circle" aria-hidden="true"></i>
-			</div>
-
-			<div id="sidebar"></div>
-
-			<div class="productTitle"></div>
-			<div id="closeButton" class="toolbarButton roundedButton Blue" onclick="close_window()" title="" aria-describedby="ui-id-10">
-				<i class="fa fa-times" aria-hidden="true"></i>
-			</div>
-
-		</div>
-
-		<!--======== QUESTIONLIST ============ -->
-
-		<div id="catalog" class="shadow roundedBox">
-			<div class="moveheader">
-				<div class="docTitle qpane-title ">
-					<span class="add-help" data-video="1"></span>&nbsp;&nbsp;Questions
-				</div>
-				<div class="panel-right-text question-count"></div>
-			</div>
-
-			<div class="search-crumbs">
-
-			</div>
-
-			<ul id="cataloglist"></ul>
-
-			<div class="listFooter" id="footerCatalog">
-
-				<span class="toggle-question-id docDetails">Question&nbsp;IDs</span>
-				<span class="add-items"><i class="fa fa-plus-square" aria-hidden="true"></i></span>
-
+		<div id="loading" style="display: none;">
+			<div id="spinner">
+				<i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
+				<span class="sr-only">Loading...</span>
 			</div>
 		</div>
 
-		<!--======== DEFAULT DOCUMENT ============ -->
+		<div class="page" style="display: block;">
 
-		<div class="document shadow roundedBox doc-zero" id="docZero">
-			<div class="moveheader">
-				<span class="saved-sign">&nbsp;</span>
-				<div class="docTitle">
-					New Document 1
+			<!--======== TOOLBAR  ============ -->
+
+			<div id="toolbar">
+
+				<div id="searchButton" class="toolbarButton toolbarButtonSearch roundedButton Blue" title="Open the search window">
+					<i class="fa fa-search" aria-hidden="true"></i>
+					<div class="search-button-text">
+						Search
+					</div>
 				</div>
 
-				<div class="add-menu-bar">
-					<a href="#" class="menuitem" data-type="docClose" title="Close"><i class="fa fa-times-circle"
-							aria-hidden="true"></i></a>
+				<div id="resetButton" class="toolbarButton toolbarClearSearchButton roundedButton Blue" title="Reset the current search">
+					<i class="fa fa-refresh" aria-hidden="true"></i>
 				</div>
-				<div class="add-menu-bar">
-					<a href="#" class="menuitem" data-type="docHide" title="Minimise"><i class="fa fa-minus-circle"
-							aria-hidden="true"></i></a>
+
+				<div id="homeButton" class="toolbarButton roundedButton Blue" title="View the home screen">
+					<i class="fa fa-home" aria-hidden="true"></i>
 				</div>
-				<div class="add-menu-bar margin-top-1 external-icon">
-					<a href="#" class="menuitem" data-type="docSave" title="Export File"><i class="fa fa-external-link"
-							aria-hidden="true"></i></a>
+
+				<div id="newDocumentButton" class="toolbarButton roundedButton Blue makedoc" title="Create a new, blank document">
+					<i class="fa fa-plus-circle" aria-hidden="true"></i>
+				</div>
+				<div id="documentListButton" class="toolbarButton roundedButton Blue" title="Open saved documents">
+					<i class="fa fa-th-list" aria-hidden="true"></i>
+				</div>
+
+
+
+				<a href="https://support.exampro.co.uk" id="helpLink" target="_blank">
+				<div id="helpButton" class="toolbarButton roundedButton Blue" title="Get help and view FAQs">
+					<i class="fa fa-question" aria-hidden="true"></i>
+				</div></a>
+
+				
+				<div id="sidebar"></div>
+
+				<div class="productTitle">A-level German</div>
+
+				<div id="logoutButton" class="toolbarButton roundedButton Blue" title="Close">
+					<i class="fa fa-times" aria-hidden="true"></i>
 				</div>
 
 			</div>
 
-			<div class="listInstructions ">
-				Drag questions from the Question list or from other documents and drop them here
-			</div>
+			<!--======== QUESTIONLIST ============ -->
 
-			<div class="fixme">
-				<ul class="doclist dynamiclist" id="listZero"></ul>
-			</div>
-			<div class="listFooter" id="footerZero"></div>
-		</div>
-
-		<div class='no-border-box' id='helpPopUp'>
-			<div class="close-button close-help close-no-border-box">
-				<i class="fa fa-times-circle" aria-hidden="true"></i>
-			</div>
-			<div class='formBox' id="helpContent">
-				<div class="help-header">
-					<p class="help-title">
-						<i class="fa fa-question-circle"></i>&nbsp;&nbsp; <span id="helpWindowTitle"></span>
-					</p>
-					<hr class="help-hr" />
+			<div id="catalog" class="shadow roundedBox ui-resizable ui-draggable" style="left: 10px; top: 55px; height: 400px; z-index: 5;">
+				<div class="moveheader ui-draggable-handle">
+					<div class="docTitle qpane-title ">
+						<span class="add-help" data-video="1"><div class="context-help-button" data-video="1"><i class="fa fa-video-camera" aria-hidden="true"></i></div></span>&nbsp;&nbsp;Questions
+					</div>
+					<div class="panel-right-text question-count">850 questions</div>
 				</div>
-				<div class="help-body">
-					<div style="text-align:center;">
-						<span id="helpWindowVideo"> <iframe id="helpWindowIframe" width="630" height="330" src=""
-								frameborder="0" allowfullscreen></iframe> </span>
+
+				<div class="search-crumbs">No search</div>
+
+				<ul id="cataloglist"><li class="li_item Q22.S1.01 ui-draggable ui-draggable-handle" data-id="Q22.S1.01" data-index="0" style="opacity: 1;"><div class="listItem" data-id="Q22.S1.01" data-index="0" data-file="Q22S101" data-folder="AA_GERM" data-res="/RESOURCES/AA_GERM/MP3/Q22S101.asp" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-plus ic1"></i>&nbsp;&nbsp;</span>Kunst und Architektur</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Deutschlands grosstes Holzhochhaus</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>7<br><i class="fa fa-check flag-green" aria-hidden="true"></i>6<br></div><div class="question-id-display">Q22.S1.01</div></div></li><li class="li_item Q22.S1.02 ui-draggable ui-draggable-handle" data-id="Q22.S1.02" data-index="1" style="opacity: 1;"><div class="listItem" data-id="Q22.S1.02" data-index="1" data-file="Q22S102" data-folder="AA_GERM" data-res="/RESOURCES/AA_GERM/MP3/Q22S102.asp" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-plus ic1"></i>&nbsp;&nbsp;</span>Jugendkultur: Mode; Musik und Fernsehen</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Musik</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>9<br><i class="fa fa-check flag-green" aria-hidden="true"></i>8<br></div><div class="question-id-display">Q22.S1.02</div></div></li><li class="li_item Q22.S1.03 ui-draggable ui-draggable-handle" data-id="Q22.S1.03" data-index="2" style="opacity: 1;"><div class="listItem" data-id="Q22.S1.03" data-index="2" data-file="Q22S103" data-folder="AA_GERM" data-res="/RESOURCES/AA_GERM/MP3/Q22S103.asp" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-circle ic2"></i>&nbsp;&nbsp;</span>Die digitale Welt</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Digitales Lernen</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>10<br><i class="fa fa-check flag-green" aria-hidden="true"></i>9<br></div><div class="question-id-display">Q22.S1.03</div></div></li><li class="li_item Q22.S1.04 ui-draggable ui-draggable-handle" data-id="Q22.S1.04" data-index="3" style="opacity: 1;"><div class="listItem" data-id="Q22.S1.04" data-index="3" data-file="Q22S104" data-folder="AA_GERM" data-res="/RESOURCES/AA_GERM/MP3/Q22S104.asp" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-circle ic2"></i>&nbsp;&nbsp;</span>Berliner Kulturleben damals und heut</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Erlebnisse in Berlin</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>14<br><i class="fa fa-check flag-green" aria-hidden="true"></i>12<br></div><div class="question-id-display">Q22.S1.04</div></div></li><li class="li_item Q22.S1.05 ui-draggable ui-draggable-handle" data-id="Q22.S1.05" data-index="4" style="opacity: 1;"><div class="listItem" data-id="Q22.S1.05" data-index="4" data-file="Q22S105" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-square ic3"></i>&nbsp;&nbsp;</span>Familie im Wandel</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Familienpolitik in Deutschland</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>8<br><i class="fa fa-check flag-green" aria-hidden="true"></i>7<br></div><div class="question-id-display">Q22.S1.05</div></div></li><li class="li_item Q22.S1.06 ui-draggable ui-draggable-handle" data-id="Q22.S1.06" data-index="5" style="opacity: 1;"><div class="listItem" data-id="Q22.S1.06" data-index="5" data-file="Q22S106" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-square ic3"></i>&nbsp;&nbsp;</span>Feste und Traditionen</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Silvester in Osterreich</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>9<br><i class="fa fa-check flag-green" aria-hidden="true"></i>8<br></div><div class="question-id-display">Q22.S1.06</div></div></li><li class="li_item Q22.S1.07 ui-draggable ui-draggable-handle" data-id="Q22.S1.07" data-index="6" style="opacity: 1;"><div class="listItem" data-id="Q22.S1.07" data-index="6" data-file="Q22S107" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-caret-up ic4"></i>&nbsp;&nbsp;</span>Jugendkultur: Mode; Musik und Fernsehen</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Die Bildschirmzeit von kleinen Kindern</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>11<br><i class="fa fa-check flag-green" aria-hidden="true"></i>9<br></div><div class="question-id-display">Q22.S1.07</div></div></li><li class="li_item Q22.S1.08 ui-draggable ui-draggable-handle" data-id="Q22.S1.08" data-index="7" style="opacity: 1;"><div class="listItem" data-id="Q22.S1.08" data-index="7" data-file="Q22S108" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-square ic3"></i>&nbsp;&nbsp;</span>Literary extract</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Der neue Schuler - Heinrich Mann</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>11<br><i class="fa fa-check flag-green" aria-hidden="true"></i>9<br></div><div class="question-id-display">Q22.S1.08</div></div></li><li class="li_item Q22.S1.09 ui-draggable ui-draggable-handle" data-id="Q22.S1.09" data-index="8" style="opacity: 1;"><div class="listItem" data-id="Q22.S1.09" data-index="8" data-file="Q22S109" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-caret-up ic4"></i>&nbsp;&nbsp;</span>Kunst und Architektur</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Ein Graffiti-Kunst-Projekt</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>14<br><i class="fa fa-check flag-green" aria-hidden="true"></i>12<br></div><div class="question-id-display">Q22.S1.09</div></div></li><li class="li_item Q22.S1.10 ui-draggable ui-draggable-handle" data-id="Q22.S1.10" data-index="9" style="opacity: 1;"><div class="listItem" data-id="Q22.S1.10" data-index="9" data-file="Q22S110" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-caret-up ic4"></i>&nbsp;&nbsp;</span>Familie im Wandel</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Kinderreiche Familien - Translation</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>12<br><i class="fa fa-check flag-green" aria-hidden="true"></i>10<br></div><div class="question-id-display">Q22.S1.10</div></div></li><li class="li_item Q22.S2.01 ui-draggable ui-draggable-handle" data-id="Q22.S2.01" data-index="10" style="opacity: 1;"><div class="listItem" data-id="Q22.S2.01" data-index="10" data-file="Q22S201" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-caret-up ic4"></i>&nbsp;&nbsp;</span>Feste und Traditionen</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Die Deutschen und Weihnachten</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>30<br><i class="fa fa-check flag-green" aria-hidden="true"></i>15<br></div><div class="question-id-display">Q22.S2.01</div></div></li><li class="li_item Q22.S2.02p1 ui-draggable ui-draggable-handle" data-id="Q22.S2.02p1" data-index="11" style="opacity: 1;"><div class="listItem" data-id="Q22.S2.02p1" data-index="11" data-file="Q22S202P1" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-caret-left ic6"></i>&nbsp;&nbsp;</span>Die verlorene Ehre der Katharina Blum</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Katharina hat es immer schwer gehabt</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>60<br><i class="fa fa-check flag-green" aria-hidden="true"></i>35<br></div><div class="question-id-display">Q22.S2.02p1</div></div></li><li class="li_item Q22.S2.02p2 ui-draggable ui-draggable-handle" data-id="Q22.S2.02p2" data-index="12" style="opacity: 1;"><div class="listItem" data-id="Q22.S2.02p2" data-index="12" data-file="Q22S202P2" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-caret-left ic6"></i>&nbsp;&nbsp;</span>Die verlorene Ehre der Katharina Blum</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Welche Figuren wurden Sie kritisieren?</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>60<br><i class="fa fa-check flag-green" aria-hidden="true"></i>35<br></div><div class="question-id-display">Q22.S2.02p2</div></div></li><li class="li_item Q22.S2.03p1 ui-draggable ui-draggable-handle" data-id="Q22.S2.03p1" data-index="13" style="opacity: 1;"><div class="listItem" data-id="Q22.S2.03p1" data-index="13" data-file="Q22S203P1" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-caret-left ic6"></i>&nbsp;&nbsp;</span>Mutter Courage und ihre Kinder</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Ist das Theaterstuck optimistisch oder pessimistisch?</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>60<br><i class="fa fa-check flag-green" aria-hidden="true"></i>35<br></div><div class="question-id-display">Q22.S2.03p1</div></div></li><li class="li_item Q22.S2.03p2 ui-draggable ui-draggable-handle" data-id="Q22.S2.03p2" data-index="14" style="opacity: 1;"><div class="listItem" data-id="Q22.S2.03p2" data-index="14" data-file="Q22S203P2" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-caret-left ic6"></i>&nbsp;&nbsp;</span>Mutter Courage und ihre Kinder</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Die Rolle des Feldpredigers</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>60<br><i class="fa fa-check flag-green" aria-hidden="true"></i>35<br></div><div class="question-id-display">Q22.S2.03p2</div></div></li><li class="li_item Q22.S2.04p1 ui-draggable ui-draggable-handle" data-id="Q22.S2.04p1" data-index="15" style="opacity: 1;"><div class="listItem" data-id="Q22.S2.04p1" data-index="15" data-file="Q22S204P1" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-caret-left ic6"></i>&nbsp;&nbsp;</span>Der Besuch der alten Dame</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Die lustigsten Elemente in dem Theaterstuck</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>60<br><i class="fa fa-check flag-green" aria-hidden="true"></i>35<br></div><div class="question-id-display">Q22.S2.04p1</div></div></li><li class="li_item Q22.S2.04p2 ui-draggable ui-draggable-handle" data-id="Q22.S2.04p2" data-index="16" style="opacity: 1;"><div class="listItem" data-id="Q22.S2.04p2" data-index="16" data-file="Q22S204P2" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-caret-left ic6"></i>&nbsp;&nbsp;</span>Der Besuch der alten Dame</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Sind die wichtigsten Burger auch die korruptesten?</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>60<br><i class="fa fa-check flag-green" aria-hidden="true"></i>35<br></div><div class="question-id-display">Q22.S2.04p2</div></div></li><li class="li_item Q22.S2.05p1 ui-draggable ui-draggable-handle" data-id="Q22.S2.05p1" data-index="17" style="opacity: 1;"><div class="listItem" data-id="Q22.S2.05p1" data-index="17" data-file="Q22S205P1" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-caret-left ic6"></i>&nbsp;&nbsp;</span>Andorra</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Das Thema Religion</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>60<br><i class="fa fa-check flag-green" aria-hidden="true"></i>35<br></div><div class="question-id-display">Q22.S2.05p1</div></div></li><li class="li_item Q22.S2.05p2 ui-draggable ui-draggable-handle" data-id="Q22.S2.05p2" data-index="18" style="opacity: 1;"><div class="listItem" data-id="Q22.S2.05p2" data-index="18" data-file="Q22S205P2" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-caret-left ic6"></i>&nbsp;&nbsp;</span>Andorra</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Die Suche nach der Wahrheit</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>60<br><i class="fa fa-check flag-green" aria-hidden="true"></i>35<br></div><div class="question-id-display">Q22.S2.05p2</div></div></li><li class="li_item Q22.S2.06p1 ui-draggable ui-draggable-handle" data-id="Q22.S2.06p1" data-index="19" style="opacity: 1;"><div class="listItem" data-id="Q22.S2.06p1" data-index="19" data-file="Q22S206P1" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-caret-left ic6"></i>&nbsp;&nbsp;</span>Gedichte - Buch der Lieder</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Junge Liebe - enttauschend?</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>60<br><i class="fa fa-check flag-green" aria-hidden="true"></i>35<br></div><div class="question-id-display">Q22.S2.06p1</div></div></li><li class="li_item Q22.S2.06p2 ui-draggable ui-draggable-handle" data-id="Q22.S2.06p2" data-index="20" style="opacity: 1;"><div class="listItem" data-id="Q22.S2.06p2" data-index="20" data-file="Q22S206P2" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-caret-left ic6"></i>&nbsp;&nbsp;</span>Gedichte - Buch der Lieder</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Das Thema Tod</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>60<br><i class="fa fa-check flag-green" aria-hidden="true"></i>35<br></div><div class="question-id-display">Q22.S2.06p2</div></div></li><li class="li_item Q22.S2.07p1 ui-draggable ui-draggable-handle" data-id="Q22.S2.07p1" data-index="21" style="opacity: 1;"><div class="listItem" data-id="Q22.S2.07p1" data-index="21" data-file="Q22S207P1" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-caret-left ic6"></i>&nbsp;&nbsp;</span>Zonenkinder</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Identitatskrise nach der Wende</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>60<br><i class="fa fa-check flag-green" aria-hidden="true"></i>35<br></div><div class="question-id-display">Q22.S2.07p1</div></div></li><li class="li_item Q22.S2.07p2 ui-draggable ui-draggable-handle" data-id="Q22.S2.07p2" data-index="22" style="opacity: 1;"><div class="listItem" data-id="Q22.S2.07p2" data-index="22" data-file="Q22S207P2" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-caret-left ic6"></i>&nbsp;&nbsp;</span>Zonenkinder</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Die wichtigsten Unterschiede der beiden Teile Deutschlands</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>60<br><i class="fa fa-check flag-green" aria-hidden="true"></i>35<br></div><div class="question-id-display">Q22.S2.07p2</div></div></li><li class="li_item Q22.S2.08p1 ui-draggable ui-draggable-handle" data-id="Q22.S2.08p1" data-index="23" style="opacity: 1;"><div class="listItem" data-id="Q22.S2.08p1" data-index="23" data-file="Q22S208P1" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-caret-left ic6"></i>&nbsp;&nbsp;</span>Die Verwandlung</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Grete - eine gute Schwester?</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>60<br><i class="fa fa-check flag-green" aria-hidden="true"></i>35<br></div><div class="question-id-display">Q22.S2.08p1</div></div></li><li class="li_item Q22.S2.08p2 ui-draggable ui-draggable-handle" data-id="Q22.S2.08p2" data-index="24" style="opacity: 1;"><div class="listItem" data-id="Q22.S2.08p2" data-index="24" data-file="Q22S208P2" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-caret-left ic6"></i>&nbsp;&nbsp;</span>Die Verwandlung</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Die negativsten Figuren</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>60<br><i class="fa fa-check flag-green" aria-hidden="true"></i>35<br></div><div class="question-id-display">Q22.S2.08p2</div></div></li><li class="li_item Q22.S2.09p1 ui-draggable ui-draggable-handle" data-id="Q22.S2.09p1" data-index="25" style="opacity: 1;"><div class="listItem" data-id="Q22.S2.09p1" data-index="25" data-file="Q22S209P1" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-caret-left ic6"></i>&nbsp;&nbsp;</span>Russendisko</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Geniessen die Migranten ihr Leben in Berlin?</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>60<br><i class="fa fa-check flag-green" aria-hidden="true"></i>35<br></div><div class="question-id-display">Q22.S2.09p1</div></div></li><li class="li_item Q22.S2.09p2 ui-draggable ui-draggable-handle" data-id="Q22.S2.09p2" data-index="26" style="opacity: 1;"><div class="listItem" data-id="Q22.S2.09p2" data-index="26" data-file="Q22S209P2" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-caret-left ic6"></i>&nbsp;&nbsp;</span>Russendisko</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Die Bedeutung der weiblichen Figuren</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>60<br><i class="fa fa-check flag-green" aria-hidden="true"></i>35<br></div><div class="question-id-display">Q22.S2.09p2</div></div></li><li class="li_item Q22.S2.10p1 ui-draggable ui-draggable-handle" data-id="Q22.S2.10p1" data-index="27" style="opacity: 1;"><div class="listItem" data-id="Q22.S2.10p1" data-index="27" data-file="Q22S210P1" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-caret-left ic6"></i>&nbsp;&nbsp;</span>Das Fundbuero</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Die Figuren Hannes Harms und Paula Blohm</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>60<br><i class="fa fa-check flag-green" aria-hidden="true"></i>35<br></div><div class="question-id-display">Q22.S2.10p1</div></div></li><li class="li_item Q22.S2.10p2 ui-draggable ui-draggable-handle" data-id="Q22.S2.10p2" data-index="28" style="opacity: 1;"><div class="listItem" data-id="Q22.S2.10p2" data-index="28" data-file="Q22S210P2" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-caret-left ic6"></i>&nbsp;&nbsp;</span>Das Fundbuero</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Die wichtigsten Aspekte des Fundburos</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>60<br><i class="fa fa-check flag-green" aria-hidden="true"></i>35<br></div><div class="question-id-display">Q22.S2.10p2</div></div></li><li class="li_item Q22.S2.11p1 ui-draggable ui-draggable-handle" data-id="Q22.S2.11p1" data-index="29" style="opacity: 1;"><div class="listItem" data-id="Q22.S2.11p1" data-index="29" data-file="Q22S211P1" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-caret-left ic6"></i>&nbsp;&nbsp;</span>Der Vorleser</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Mitleid mit Michael?</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>60<br><i class="fa fa-check flag-green" aria-hidden="true"></i>35<br></div><div class="question-id-display">Q22.S2.11p1</div></div></li><li class="li_item Q22.S2.11p2 ui-draggable ui-draggable-handle" data-id="Q22.S2.11p2" data-index="30" style="opacity: 1;"><div class="listItem" data-id="Q22.S2.11p2" data-index="30" data-file="Q22S211P2" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-caret-left ic6"></i>&nbsp;&nbsp;</span>Der Vorleser</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Die interessantesten Elemente des Werks</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>60<br><i class="fa fa-check flag-green" aria-hidden="true"></i>35<br></div><div class="question-id-display">Q22.S2.11p2</div></div></li><li class="li_item Q22.S2.12p1 ui-draggable ui-draggable-handle" data-id="Q22.S2.12p1" data-index="31" style="opacity: 1;"><div class="listItem" data-id="Q22.S2.12p1" data-index="31" data-file="Q22S212P1" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-caret-left ic6"></i>&nbsp;&nbsp;</span>Good bye Lenin!</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Hat dieser Film nichts Bedeutendes zu sagen?</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>60<br><i class="fa fa-check flag-green" aria-hidden="true"></i>35<br></div><div class="question-id-display">Q22.S2.12p1</div></div></li><li class="li_item Q22.S2.12p2 ui-draggable ui-draggable-handle" data-id="Q22.S2.12p2" data-index="32" style="opacity: 1;"><div class="listItem" data-id="Q22.S2.12p2" data-index="32" data-file="Q22S212P2" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-caret-left ic6"></i>&nbsp;&nbsp;</span>Good bye Lenin!</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Die Reaktionen der verschiedenen Generationen</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>60<br><i class="fa fa-check flag-green" aria-hidden="true"></i>35<br></div><div class="question-id-display">Q22.S2.12p2</div></div></li><li class="li_item Q22.S2.13p1 ui-draggable ui-draggable-handle" data-id="Q22.S2.13p1" data-index="33" style="opacity: 1;"><div class="listItem" data-id="Q22.S2.13p1" data-index="33" data-file="Q22S213P1" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-caret-left ic6"></i>&nbsp;&nbsp;</span>Das Leben der Anderen</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Die Rolle von Minister Bruno Hempf</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>60<br><i class="fa fa-check flag-green" aria-hidden="true"></i>35<br></div><div class="question-id-display">Q22.S2.13p1</div></div></li><li class="li_item Q22.S2.13p2 ui-draggable ui-draggable-handle" data-id="Q22.S2.13p2" data-index="34" style="opacity: 1;"><div class="listItem" data-id="Q22.S2.13p2" data-index="34" data-file="Q22S213P2" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-caret-left ic6"></i>&nbsp;&nbsp;</span>Das Leben der Anderen</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Die Arbeit der Stasi</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>60<br><i class="fa fa-check flag-green" aria-hidden="true"></i>35<br></div><div class="question-id-display">Q22.S2.13p2</div></div></li><li class="li_item Q22.S2.14p1 ui-draggable ui-draggable-handle" data-id="Q22.S2.14p1" data-index="35" style="opacity: 1;"><div class="listItem" data-id="Q22.S2.14p1" data-index="35" data-file="Q22S214P1" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-caret-left ic6"></i>&nbsp;&nbsp;</span>Die fetten Jahre sind vorbei</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Jan - positiv oder negativ?</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>60<br><i class="fa fa-check flag-green" aria-hidden="true"></i>35<br></div><div class="question-id-display">Q22.S2.14p1</div></div></li><li class="li_item Q22.S2.14p2 ui-draggable ui-draggable-handle" data-id="Q22.S2.14p2" data-index="36" style="opacity: 1;"><div class="listItem" data-id="Q22.S2.14p2" data-index="36" data-file="Q22S214P2" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-caret-left ic6"></i>&nbsp;&nbsp;</span>Die fetten Jahre sind vorbei</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Die wichtigsten Themen in dem Film</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>60<br><i class="fa fa-check flag-green" aria-hidden="true"></i>35<br></div><div class="question-id-display">Q22.S2.14p2</div></div></li><li class="li_item Q22.S2.15p1 ui-draggable ui-draggable-handle" data-id="Q22.S2.15p1" data-index="37" style="opacity: 1;"><div class="listItem" data-id="Q22.S2.15p1" data-index="37" data-file="Q22S215P1" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-caret-left ic6"></i>&nbsp;&nbsp;</span>Almanya - Willkommen in Deutschland</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Die Rolle von Cenk</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>60<br><i class="fa fa-check flag-green" aria-hidden="true"></i>35<br></div><div class="question-id-display">Q22.S2.15p1</div></div></li><li class="li_item Q22.S2.15p2 ui-draggable ui-draggable-handle" data-id="Q22.S2.15p2" data-index="38" style="opacity: 1;"><div class="listItem" data-id="Q22.S2.15p2" data-index="38" data-file="Q22S215P2" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-caret-left ic6"></i>&nbsp;&nbsp;</span>Almanya - Willkommen in Deutschland</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Das Thema Familie</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>60<br><i class="fa fa-check flag-green" aria-hidden="true"></i>35<br></div><div class="question-id-display">Q22.S2.15p2</div></div></li><li class="li_item Q22.S2.16p1 ui-draggable ui-draggable-handle" data-id="Q22.S2.16p1" data-index="39" style="opacity: 1;"><div class="listItem" data-id="Q22.S2.16p1" data-index="39" data-file="Q22S216P1" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-caret-left ic6"></i>&nbsp;&nbsp;</span>Sophie Scholl - Die letzten Tage</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Die spannendsten Szenen</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>60<br><i class="fa fa-check flag-green" aria-hidden="true"></i>35<br></div><div class="question-id-display">Q22.S2.16p1</div></div></li><li class="li_item Q22.S2.16p2 ui-draggable ui-draggable-handle" data-id="Q22.S2.16p2" data-index="40" style="opacity: 1;"><div class="listItem" data-id="Q22.S2.16p2" data-index="40" data-file="Q22S216P2" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-caret-left ic6"></i>&nbsp;&nbsp;</span>Sophie Scholl - Die letzten Tage</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Die wichtigsten Figuren in Sophies Leben</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>60<br><i class="fa fa-check flag-green" aria-hidden="true"></i>35<br></div><div class="question-id-display">Q22.S2.16p2</div></div></li><li class="li_item Q22.S2.17p1 ui-draggable ui-draggable-handle" data-id="Q22.S2.17p1" data-index="41" style="opacity: 1;"><div class="listItem" data-id="Q22.S2.17p1" data-index="41" data-file="Q22S217P1" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-caret-left ic6"></i>&nbsp;&nbsp;</span>Lola rennt</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Die Rolle des Schicksals</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>60<br><i class="fa fa-check flag-green" aria-hidden="true"></i>35<br></div><div class="question-id-display">Q22.S2.17p1</div></div></li><li class="li_item Q22.S2.17p2 ui-draggable ui-draggable-handle" data-id="Q22.S2.17p2" data-index="42" style="opacity: 1;"><div class="listItem" data-id="Q22.S2.17p2" data-index="42" data-file="Q22S217P2" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-caret-left ic6"></i>&nbsp;&nbsp;</span>Lola rennt</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Die interessantesten Aspekte des Films</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>60<br><i class="fa fa-check flag-green" aria-hidden="true"></i>35<br></div><div class="question-id-display">Q22.S2.17p2</div></div></li><li class="li_item Q22.S3.A ui-draggable ui-draggable-handle" data-id="Q22.S3.A" data-index="43" style="opacity: 1;"><div class="listItem" data-id="Q22.S3.A" data-index="43" data-file="Q22S3A" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-times ic5"></i>&nbsp;&nbsp;</span>Familie im Wandel</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Leih-Grosseltern in Deutschland</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>14<br><i class="fa fa-check flag-green" aria-hidden="true"></i>30<br></div><div class="question-id-display">Q22.S3.A</div></div></li><li class="li_item Q22.S3.B ui-draggable ui-draggable-handle" data-id="Q22.S3.B" data-index="44" style="opacity: 1;"><div class="listItem" data-id="Q22.S3.B" data-index="44" data-file="Q22S3B" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-times ic5"></i>&nbsp;&nbsp;</span>Familie im Wandel</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Gleichgeschlechtliche Beziehungen in Deutschland</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>14<br><i class="fa fa-check flag-green" aria-hidden="true"></i>30<br></div><div class="question-id-display">Q22.S3.B</div></div></li><li class="li_item Q22.S3.C ui-draggable ui-draggable-handle" data-id="Q22.S3.C" data-index="45" style="opacity: 1;"><div class="listItem" data-id="Q22.S3.C" data-index="45" data-file="Q22S3C" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-times ic5"></i>&nbsp;&nbsp;</span>Die digitale Welt</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Soziale Medien in Deutschland</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>14<br><i class="fa fa-check flag-green" aria-hidden="true"></i>30<br></div><div class="question-id-display">Q22.S3.C</div></div></li><li class="li_item Q22.S3.D ui-draggable ui-draggable-handle" data-id="Q22.S3.D" data-index="46" style="opacity: 1;"><div class="listItem" data-id="Q22.S3.D" data-index="46" data-file="Q22S3D" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-times ic5"></i>&nbsp;&nbsp;</span>Die digitale Welt</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Gaming in Deutschland</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>14<br><i class="fa fa-check flag-green" aria-hidden="true"></i>30<br></div><div class="question-id-display">Q22.S3.D</div></div></li><li class="li_item Q22.S3.E ui-draggable ui-draggable-handle" data-id="Q22.S3.E" data-index="47" style="opacity: 1;"><div class="listItem" data-id="Q22.S3.E" data-index="47" data-file="Q22S3E" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-times ic5"></i>&nbsp;&nbsp;</span>Jugendkultur: Mode; Musik und Fernsehen</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Designermarken</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>14<br><i class="fa fa-check flag-green" aria-hidden="true"></i>30<br></div><div class="question-id-display">Q22.S3.E</div></div></li><li class="li_item Q22.S3.F ui-draggable ui-draggable-handle" data-id="Q22.S3.F" data-index="48" style="opacity: 1;"><div class="listItem" data-id="Q22.S3.F" data-index="48" data-file="Q22S3F" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-times ic5"></i>&nbsp;&nbsp;</span>Jugendkultur: Mode; Musik und Fernsehen</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Popmusik aus Osterreich</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>14<br><i class="fa fa-check flag-green" aria-hidden="true"></i>30<br></div><div class="question-id-display">Q22.S3.F</div></div></li><li class="li_item Q22.S3.G ui-draggable ui-draggable-handle" data-id="Q22.S3.G" data-index="49" style="opacity: 1;"><div class="listItem" data-id="Q22.S3.G" data-index="49" data-file="Q22S3G" data-folder="AA_GERM" data-res="" data-type="1"><div class="topic"><span class="indexIcon"><i class="fa fa-times ic5"></i>&nbsp;&nbsp;</span>Feste und Traditionen</div><div class="des tittext"><span class="levelIcon"><span class="l1"></span>&nbsp;&nbsp;</span>Ein alter Brauch in Osterreich</div><span class="removeQuestion"><i class="fa fa-trash-o delete-question" aria-hidden="true"></i></span><div class="marks"><i class="fa fa-clock-o flag-blue" aria-hidden="true"></i>14<br><i class="fa fa-check flag-green" aria-hidden="true"></i>30<br></div><div class="question-id-display">Q22.S3.G</div></div></li></ul>
+
+				<div class="listFooter" id="footerCatalog">
+
+					<span class="toggle-question-id docDetails">Question&nbsp;IDs</span>
+					<span class="add-items"><i class="fa fa-plus-square" aria-hidden="true"></i></span>
+
+				</div>
+			<div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div></div>
+
+			<!--======== DEFAULT DOCUMENT ============ -->
+
+			<div class="document shadow roundedBox doc-zero ui-resizable ui-draggable" id="docZero" style="left: 10px; top: 470px; bottom: 20px;">
+				<div class="moveheader ui-draggable-handle">
+					<span class="saved-sign">&nbsp;</span>
+					<div class="docTitle">
+						New Document 1
+					</div>
+
+					<div class="add-menu-bar">
+						<a href="#" class="menuitem" data-type="docClose" title="Close"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+					</div>
+					<div class="add-menu-bar">
+						<a href="#" class="menuitem" data-type="docHide" title="Minimise"><i class="fa fa-minus-circle" aria-hidden="true"></i></a>
+					</div>
+					<div class="add-menu-bar margin-top-1 external-icon">
+						<a href="#" class="menuitem" data-type="docSave" title="Export File"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+					</div>
+
+				</div>
+
+				<div class="listInstructions ">
+					Drag questions from the Question list or from other documents and drop them here
+				</div>
+
+				<div class="fixme">
+					<ul class="doclist dynamiclist ui-sortable" id="listZero"></ul>
+				</div>
+				<div class="listFooter" id="footerZero"><div class="docDetails">Count: <b>0</b>,&nbsp;Marks: <b>0</b>,&nbsp;Time: <b>0</b></div></div>
+			<div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div></div>
+
+			<div class="no-border-box" id="helpPopUp">
+				<div class="close-button close-help close-no-border-box">
+					<i class="fa fa-times-circle" aria-hidden="true"></i>
+				</div>
+				<div class="formBox" id="helpContent">
+					<div class="help-header">
+						<p class="help-title">
+							<i class="fa fa-question-circle"></i>&nbsp;&nbsp; <span id="helpWindowTitle"></span>
+						</p>
+						<hr class="help-hr">
+					</div>
+					<div class="help-body">
+						<div style="text-align:center;">
+							<span id="helpWindowVideo"> <iframe id="helpWindowIframe" width="630" height="330" src="" frameborder="0" allowfullscreen=""></iframe> </span>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<!-- ===== WELCOME SCREEN ============-->
+			<!-- ===== WELCOME SCREEN ============-->
 
-		<div class="right-container welcome-screen">
+			<div class="right-container welcome-screen">
 
-						<div class="welcome-ep orange">
+						<div class="welcome-ep brick">
 
 			<article class="welcome-page welcome-page-2020">
 				<div class="welcome-page-container">
@@ -257,21 +273,39 @@
 									</div>
 								</a>
 							</li>
-							<li class="btn-paper aa-com">
-								<a href="https://www.aqa.org.uk/subjects/computer-science/as-level/computer-science-7516/specification" target="_blank" class="log-this" data-type="WEL_SCREEN" data-log="Clicked AQA spec">
-									<div class="btn-head"><span class="btn-flag">AS</span></div>
+							<li class="btn-bold audio">
+								<a href="https://resources.doublestruck.eu/resources/res-ep-audio.php" target="_blank" class="log-this" data-type="WEL_SCREEN" data-log="Clicked audio guide">
+									<div class="btn-head"><span class="btn-ico"></span></div>
 									<div class="btn-body">
-										<h3>Specification</h3>
-										<p>AS Computer Science <span class="btn-specnum">7516</span></p>
+										<h3>Audio guide</h3>
+										<p></p>
 									</div>
 								</a>
 							</li>
-							<li class="btn-paper aa-com">
-								<a href="https://www.aqa.org.uk/subjects/computer-science/a-level/computer-science-7517/specification" target="_blank" class="log-this" data-type="WEL_SCREEN" data-log="Clicked AQA spec">
+							<li class="btn-bold tests">
+								<a href="https://resources.doublestruck.eu/resources/res-aa-lang-tt.php" target="_blank" class="log-this" data-type="WEL_SCREEN" data-log="Clicked topic tests">
+									<div class="btn-head"><span class="btn-ico"></span></div>
+									<div class="btn-body">
+										<h3>Topic tests</h3>
+										<p></p>
+									</div>
+								</a>
+							</li>
+							<li class="btn-paper aa-germ-as">
+								<a href="https://www.aqa.org.uk/subjects/german/as-level/german-7661/specification" target="_blank" class="log-this" data-type="WEL_SCREEN" data-log="Clicked AQA spec">
+									<div class="btn-head"><span class="btn-flag">AS</span></div>
+									<div class="btn-body">
+										<h3>Specification</h3>
+										<p>AS German <span class="btn-specnum">7661</span></p>
+									</div>
+								</a>
+							</li>
+							<li class="btn-paper aa-germ-al">
+								<a href="https://www.aqa.org.uk/subjects/german/a-level/german-7662/specification" target="_blank" class="log-this" data-type="WEL_SCREEN" data-log="Clicked AQA spec">
 									<div class="btn-head"><span class="btn-flag">A-level</span></div>
 									<div class="btn-body">
 										<h3>Specification</h3>
-										<p>A-level Computer Science <span class="btn-specnum">7517</span></p>
+										<p>A-level German <span class="btn-specnum">7662</span></p>
 									</div>
 								</a>
 							</li>
@@ -280,8 +314,8 @@
 					</div>
 
 					<footer class="welcome-footer">
-						<p>© Doublestruck Ltd. 2024</p>
-						<p><a href="https://ds-welcome.doublestruck.eu/welcome/documents/copyright/pdf/AA_COM.pdf" target="_blank">Copyright information</a></p>
+						<p>© Doublestruck Ltd. 2025</p>
+						<p><a href="https://ds-welcome.doublestruck.eu/welcome/documents/copyright/pdf/AA_GERM.pdf" target="_blank">Copyright information</a></p>
 					</footer>
 
 				</div>
@@ -293,214 +327,393 @@
 
 			</div>
 
-		<!--======== CONTENT TAB AREA ============ -->
+			<!--======== CONTENT TAB AREA ============ -->
 
-		<div class="right-container shadow content-tabs" id="viewerWindow">
+			<div class="right-container shadow content-tabs ui-resizable ui-draggable" id="viewerWindow">
 
-			<div id="tabbox" class="roundedBox">
+				<div id="tabbox" class="roundedBox">
 
-				<div class="moveheader">
-					<div class="docTitle viewerTitle">
-						Content window
+					<div class="moveheader ui-draggable-handle">
+						<div class="docTitle viewerTitle">
+							Content window
+						</div>
+
+						<div class="viewer-control">
+							<span class="viewer-button viewer-win-ctrl"></span>
+						</div>
+
 					</div>
 
-					<div class="viewer-control">
-						<span class="viewer-button viewer-win-ctrl"></span>
+					<div id="tabs" class="tabs ui-tabs ui-corner-all ui-widget ui-widget-content">
+
+						<ul role="tablist" class="ui-tabs-nav ui-corner-all ui-helper-reset ui-helper-clearfix ui-widget-header">
+							<li class="tab1 ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="tabs-1" aria-labelledby="t1" aria-selected="true" aria-expanded="true">
+								<a href="#tabs-1" id="t1" role="presentation" tabindex="-1" class="ui-tabs-anchor">Question</a>
+							</li>
+							<li class="tab2 ui-tabs-tab ui-corner-top ui-state-default ui-tab" role="tab" tabindex="-1" aria-controls="tabs-2" aria-labelledby="t2" aria-selected="false" aria-expanded="false">
+								<a href="#tabs-2" id="t2" role="presentation" tabindex="-1" class="ui-tabs-anchor"> Markscheme</a>
+							</li>
+							<li class="tab3 ui-tabs-tab ui-corner-top ui-state-default ui-tab" role="tab" tabindex="-1" aria-controls="tabs-3" aria-labelledby="t3" aria-selected="false" aria-expanded="false">
+								<a href="#tabs-3" id="t3" role="presentation" tabindex="-1" class="ui-tabs-anchor"> Examiner's report</a>
+							</li>
+							<li class="tab4 ui-tabs-tab ui-corner-top ui-state-default ui-tab" role="tab" tabindex="-1" aria-controls="tabs-4" aria-labelledby="t4" aria-selected="false" aria-expanded="false">
+								<a href="#tabs-4" id="t4" role="presentation" tabindex="-1" class="ui-tabs-anchor"> Notes</a>
+							</li>
+							<li class="tab5 ui-tabs-tab ui-corner-top ui-state-default ui-tab" role="tab" tabindex="-1" aria-controls="tabs-5" aria-labelledby="t5" aria-selected="false" aria-expanded="false">
+								<a href="#tabs-5" id="t5" role="presentation" tabindex="-1" class="ui-tabs-anchor"> Audio</a>
+							</li>
+
+						</ul>
+						<div id="contentTabs">
+							<div id="tabs-1" class="cTab tab1 htmlTab ui-tabs-panel ui-corner-bottom ui-widget-content" aria-labelledby="t1" role="tabpanel" aria-hidden="false">
+								<p>
+								&nbsp;
+								</p>
+							</div>
+							<div id="tabs-2" class="cTab tab2 htmlTab ui-tabs-panel ui-corner-bottom ui-widget-content" aria-labelledby="t2" role="tabpanel" aria-hidden="true" style="display: none;">
+								<p>
+								&nbsp;
+								</p>
+							</div>
+							<div id="tabs-3" class="cTab tab3 htmlTab ui-tabs-panel ui-corner-bottom ui-widget-content" aria-labelledby="t3" role="tabpanel" aria-hidden="true" style="display: none;">
+								<p>
+								&nbsp;
+								</p>
+							</div>
+							<div id="tabs-4" class="cTab tab4 htmlTab ui-tabs-panel ui-corner-bottom ui-widget-content" aria-labelledby="t4" role="tabpanel" aria-hidden="true" style="display: none;">
+								<p>
+								&nbsp;
+								</p>
+							</div>
+							<div id="tabs-5" class="cTab tab5 ui-tabs-panel ui-corner-bottom ui-widget-content" aria-labelledby="t5" role="tabpanel" aria-hidden="true" style="display: none;">
+								<div id="iframeContainer">
+									<iframe id="resourceIframe"></iframe>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			<div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div></div>
+
+			<!--======== SEARCH PANE ============ -->
+
+			<div class="shadow roundedBox searchbox-alt ui-draggable ui-resizable" id="searchbox">
+				<div class="moveheader moveheader-alt ui-draggable-handle">
+					<div class="docTitle search-title">
+						<span class="add-help" data-video="6"><div class="context-help-button" data-video="6"><i class="fa fa-video-camera" aria-hidden="true"></i></div></span>&nbsp;&nbsp;Search&nbsp;-&nbsp;<span class="question-count">850 questions</span>
+					</div>
+					<div class="close-button close-search">
+						<i class="fa fa-times-circle" aria-hidden="true"></i>
+					</div>
+				</div>
+
+				<div id="searchHeader">
+
+					<div class="question-count-field">
+						<div class="question-count question-count-search">850 questions</div>
+						<div class="searchWindowClear clear-search" title="Reset the current search">
+							&nbsp;<i class="fa fa-refresh" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span class="button-text">reset search</span>
+						</div>
+					</div>
+
+					<div class="freetext-field">
+						<div class="qindex-title">
+							Quick Index search:
+						</div>
+						<div class="freetext-container">
+							<input type="text" class="ui-textfield freetext">
+						</div>
+						<div class="searchWindowButton clear-freetext" title="Reset the quick index search">
+							<i class="fa fa-times-circle-o" aria-hidden="true"></i>
+						</div>
 					</div>
 
 				</div>
 
-				<div id="tabs" class="tabs">
+				<div id="indextabs" class="ui-tabs ui-corner-all ui-widget ui-widget-content">
+					<ul id="tabTab" role="tablist" class="ui-tabs-nav ui-corner-all ui-helper-reset ui-helper-clearfix ui-widget-header" style="white-space: nowrap; overflow: auto hidden;"><li class="index1 index-tab ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="index1" aria-labelledby="index1label" aria-selected="true" aria-expanded="true" style="display: inline-block; float: none; vertical-align: bottom;"><a href="#index1" id="index1label" role="presentation" tabindex="-1" class="ui-tabs-anchor">Spec</a></li><li class="index2 index-tab ui-tabs-tab ui-corner-top ui-state-default ui-tab" role="tab" tabindex="-1" aria-controls="index2" aria-labelledby="index2label" aria-selected="false" aria-expanded="false" style="display: inline-block; float: none; vertical-align: bottom;"><a href="#index2" id="index2label" role="presentation" tabindex="-1" class="ui-tabs-anchor">Level</a></li><li class="index7 index-tab ui-tabs-tab ui-corner-top ui-state-default ui-tab" role="tab" tabindex="-1" aria-controls="index7" aria-labelledby="index7label" aria-selected="false" aria-expanded="false" style="display: inline-block; float: none; vertical-align: bottom;"><a href="#index7" id="index7label" role="presentation" tabindex="-1" class="ui-tabs-anchor">Type</a></li><li class="index3 index-tab ui-tabs-tab ui-corner-top ui-state-default ui-tab" role="tab" tabindex="-1" aria-controls="index3" aria-labelledby="index3label" aria-selected="false" aria-expanded="false" style="display: inline-block; float: none; vertical-align: bottom;"><a href="#index3" id="index3label" role="presentation" tabindex="-1" class="ui-tabs-anchor">Section</a></li><li class="index6 index-tab ui-tabs-tab ui-corner-top ui-state-default ui-tab" role="tab" tabindex="-1" aria-controls="index6" aria-labelledby="index6label" aria-selected="false" aria-expanded="false" style="display: inline-block; float: none; vertical-align: bottom;"><a href="#index6" id="index6label" role="presentation" tabindex="-1" class="ui-tabs-anchor">Exam series</a></li></ul>
 
-					<ul>
-						<li class="tab1">
-							<a href="#tabs-1" id="t1">Question</a>
-						</li>
-						<li class="tab2">
-							<a href="#tabs-2" id="t2">Mark Scheme</a>
-						</li>
-						<li class="tab3">
-							<a href="#tabs-3" id="t3">Examiner's Report</a>
-						</li>
-						<li class="tab4">
-							<a href="#tabs-4" id="t4">Notes</a>
-						</li>
-						<li class="tab5">
-							<a href="#tabs-5" id="t5">Resource</a>
-						</li>
+					<div class="indexTabHolder" id="tabContent"><div id="index1" class="iTab index1 index-tab jstree jstree-1 jstree-default ui-tabs-panel ui-corner-bottom ui-widget-content" role="tabpanel" aria-multiselectable="true" tabindex="0" aria-activedescendant="j1_1" aria-busy="false" aria-labelledby="index1label" aria-hidden="false"><ul class="jstree-container-ul jstree-children jstree-wholerow-ul jstree-no-dots" role="group"><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="j1_1_anchor" id="j1_1" class="jstree-node  jstree-leaf"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="j1_1_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>ALL</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="|A_anchor" aria-expanded="false" id="|A" class="jstree-node  jstree-closed"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="|A_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>Social issues and trends</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="|B_anchor" aria-expanded="false" id="|B" class="jstree-node  jstree-closed"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="|B_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>Political and artistic culture</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="|C$_anchor" id="|C$" class="jstree-node  jstree-leaf"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="|C$_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>Literary extract</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="|D$_anchor" id="|D$" class="jstree-node  jstree-leaf"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="|D$_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>Historical extract</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="|E_anchor" aria-expanded="false" id="|E" class="jstree-node  jstree-closed jstree-last"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="|E_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>Works</a></li></ul></div><div id="index2" class="iTab index2 index-tab jstree jstree-2 jstree-default ui-tabs-panel ui-corner-bottom ui-widget-content" role="tabpanel" aria-multiselectable="true" tabindex="0" aria-activedescendant="j2_1" aria-busy="false" aria-labelledby="index2label" aria-hidden="true" style="display: none;"><ul class="jstree-container-ul jstree-children jstree-wholerow-ul jstree-no-dots" role="group"><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="j2_1_anchor" id="j2_1" class="jstree-node  jstree-leaf"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="j2_1_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>ALL</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="1$_anchor" id="1$" class="jstree-node  jstree-leaf"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="1$_anchor"><i class="jstree-icon jstree-themeicon levelIcon l1 hide-icon jstree-themeicon-custom" role="presentation"></i>AS and A-level</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="2$_anchor" id="2$" class="jstree-node  jstree-leaf jstree-last"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="2$_anchor"><i class="jstree-icon jstree-themeicon levelIcon l2 hide-icon jstree-themeicon-custom" role="presentation"></i>A-level only</a></li></ul></div><div id="index7" class="iTab index7 index-tab jstree jstree-3 jstree-default ui-tabs-panel ui-corner-bottom ui-widget-content" role="tabpanel" aria-multiselectable="true" tabindex="0" aria-activedescendant="j3_1" aria-busy="false" aria-labelledby="index7label" aria-hidden="true" style="display: none;"><ul class="jstree-container-ul jstree-children jstree-wholerow-ul jstree-no-dots" role="group"><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="j3_1_anchor" id="j3_1" class="jstree-node  jstree-leaf"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="j3_1_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>ALL</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="A_anchor" id="A" class="jstree-node  jstree-leaf"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="A_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>Brief written answer in German</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="C_anchor" id="C" class="jstree-node  jstree-leaf"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="C_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>Conversation in German</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="D_anchor" id="D" class="jstree-node  jstree-leaf"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="D_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>Essay</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="E_anchor" id="E" class="jstree-node  jstree-leaf"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="E_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>Gap fill / cloze test</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="F_anchor" id="F" class="jstree-node  jstree-leaf"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="F_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>Grammar test</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="G_anchor" id="G" class="jstree-node  jstree-leaf"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="G_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>Identify false statements</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="H_anchor" id="H" class="jstree-node  jstree-leaf"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="H_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>Match question and answer</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="I_anchor" id="I" class="jstree-node  jstree-leaf"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="I_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>Multiple choice questions</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="J_anchor" id="J" class="jstree-node  jstree-leaf"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="J_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>P/N/P+N</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="K_anchor" id="K" class="jstree-node  jstree-leaf"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="K_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>Select from list</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="N_anchor" id="N" class="jstree-node  jstree-leaf"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="N_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>Summarising</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="M_anchor" id="M" class="jstree-node  jstree-leaf"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="M_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>T/F/?</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="Q_anchor" id="Q" class="jstree-node  jstree-leaf"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="Q_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>Translation English - German</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="L_anchor" id="L" class="jstree-node  jstree-leaf"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="L_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>Translation German - English</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="P_anchor" id="P" class="jstree-node  jstree-leaf"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="P_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>Which statements are correct?</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="O_anchor" id="O" class="jstree-node  jstree-leaf jstree-last"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="O_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>Who says what?</a></li></ul></div><div id="index3" class="iTab index3 index-tab jstree jstree-4 jstree-default ui-tabs-panel ui-corner-bottom ui-widget-content" role="tabpanel" aria-multiselectable="true" tabindex="0" aria-activedescendant="j4_1" aria-busy="false" aria-labelledby="index3label" aria-hidden="true" style="display: none;"><ul class="jstree-container-ul jstree-children jstree-wholerow-ul jstree-no-dots" role="group"><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="j4_1_anchor" id="j4_1" class="jstree-node  jstree-leaf"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="j4_1_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>ALL</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="1$_anchor" id="1$" class="jstree-node  jstree-leaf"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="1$_anchor"><i class="jstree-icon jstree-themeicon fa fa-plus ic1 hide-icon jstree-themeicon-custom" role="presentation"></i>Listening</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="2$_anchor" id="2$" class="jstree-node  jstree-leaf"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="2$_anchor"><i class="jstree-icon jstree-themeicon fa fa-circle ic2 hide-icon jstree-themeicon-custom" role="presentation"></i>Listening and Writing</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="3$_anchor" id="3$" class="jstree-node  jstree-leaf"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="3$_anchor"><i class="jstree-icon jstree-themeicon fa fa-square ic3 hide-icon jstree-themeicon-custom" role="presentation"></i>Reading</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="4$_anchor" id="4$" class="jstree-node  jstree-leaf"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="4$_anchor"><i class="jstree-icon jstree-themeicon fa fa-caret-up ic4 hide-icon jstree-themeicon-custom" role="presentation"></i>Reading and Writing</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="5$_anchor" id="5$" class="jstree-node  jstree-leaf"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="5$_anchor"><i class="jstree-icon jstree-themeicon fa fa-times ic5 hide-icon jstree-themeicon-custom" role="presentation"></i>Speaking</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="6$_anchor" id="6$" class="jstree-node  jstree-leaf jstree-last"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="6$_anchor"><i class="jstree-icon jstree-themeicon fa fa-caret-left ic6 hide-icon jstree-themeicon-custom" role="presentation"></i>Writing</a></li></ul></div><div id="index6" class="iTab index6 index-tab jstree jstree-5 jstree-default ui-tabs-panel ui-corner-bottom ui-widget-content" role="tabpanel" aria-multiselectable="true" tabindex="0" aria-activedescendant="j5_1" aria-busy="false" aria-labelledby="index6label" aria-hidden="true" style="display: none;"><ul class="jstree-container-ul jstree-children jstree-wholerow-ul jstree-no-dots" role="group"><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="j5_1_anchor" id="j5_1" class="jstree-node  jstree-leaf"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="j5_1_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>ALL</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="Q24._anchor" aria-expanded="false" id="Q24." class="jstree-node  jstree-closed"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="Q24._anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>2024</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="Q23._anchor" aria-expanded="false" id="Q23." class="jstree-node  jstree-closed"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="Q23._anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>2023</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="Q22._anchor" aria-expanded="false" id="Q22." class="jstree-node  jstree-closed"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="Q22._anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>2022</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="Q21._anchor" aria-expanded="false" id="Q21." class="jstree-node  jstree-closed"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="Q21._anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>2021</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="Q20._anchor" aria-expanded="false" id="Q20." class="jstree-node  jstree-closed"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="Q20._anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>2020</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="Q19._anchor" aria-expanded="false" id="Q19." class="jstree-node  jstree-closed"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="Q19._anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>2019</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="Q18._anchor" aria-expanded="false" id="Q18." class="jstree-node  jstree-closed"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="Q18._anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>2018</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="Q17._anchor" aria-expanded="false" id="Q17." class="jstree-node  jstree-closed"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="Q17._anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>2017</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="QSP2766_anchor" aria-expanded="false" id="QSP2766" class="jstree-node  jstree-closed"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="QSP2766_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>Specimen Set 2</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="QSP766_anchor" aria-expanded="false" id="QSP766" class="jstree-node  jstree-closed"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="QSP766_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>Specimen Set 1</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="Q16_anchor" aria-expanded="false" id="Q16" class="jstree-node  jstree-closed"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="Q16_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>2016</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="Q15_anchor" aria-expanded="false" id="Q15" class="jstree-node  jstree-closed"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="Q15_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>2015</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="Q14_anchor" aria-expanded="false" id="Q14" class="jstree-node  jstree-closed"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="Q14_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>2014</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="Q13_anchor" aria-expanded="false" id="Q13" class="jstree-node  jstree-closed"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="Q13_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>2013</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="Q12_anchor" aria-expanded="false" id="Q12" class="jstree-node  jstree-closed"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="Q12_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>2012</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="Q11_anchor" aria-expanded="false" id="Q11" class="jstree-node  jstree-closed"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="Q11_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>2011</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="Q10_anchor" aria-expanded="false" id="Q10" class="jstree-node  jstree-closed"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="Q10_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>2010</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="Q09_anchor" aria-expanded="false" id="Q09" class="jstree-node  jstree-closed"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="Q09_anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>2009</a></li><li role="treeitem" aria-selected="false" aria-level="1" aria-labelledby="QSP._anchor" aria-expanded="false" id="QSP." class="jstree-node  jstree-closed jstree-last"><div unselectable="on" role="presentation" class="jstree-wholerow">&nbsp;</div><i class="jstree-icon jstree-ocl" role="presentation"></i><a class="jstree-anchor" href="#" tabindex="-1" id="QSP._anchor"><i class="jstree-icon jstree-themeicon" role="presentation"></i>Legacy Specimen</a></li></ul></div></div>
+				</div>
 
-					</ul>
-					<div id="contentTabs">
-						<div id="tabs-1" class="cTab tab1 htmlTab">
-							<p>
-								&nbsp;
-							</p>
-						</div>
-						<div id="tabs-2" class="cTab tab2 htmlTab">
-							<p>
-								&nbsp;
-							</p>
-						</div>
-						<div id="tabs-3" class="cTab  tab3 htmlTab">
-							<p>
-								&nbsp;
-							</p>
-						</div>
-						<div id="tabs-4" class="cTab  tab4 htmlTab">
-							<p>
-								&nbsp;
-							</p>
-						</div>
-						<div id="tabs-5" class="cTab  tab5">
-							<div id="iframeContainer">
-								<iframe id="resourceIframe"></iframe>
+			<div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div></div>
+
+			<!--======== DOCUMENT LIST ============ -->
+	 
+
+			<div class="roundedBox" id="docbox">
+				<div class="moveheader">
+					<div class="docTitle">
+						<span class="add-help" data-video="2"><div class="context-help-button" data-video="2"><i class="fa fa-video-camera" aria-hidden="true"></i></div></span>&nbsp;&nbsp;Documents
+					</div>
+					<div class="close-button close-docbox">
+						<i class="fa fa-times-circle" aria-hidden="true"></i>
+					</div>
+				</div>
+
+				<div id="docbody">
+
+					<div id="doctabs" class="tabs ui-tabs ui-corner-all ui-widget ui-widget-content">
+
+						<ul role="tablist" class="ui-tabs-nav ui-corner-all ui-helper-reset ui-helper-clearfix ui-widget-header">
+							<li class="documentTab ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="doctab-1" aria-labelledby="dt1" aria-selected="true" aria-expanded="true">
+								<a href="#doctab-1" id="dt1" role="presentation" tabindex="-1" class="ui-tabs-anchor">Documents</a>
+							</li>
+							<li class="readyMadeTab ui-tabs-tab ui-corner-top ui-state-default ui-tab" role="tab" tabindex="-1" aria-controls="doctab-2" aria-labelledby="dt2" aria-selected="false" aria-expanded="false">
+								<a href="#doctab-2" id="dt2" role="presentation" tabindex="-1" class="ui-tabs-anchor">Ready made documents</a>
+							</li>
+						</ul>
+						<div id="documentTabs">
+							<div id="doctab-1" class="doctab cTab ui-tabs-panel ui-corner-bottom ui-widget-content" aria-labelledby="dt1" role="tabpanel" aria-hidden="false">
+
+								<div id="docboxTitle">
+									Documents
+								</div>
+
+								<!--    <div id="docboxSearch"><input class="ui-textfield searchDocs" placeholder="search" /></div>  -->
+
+								<div class="doclistContainer">
+
+									<table id="docTableHeader" class="docTableHeader">
+										<thead>
+											<tr>
+												<th class="col1 hcol1">Open</th>
+												<th class="col1b hcol1b">Share</th>
+												<th class="col2  hcol2">Title</th>
+												<th class="col3  hcol3">Saved</th>
+												<th class="col4  hcol4">Author</th>
+												<th class="col5  hcol5">Questions</th>
+												<th class="col6  hcol6">Edit&nbsp;details</th>
+												<th class="col7  hcol7">Delete</th>
+											</tr>
+										</thead>
+									</table>
+
+									<table class="documentTable" id="documentTable" width="100%">
+
+										<thead style="display:none;">
+											<tr>
+												<th class="header"></th><th class="header"></th><th class="header"></th><th class="header"></th><th class="header"></th><th class="header"></th><th class="header"></th><th class="header"></th>
+											</tr>
+										</thead>
+										<tbody id="doclist"><tr id="1682cfe1aa3265c9d81232149e53ded7" class="documentItem"><td class="col1"><i class="fa fa-folder-open-o openDocument doc-icon" aria-hidden="true" data-type="open"></i></td><td class="col1b"><i class="fa fa-tablet openViewer doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col2"><span class="docname">2022 AS speaking</span></td><td class="col3">2024/09/12</td><td class="col4"></td><td class="col5">12</td><td class="col6"><i class="fa fa-pencil-square-o editDocument doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col7"><i class="fa fa-times deleteDocument doc-icon" aria-hidden="true" data-type="delete"></i></td></tr><tr id="fd595ccacf138a0fb3095a828178e819" class="documentItem"><td class="col1"><i class="fa fa-folder-open-o openDocument doc-icon" aria-hidden="true" data-type="open"></i></td><td class="col1b"><i class="fa fa-tablet openViewer doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col2"><span class="docname">Alicia Practice_Berlin_Mueseen</span></td><td class="col3">2025/06/05</td><td class="col4"></td><td class="col5">1</td><td class="col6"><i class="fa fa-pencil-square-o editDocument doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col7"><i class="fa fa-times deleteDocument doc-icon" aria-hidden="true" data-type="delete"></i></td></tr><tr id="ed7438a0a9891fae0ad3e4991cd8b8bc" class="documentItem"><td class="col1"><i class="fa fa-folder-open-o openDocument doc-icon" aria-hidden="true" data-type="open"></i></td><td class="col1b"><i class="fa fa-tablet openViewer doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col2"><span class="docname">AS A2 Revision Medien</span></td><td class="col3">2025/05/10</td><td class="col4">NBE</td><td class="col5">52</td><td class="col6"><i class="fa fa-pencil-square-o editDocument doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col7"><i class="fa fa-times deleteDocument doc-icon" aria-hidden="true" data-type="delete"></i></td></tr><tr id="e3ec416c191bd4c50c320d9a170f201f" class="documentItem"><td class="col1"><i class="fa fa-folder-open-o openDocument doc-icon" aria-hidden="true" data-type="open"></i></td><td class="col1b"><i class="fa fa-tablet openViewer doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col2"><span class="docname">Berlin Speaking</span></td><td class="col3">2024/06/27</td><td class="col4"></td><td class="col5">5</td><td class="col6"><i class="fa fa-pencil-square-o editDocument doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col7"><i class="fa fa-times deleteDocument doc-icon" aria-hidden="true" data-type="delete"></i></td></tr><tr id="467543b1785a1d29b06fc2b442d504c2" class="documentItem"><td class="col1"><i class="fa fa-folder-open-o openDocument doc-icon" aria-hidden="true" data-type="open"></i></td><td class="col1b"><i class="fa fa-tablet openViewer doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col2"><span class="docname">Besuch der alten Dame</span></td><td class="col3">2025/05/10</td><td class="col4">NBE</td><td class="col5">36</td><td class="col6"><i class="fa fa-pencil-square-o editDocument doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col7"><i class="fa fa-times deleteDocument doc-icon" aria-hidden="true" data-type="delete"></i></td></tr><tr id="d5c51898fd55afde46fe6f1374932861" class="documentItem"><td class="col1"><i class="fa fa-folder-open-o openDocument doc-icon" aria-hidden="true" data-type="open"></i></td><td class="col1b"><i class="fa fa-tablet openViewer doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col2"><span class="docname">Das Leben der Anderen</span></td><td class="col3">2025/06/05</td><td class="col4">NBE</td><td class="col5">36</td><td class="col6"><i class="fa fa-pencil-square-o editDocument doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col7"><i class="fa fa-times deleteDocument doc-icon" aria-hidden="true" data-type="delete"></i></td></tr><tr id="4207ce7e39c203e559fb6200896c704a" class="documentItem"><td class="col1"><i class="fa fa-folder-open-o openDocument doc-icon" aria-hidden="true" data-type="open"></i></td><td class="col1b"><i class="fa fa-tablet openViewer doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col2"><span class="docname">Der Vorleser</span></td><td class="col3">2025/05/10</td><td class="col4">NBE</td><td class="col5">36</td><td class="col6"><i class="fa fa-pencil-square-o editDocument doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col7"><i class="fa fa-times deleteDocument doc-icon" aria-hidden="true" data-type="delete"></i></td></tr><tr id="5ec388df300484d4c679b9a6fe2c6a9b" class="documentItem"><td class="col1"><i class="fa fa-folder-open-o openDocument doc-icon" aria-hidden="true" data-type="open"></i></td><td class="col1b"><i class="fa fa-tablet openViewer doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col2"><span class="docname">deutsch</span></td><td class="col3">2024/09/29</td><td class="col4"></td><td class="col5">7</td><td class="col6"><i class="fa fa-pencil-square-o editDocument doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col7"><i class="fa fa-times deleteDocument doc-icon" aria-hidden="true" data-type="delete"></i></td></tr><tr id="613fda3fe2c7606dd94b8387aa5e903b" class="documentItem"><td class="col1"><i class="fa fa-folder-open-o openDocument doc-icon" aria-hidden="true" data-type="open"></i></td><td class="col1b"><i class="fa fa-tablet openViewer doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col2"><span class="docname">Deutschland und die EU</span></td><td class="col3">2024/05/08</td><td class="col4"></td><td class="col5">5</td><td class="col6"><i class="fa fa-pencil-square-o editDocument doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col7"><i class="fa fa-times deleteDocument doc-icon" aria-hidden="true" data-type="delete"></i></td></tr><tr id="7f40984a60e3e020244ed9386c3bc5a0" class="documentItem"><td class="col1"><i class="fa fa-folder-open-o openDocument doc-icon" aria-hidden="true" data-type="open"></i></td><td class="col1b"><i class="fa fa-tablet openViewer doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col2"><span class="docname">Die digitale Welt</span></td><td class="col3">2024/04/25</td><td class="col4"></td><td class="col5">5</td><td class="col6"><i class="fa fa-pencil-square-o editDocument doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col7"><i class="fa fa-times deleteDocument doc-icon" aria-hidden="true" data-type="delete"></i></td></tr><tr id="f8d7ced8d5fdb6c9b0a4f8892a108a99" class="documentItem"><td class="col1"><i class="fa fa-folder-open-o openDocument doc-icon" aria-hidden="true" data-type="open"></i></td><td class="col1b"><i class="fa fa-tablet openViewer doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col2"><span class="docname">Die Politik und die Jugend</span></td><td class="col3">2024/05/08</td><td class="col4"></td><td class="col5">5</td><td class="col6"><i class="fa fa-pencil-square-o editDocument doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col7"><i class="fa fa-times deleteDocument doc-icon" aria-hidden="true" data-type="delete"></i></td></tr><tr id="bd855c6a9ab605835a1514e5ec0eca47" class="documentItem"><td class="col1"><i class="fa fa-folder-open-o openDocument doc-icon" aria-hidden="true" data-type="open"></i></td><td class="col1b"><i class="fa fa-tablet openViewer doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col2"><span class="docname">Die Politik und die Jugend</span></td><td class="col3">2024/05/08</td><td class="col4"></td><td class="col5">5</td><td class="col6"><i class="fa fa-pencil-square-o editDocument doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col7"><i class="fa fa-times deleteDocument doc-icon" aria-hidden="true" data-type="delete"></i></td></tr><tr id="1f107bd0e122e1b9b9a68cd6cfa0fcdd" class="documentItem"><td class="col1"><i class="fa fa-folder-open-o openDocument doc-icon" aria-hidden="true" data-type="open"></i></td><td class="col1b"><i class="fa fa-tablet openViewer doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col2"><span class="docname">Einwanderung</span></td><td class="col3">2025/05/10</td><td class="col4">Natalie Boniface</td><td class="col5">20</td><td class="col6"><i class="fa fa-pencil-square-o editDocument doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col7"><i class="fa fa-times deleteDocument doc-icon" aria-hidden="true" data-type="delete"></i></td></tr><tr id="f01cb98e2abb8ba37af84c6b477f39a9" class="documentItem"><td class="col1"><i class="fa fa-folder-open-o openDocument doc-icon" aria-hidden="true" data-type="open"></i></td><td class="col1b"><i class="fa fa-tablet openViewer doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col2"><span class="docname">Exampro Ger</span></td><td class="col3">2025/06/04</td><td class="col4"></td><td class="col5">8</td><td class="col6"><i class="fa fa-pencil-square-o editDocument doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col7"><i class="fa fa-times deleteDocument doc-icon" aria-hidden="true" data-type="delete"></i></td></tr><tr id="12be3b511b2f340f0ff868dfd439cdad" class="documentItem"><td class="col1"><i class="fa fa-folder-open-o openDocument doc-icon" aria-hidden="true" data-type="open"></i></td><td class="col1b"><i class="fa fa-tablet openViewer doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col2"><span class="docname">familie im wandel</span></td><td class="col3">2024/12/29</td><td class="col4"></td><td class="col5">10</td><td class="col6"><i class="fa fa-pencil-square-o editDocument doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col7"><i class="fa fa-times deleteDocument doc-icon" aria-hidden="true" data-type="delete"></i></td></tr><tr id="1100f1908f522eb86d98969772ec5660" class="documentItem"><td class="col1"><i class="fa fa-folder-open-o openDocument doc-icon" aria-hidden="true" data-type="open"></i></td><td class="col1b"><i class="fa fa-tablet openViewer doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col2"><span class="docname">Feste und Traditionen Speaking</span></td><td class="col3">2024/04/25</td><td class="col4"></td><td class="col5">5</td><td class="col6"><i class="fa fa-pencil-square-o editDocument doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col7"><i class="fa fa-times deleteDocument doc-icon" aria-hidden="true" data-type="delete"></i></td></tr><tr id="eb4313f8646d5371b5efad112bfb5cbf" class="documentItem"><td class="col1"><i class="fa fa-folder-open-o openDocument doc-icon" aria-hidden="true" data-type="open"></i></td><td class="col1b"><i class="fa fa-tablet openViewer doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col2"><span class="docname">Film und Buch</span></td><td class="col3">2024/07/21</td><td class="col4">SJA</td><td class="col5">54</td><td class="col6"><i class="fa fa-pencil-square-o editDocument doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col7"><i class="fa fa-times deleteDocument doc-icon" aria-hidden="true" data-type="delete"></i></td></tr><tr id="cfea740c94a8fe74088841a8cfc9549e" class="documentItem"><td class="col1"><i class="fa fa-folder-open-o openDocument doc-icon" aria-hidden="true" data-type="open"></i></td><td class="col1b"><i class="fa fa-tablet openViewer doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col2"><span class="docname">Folgen der Wiedervereinigung</span></td><td class="col3">2024/05/08</td><td class="col4"></td><td class="col5">5</td><td class="col6"><i class="fa fa-pencil-square-o editDocument doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col7"><i class="fa fa-times deleteDocument doc-icon" aria-hidden="true" data-type="delete"></i></td></tr><tr id="598e52062bb2e22df3f695adbc5c3e23" class="documentItem"><td class="col1"><i class="fa fa-folder-open-o openDocument doc-icon" aria-hidden="true" data-type="open"></i></td><td class="col1b"><i class="fa fa-tablet openViewer doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col2"><span class="docname">Good Bye Lenin</span></td><td class="col3">2025/05/10</td><td class="col4">NBE</td><td class="col5">36</td><td class="col6"><i class="fa fa-pencil-square-o editDocument doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col7"><i class="fa fa-times deleteDocument doc-icon" aria-hidden="true" data-type="delete"></i></td></tr><tr id="217a0487aad80a16026dddb608171bc0" class="documentItem"><td class="col1"><i class="fa fa-folder-open-o openDocument doc-icon" aria-hidden="true" data-type="open"></i></td><td class="col1b"><i class="fa fa-tablet openViewer doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col2"><span class="docname">Integration</span></td><td class="col3">2025/05/10</td><td class="col4">NBE</td><td class="col5">24</td><td class="col6"><i class="fa fa-pencil-square-o editDocument doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col7"><i class="fa fa-times deleteDocument doc-icon" aria-hidden="true" data-type="delete"></i></td></tr><tr id="416f34e541d961936dd52735047662c7" class="documentItem"><td class="col1"><i class="fa fa-folder-open-o openDocument doc-icon" aria-hidden="true" data-type="open"></i></td><td class="col1b"><i class="fa fa-tablet openViewer doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col2"><span class="docname">Jugendkultur Speaking</span></td><td class="col3">2024/04/25</td><td class="col4"></td><td class="col5">5</td><td class="col6"><i class="fa fa-pencil-square-o editDocument doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col7"><i class="fa fa-times deleteDocument doc-icon" aria-hidden="true" data-type="delete"></i></td></tr><tr id="df09aa0442bc8e8cdc6767e8a84df601" class="documentItem"><td class="col1"><i class="fa fa-folder-open-o openDocument doc-icon" aria-hidden="true" data-type="open"></i></td><td class="col1b"><i class="fa fa-tablet openViewer doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col2"><span class="docname">Jugendkultur Speaking (copy)</span></td><td class="col3">2024/04/25</td><td class="col4"></td><td class="col5">5</td><td class="col6"><i class="fa fa-pencil-square-o editDocument doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col7"><i class="fa fa-times deleteDocument doc-icon" aria-hidden="true" data-type="delete"></i></td></tr><tr id="5b6c199aed679a1db7df5ee5a169b4a8" class="documentItem"><td class="col1"><i class="fa fa-folder-open-o openDocument doc-icon" aria-hidden="true" data-type="open"></i></td><td class="col1b"><i class="fa fa-tablet openViewer doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col2"><span class="docname">Kunst und Architektur speaking</span></td><td class="col3">2024/04/25</td><td class="col4"></td><td class="col5">5</td><td class="col6"><i class="fa fa-pencil-square-o editDocument doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col7"><i class="fa fa-times deleteDocument doc-icon" aria-hidden="true" data-type="delete"></i></td></tr><tr id="1622e72dbb41f9bb451773fed6cfa2f8" class="documentItem"><td class="col1"><i class="fa fa-folder-open-o openDocument doc-icon" aria-hidden="true" data-type="open"></i></td><td class="col1b"><i class="fa fa-tablet openViewer doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col2"><span class="docname">listening</span></td><td class="col3">2025/05/23</td><td class="col4"></td><td class="col5">2</td><td class="col6"><i class="fa fa-pencil-square-o editDocument doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col7"><i class="fa fa-times deleteDocument doc-icon" aria-hidden="true" data-type="delete"></i></td></tr><tr id="488fe5bd4b27f5bde08f831cdc75f902" class="documentItem"><td class="col1"><i class="fa fa-folder-open-o openDocument doc-icon" aria-hidden="true" data-type="open"></i></td><td class="col1b"><i class="fa fa-tablet openViewer doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col2"><span class="docname">Listening  Writing</span></td><td class="col3">2024/07/21</td><td class="col4">SJA</td><td class="col5">4</td><td class="col6"><i class="fa fa-pencil-square-o editDocument doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col7"><i class="fa fa-times deleteDocument doc-icon" aria-hidden="true" data-type="delete"></i></td></tr><tr id="9eba92d1f8c1d09111a608354bc06f4c" class="documentItem"><td class="col1"><i class="fa fa-folder-open-o openDocument doc-icon" aria-hidden="true" data-type="open"></i></td><td class="col1b"><i class="fa fa-tablet openViewer doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col2"><span class="docname">Listening Jugendkultur</span></td><td class="col3">2025/09/16</td><td class="col4"></td><td class="col5">5</td><td class="col6"><i class="fa fa-pencil-square-o editDocument doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col7"><i class="fa fa-times deleteDocument doc-icon" aria-hidden="true" data-type="delete"></i></td></tr><tr id="5ca24cf09e1d532f0073ea26ed6fe335" class="documentItem"><td class="col1"><i class="fa fa-folder-open-o openDocument doc-icon" aria-hidden="true" data-type="open"></i></td><td class="col1b"><i class="fa fa-tablet openViewer doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col2"><span class="docname">Max Frisch Andorra</span></td><td class="col3">2025/05/10</td><td class="col4"> NBE</td><td class="col5">36</td><td class="col6"><i class="fa fa-pencil-square-o editDocument doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col7"><i class="fa fa-times deleteDocument doc-icon" aria-hidden="true" data-type="delete"></i></td></tr><tr id="8d4689dfef38ece78e2252130b892a1b" class="documentItem"><td class="col1"><i class="fa fa-folder-open-o openDocument doc-icon" aria-hidden="true" data-type="open"></i></td><td class="col1b"><i class="fa fa-tablet openViewer doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col2"><span class="docname">Rassismus</span></td><td class="col3">2025/05/10</td><td class="col4">NBE</td><td class="col5">20</td><td class="col6"><i class="fa fa-pencil-square-o editDocument doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col7"><i class="fa fa-times deleteDocument doc-icon" aria-hidden="true" data-type="delete"></i></td></tr><tr id="f545e3a8d39c93768df72af20e51970d" class="documentItem"><td class="col1"><i class="fa fa-folder-open-o openDocument doc-icon" aria-hidden="true" data-type="open"></i></td><td class="col1b"><i class="fa fa-tablet openViewer doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col2"><span class="docname">Reading practice</span></td><td class="col3">2024/04/29</td><td class="col4"></td><td class="col5">5</td><td class="col6"><i class="fa fa-pencil-square-o editDocument doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col7"><i class="fa fa-times deleteDocument doc-icon" aria-hidden="true" data-type="delete"></i></td></tr><tr id="a0f3f535cd8e15e984e6dcecd54a2aa0" class="documentItem"><td class="col1"><i class="fa fa-folder-open-o openDocument doc-icon" aria-hidden="true" data-type="open"></i></td><td class="col1b"><i class="fa fa-tablet openViewer doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col2"><span class="docname">Revision - Fernsehen</span></td><td class="col3">2025/05/10</td><td class="col4">NBE</td><td class="col5">18</td><td class="col6"><i class="fa fa-pencil-square-o editDocument doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col7"><i class="fa fa-times deleteDocument doc-icon" aria-hidden="true" data-type="delete"></i></td></tr><tr id="417d8cfc0a89c0093a5916a9624ab768" class="documentItem"><td class="col1"><i class="fa fa-folder-open-o openDocument doc-icon" aria-hidden="true" data-type="open"></i></td><td class="col1b"><i class="fa fa-tablet openViewer doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col2"><span class="docname">Revision - Literary Extract</span></td><td class="col3">2025/05/10</td><td class="col4">NBE</td><td class="col5">18</td><td class="col6"><i class="fa fa-pencil-square-o editDocument doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col7"><i class="fa fa-times deleteDocument doc-icon" aria-hidden="true" data-type="delete"></i></td></tr><tr id="9d39c5be78b606123f41d4ac53aa169e" class="documentItem"><td class="col1"><i class="fa fa-folder-open-o openDocument doc-icon" aria-hidden="true" data-type="open"></i></td><td class="col1b"><i class="fa fa-tablet openViewer doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col2"><span class="docname">Revision - Musik</span></td><td class="col3">2025/05/10</td><td class="col4">NBE</td><td class="col5">19</td><td class="col6"><i class="fa fa-pencil-square-o editDocument doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col7"><i class="fa fa-times deleteDocument doc-icon" aria-hidden="true" data-type="delete"></i></td></tr><tr id="b8e4c37e9b2757410f0ace0feb86f4f2" class="documentItem"><td class="col1"><i class="fa fa-folder-open-o openDocument doc-icon" aria-hidden="true" data-type="open"></i></td><td class="col1b"><i class="fa fa-tablet openViewer doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col2"><span class="docname">Translation into English</span></td><td class="col3">2024/09/03</td><td class="col4"></td><td class="col5">11</td><td class="col6"><i class="fa fa-pencil-square-o editDocument doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col7"><i class="fa fa-times deleteDocument doc-icon" aria-hidden="true" data-type="delete"></i></td></tr><tr id="a6a16f14a22d1174b06f3ad177d400d9" class="documentItem"><td class="col1"><i class="fa fa-folder-open-o openDocument doc-icon" aria-hidden="true" data-type="open"></i></td><td class="col1b"><i class="fa fa-tablet openViewer doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col2"><span class="docname">Translation into German</span></td><td class="col3">2024/09/03</td><td class="col4"></td><td class="col5">9</td><td class="col6"><i class="fa fa-pencil-square-o editDocument doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col7"><i class="fa fa-times deleteDocument doc-icon" aria-hidden="true" data-type="delete"></i></td></tr><tr id="74f27bfdca5f611ffbce78f61da5bf60" class="documentItem"><td class="col1"><i class="fa fa-folder-open-o openDocument doc-icon" aria-hidden="true" data-type="open"></i></td><td class="col1b"><i class="fa fa-tablet openViewer doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col2"><span class="docname">Translations and summaries</span></td><td class="col3">2024/10/23</td><td class="col4">SJA</td><td class="col5">9</td><td class="col6"><i class="fa fa-pencil-square-o editDocument doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col7"><i class="fa fa-times deleteDocument doc-icon" aria-hidden="true" data-type="delete"></i></td></tr><tr id="e3238205ec96f4c58b70ac6ce001c812" class="documentItem"><td class="col1"><i class="fa fa-folder-open-o openDocument doc-icon" aria-hidden="true" data-type="open"></i></td><td class="col1b"><i class="fa fa-tablet openViewer doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col2"><span class="docname">Y12 Internet assessment Term 3 new</span></td><td class="col3">2025/02/09</td><td class="col4"></td><td class="col5">4</td><td class="col6"><i class="fa fa-pencil-square-o editDocument doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col7"><i class="fa fa-times deleteDocument doc-icon" aria-hidden="true" data-type="delete"></i></td></tr><tr id="bb70e847006bfde48712774690ede624" class="documentItem"><td class="col1"><i class="fa fa-folder-open-o openDocument doc-icon" aria-hidden="true" data-type="open"></i></td><td class="col1b"><i class="fa fa-tablet openViewer doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col2"><span class="docname">Yr12 Good Bye Lenin</span></td><td class="col3">2025/05/08</td><td class="col4">NBE</td><td class="col5">18</td><td class="col6"><i class="fa fa-pencil-square-o editDocument doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col7"><i class="fa fa-times deleteDocument doc-icon" aria-hidden="true" data-type="delete"></i></td></tr><tr id="b2900cae7dcc1706cc70f7705af6f69e" class="documentItem"><td class="col1"><i class="fa fa-folder-open-o openDocument doc-icon" aria-hidden="true" data-type="open"></i></td><td class="col1b"><i class="fa fa-tablet openViewer doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col2"><span class="docname">Yr1213 A Level Revision</span></td><td class="col3">2025/06/05</td><td class="col4">Medien</td><td class="col5">16</td><td class="col6"><i class="fa fa-pencil-square-o editDocument doc-icon" aria-hidden="true" data-type="edit"></i></td><td class="col7"><i class="fa fa-times deleteDocument doc-icon" aria-hidden="true" data-type="delete"></i></td></tr></tbody>
+									</table>
+								</div>
+
+							</div>
+							<div id="doctab-2" class="doctab cTab ui-tabs-panel ui-corner-bottom ui-widget-content" aria-labelledby="dt2" role="tabpanel" aria-hidden="true" style="display: none;">
+
+								<div id="docboxTitle">
+									Ready made tests
+								</div>
+
+								<div class="doclistContainer">
+
+									<table id="readyMadeTableHeader" class="docTableHeader">
+										<thead>
+											<tr>
+												<th class="col1">Open</th>
+												<th class="col4">Document</th>
+												<th class="col6">Questions</th>
+
+											</tr>
+										</thead>
+									</table>
+									<table id="readyMades" class="documentTable" width="100%"></table>
+								</div>
 							</div>
 						</div>
-
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<!--======== SEARCH PANE ============ -->
 
-		<div class="shadow roundedBox searchbox-alt" id="searchbox">
-			<div class="moveheader moveheader-alt">
-				<div class="docTitle search-title">
-					<span class="add-help" data-video="6"></span>&nbsp;&nbsp;Search&nbsp;-&nbsp;<span
-						class="question-count"></span>
-				</div>
-				<div class="close-button close-search">
+             
+			<!--======== EDIT / SAVE DOCUMENT BOX ============ -->
+
+	 
+			<div class="no-border-box" id="editDocument">
+				<div class="close-button close-editbox close-no-border-box">
 					<i class="fa fa-times-circle" aria-hidden="true"></i>
 				</div>
-			</div>
 
-			<div id="searchHeader">
-
-				<div class="question-count-field">
-					<div class="question-count question-count-search"></div>
-					<div class="searchWindowClear clear-search" title="Reset the current search">
-						&nbsp;<i class="fa fa-refresh" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span
-							class='button-text'>reset search</span>
+				<div class="leftFormBox">
+					<div class="no-border-header editDocumentBox">
+						<span class="add-help" data-video="3"><div class="context-help-button" data-video="3"><i class="fa fa-video-camera" aria-hidden="true"></i></div></span>&nbsp;&nbsp;Export
 					</div>
-				</div>
+					<div class="label-text">
 
-				<div class="freetext-field">
-					<div class="qindex-title">
-						Quick Index search:
 					</div>
-					<div class="freetext-container">
-						<input type="text" class="ui-textfield freetext">
-					</div>
-					<div class="searchWindowButton clear-freetext" title="Reset the quick index search">
-						<i class="fa fa-times-circle-o" aria-hidden="true"></i>
-					</div>
-				</div>
+					<div class="form-container">
 
-			</div>
+						<div style="text-align: center;">
 
-			<div id="indextabs">
-				<ul id="tabTab"></ul>
+							<div class="print-options-container">
 
-				<div class="indexTabHolder" id="tabContent"></div>
-			</div>
+								<!-- <span class="printBrowser"><button class="printButton" data-action="browser" title="Preview in web browser (a new window will open)"><img class="printImage" src="/images/print/browser.png"/></button></span> -->
+								<div id="pdf-button" class="printPDF buttonContainer">
+									<button class="printButton" data-action="pdf" title="Download as Adobe PDF"><img class="printImage" src="/images/print/pdf.png">
+									</button>
+								</div>
 
-		</div>
-
-
-
-
-
-		<!--======== EDIT / SAVE DOCUMENT BOX ============ -->
-
-
-		<div class='no-border-box' id='editDocument'>
-			<div class="close-button close-editbox close-no-border-box">
-				<i class="fa fa-times-circle" aria-hidden="true"></i>
-			</div>
-
-			<div class='leftFormBox'>
-				<div class='no-border-header editDocumentBox'>
-					<span class="add-help" data-video="3"></span>&nbsp;&nbsp;Export
-				</div>
-				<div class="label-text">
-
-				</div>
-				<div class="form-container">
-
-					<div style="text-align: center;">
-						
-						<div class="print-options-container">
-
-							<!-- <span class="printBrowser"><button class="printButton" data-action="browser" title="Preview in web browser (a new window will open)"><img class="printImage" src="https://app.doublestruck.eu//images/print/browser.png"/></button></span> -->
-							<div id="pdf-button" class="printPDF buttonContainer">
-								<button class="printButton" data-action="pdf" title="Download as Adobe PDF"><img
-										class="printImage" src="https://app.doublestruck.eu//images/print/pdf.png" />
-								</button>
+								<div id="word-button" class="printWord buttonContainer">
+									<button class="printButton" data-action="word" title="Download as MS-Word RTF file"><img class="printImage" src="/images/print/word.png">
+									</button>
+								</div>
+																	<div id="cloud-button" class="printGoogle buttonContainer">
+										<button class="printButton" data-action="google" title="Save to your Google Drive"><img class="printImage" src="/images/print/google.png">
+										</button>
+									</div>
+																
+								<br>
+								<div id="pdf-text" class="buttonContainer">
+									Ready to print
+								</div>
+								<div id="word-text" class="buttonContainer">
+									Ready to edit
+								</div>
+																	<div id="cloud-text" class="buttonContainer">
+										Ready for the cloud
+									</div>
+								
 							</div>
 
-							<div id="word-button" class="printWord buttonContainer">
-								<button class="printButton" data-action="word" title="Download as MS-Word RTF file"><img
-										class="printImage" src="https://app.doublestruck.eu//images/print/word.png" />
-								</button>
+							
+						</div>
+					</div>
+				</div>
+
+				<div class="leftFormBox">
+					<div class="no-border-header editDocumentBox">
+
+					    <div class="save-indicator">
+
+					    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"></circle><path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"></path></svg>
+
+					     </div>
+					    <span class="add-help" data-video="5"><div class="context-help-button" data-video="5"><i class="fa fa-video-camera" aria-hidden="true"></i></div></span>&nbsp;&nbsp;Save
+					</div>
+					<div class="label-text">
+						Save to online library
+					</div>
+					<div class="form-container">
+
+						<div class="form-label">
+							Document name
+						</div>
+						<input type="text" class="ui-textfield doc-form-field" value="" id="docName">
+
+						<div class="form-label">
+							Author (optional)
+						</div>
+						<input type="text" class="ui-textfield doc-form-field" value="" id="docAuthor">
+
+						<div class="save-buttons">
+							<div class="application-button save-document">
+								Save
 							</div>
 
 							<br>
-							<div id="pdf-text" class="buttonContainer">
-								Ready to print
-							</div>
-							<div id="word-text" class="buttonContainer">
-								Ready to edit
-							</div>
 
-						</div>
+			                <div class="application-button save-document save-as">
+                                Save a copy
+                            </div>
+                        </div>
+
 
 
 					</div>
+
 				</div>
-			</div>
 
+				<div class="leftFormBox">
+					<div class="no-border-header editDocumentBox">
+						<span class="add-help" data-video="7"><div class="context-help-button" data-video="7"><i class="fa fa-video-camera" aria-hidden="true"></i></div></span>&nbsp;&nbsp;Share
+					</div>
 
+					<div class="label-text">
+						Document web-link
+					</div>
+					<div class="label-text">
+
+					</div>
+					<div class="form-container">
+						<div style="float:left;">
+							<div class="form-label"></div>
+							<div class="url share-url">
+								Save your document to generate the web link
+							</div>
+							<a href="#" id="qrFullScreen" target="_blank" style="text-align:left;">
+							<div class="qrcode share-qr" id="viewerQrCode">
+								
+							</div>
+						<!-- 	<div style="text-align: center;">view full screen</div> -->
+							</a>
+
+						</div>
+						<div class="weblink-button-container">
+
+							<div style="text-align:center;">
+								<!--   <div class='application-button show-share-option'>Choose what to share</div> -->
+
+								<button class="printButton show-share-option" style="font-size:28px;">
+									<i class="fa fa-cogs" aria-hidden="true"></i>
+								</button>
+								<br>
+								Choose what to share
+
+							</div>
+
+						</div>
+						<div style="clear: both;"></div>
+					</div>
+				</div>
 			
 
-
+ 
 
 			<!--======== PRINT BOX ============ -->
 
-			<div class='no-border-box' id='printDocument'>
+			<div class="no-border-box" id="printDocument">
 
 				<div class="close-button close-printbox close-no-border-box">
 					<i class="fa fa-times-circle" aria-hidden="true"></i>
 				</div>
 
-				<div class='formBox'>
-
-					<div class='no-border-header'>
+				<div class="formBox">
+									<div class="no-border-header">
 						Export
 					</div>
 
+					<div id="printSpinner">
+						<div id="pspinner">
+							<i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
+							<span class="sr-only">Loading...</span>
+						</div>
+					</div>
 					<div id="export-options">
 						<div id="export-options-left">
 							<div class="small-header">
 								What should be included?
 							</div>
-							<ul class='checkbox-ul'>
+							<ul class="checkbox-ul">
 								<li>
-									<input type="checkbox" class="printCheckbox" value="Q" id="printQ" checked />
+									<input type="checkbox" class="printCheckbox" value="Q" id="printQ" checked="">
 									<label for="viewerQ">&nbsp;&nbsp;Question</label>
 								</li>
 								<li>
-									<input type="checkbox" class="printCheckbox" value="M" id="printM" />
+									<input type="checkbox" class="printCheckbox" value="M" id="printM">
 									<label for="printM">&nbsp;&nbsp;Mark scheme
-								</li>
+								</label></li>
 								<li>
-									<input type="checkbox" class="printCheckbox" value="E" id="printE" />
+									<input type="checkbox" class="printCheckbox" value="E" id="printE">
 									<label for="printE">&nbsp;&nbsp;Examiner remarks
-								</li>
+								</label></li>
 								<li>
-									<input type="checkbox" class="printCheckbox" value="N" id="printN" />
+									<input type="checkbox" class="printCheckbox" value="N" id="printN">
 									<label for="printN">&nbsp;&nbsp;Notes
-								</li>
+								</label></li>
 								<!--
 								<li>
 									<input type="checkbox" class="printCheckbox" value="I"  id="printI"/>
@@ -509,9 +722,9 @@
 								-->
 
 								<li>
-									<input type="checkbox" class="printCheckbox" value="C" id="printC" />
+									<input type="checkbox" class="printCheckbox" value="C" id="printC">
 									<label for="printC">&nbsp;&nbsp;Include cover page
-								</li>
+								</label></li>
 
 							</ul>
 						</div> <!-- End export-options-left -->
@@ -519,7 +732,7 @@
 							<div id="compact-questions-radio">
 								<div>Answer lines</div>
 								<label>
-									<input type="radio" name="answer-lines" id="answer-lines-on" checked>On
+									<input type="radio" name="answer-lines" id="answer-lines-on" checked="">On
 								</label>
 								<label>
 									<input type="radio" name="answer-lines" id="answer-lines-off">Off
@@ -537,29 +750,29 @@
 
 						<div class="cover-page-container">
 
-							<div class="cover-page-labels">
-								<div class="ui-textfield-label">Title</div>
-								<div class="ui-textfield-label">Subtitle</div>
-								<div class="ui-textfield-label">Time&nbsp;allowed</div>
-								<div class="ui-textfield-label">Total&nbsp;marks</div>
-								<div class="ui-textfield-label">Comments</div>
-							</div>
+    			           <div class="cover-page-labels">
+                                <div class="ui-textfield-label">Title</div>
+                                <div class="ui-textfield-label">Subtitle</div>
+                                <div class="ui-textfield-label">Time&nbsp;allowed</div>
+                                <div class="ui-textfield-label">Total&nbsp;marks</div>
+                                <div class="ui-textfield-label">Comments</div>
+                            </div>
 
 
-							<div class="cover-page-form">
-								<input id="pformTitle" class="ui-textfield" type="text" />
-								<input id="pformSubtitle" class="ui-textfield" type="text" />
-								<input id="pformTime" class="ui-textfield" type="text" />
-								<input id="pformMarks" class="ui-textfield" type="text" />
-								<input id="pformComments" class="ui-textfield" type="text" />
-							</div>
+    						<div class="cover-page-form">
+    							<input id="pformTitle" class="ui-textfield" type="text">
+    							<input id="pformSubtitle" class="ui-textfield" type="text">
+    							<input id="pformTime" class="ui-textfield" type="text">
+    							<input id="pformMarks" class="ui-textfield" type="text">
+    							<input id="pformComments" class="ui-textfield" type="text">
+    						</div>
 
 						</div>
 
 					</div>
 					<br>
 					<div class="print-options-container">
-						<div class='application-button send-print'>
+						<div class="application-button send-print" style="bottom: 0px;">
 							Export to <span class="print-type">PDF</span>
 						</div>
 					</div>
@@ -567,31 +780,114 @@
 
 			</div>
 
-			
+			<div class="no-border-box" id="googleExport">
 
-			
+				<div class="close-button close-google close-no-border-box">
+					<i class="fa fa-times-circle" aria-hidden="true"></i>
+				</div>
+
+				<div class="formBox">
+					<div class="no-border-header">
+						Save to Google Drive
+					</div>
+					<div class="label-text">
+						<b>Step 1.</b> Enter a name for your document. This is the name that the document will have in your Google Drive account.
+					</div>
+
+					<input id="googleName" class="ui-textfield mar10" type="text">
+
+					<div class="googleText label-text" style="display:none;">
+						Click the save button to continue
+					</div>
+
+					<div class="googleContainer">
+						<div id="googleStep2"></div>
+					</div>
+
+					<div class="button-footer">
+						<div id="googleNext" class="footer-button">
+							Next
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<!--======== SHARE DOCUMENT BOX ============ -->
+
+			<div class="no-border-box" id="shareDocument">
+
+				<div class="close-button close-sharebox close-no-border-box">
+					<i class="fa fa-times-circle" aria-hidden="true"></i>
+				</div>
+
+				<div class="formBox">
+
+					<div class="no-border-header">
+						<span class="add-help" data-video="7"><div class="context-help-button" data-video="7"><i class="fa fa-video-camera" aria-hidden="true"></i></div></span>&nbsp;&nbsp;Web-link options
+					</div>
+
+					<div class="label-text">
+						Choose what to share
+					</div>
+
+
+					<ul class="checkbox-ul">
+						<li>
+							<input type="checkbox" disabled="disabled" checked="checked" value="1">
+							<label for="viewerQ">&nbsp;&nbsp;Question</label>
+						</li>
+						<li>
+							<input type="checkbox" class="viewer-checkbox" id="viewerM" value="1">
+							<label for="viewerM">&nbsp;&nbsp;Mark scheme
+						</label></li>
+						<li>
+							<input type="checkbox" class="viewer-checkbox" id="viewerE" value="1">
+							<label for="viewerE">&nbsp;&nbsp;Examiner remarks
+						</label></li>
+						<li>
+							<input type="checkbox" class="viewer-checkbox" id="viewerN" value="1">
+							<label for="viewerN">&nbsp;&nbsp;Notes
+						</label></li>
+						<li>
+							<input type="checkbox" class="viewer-checkbox" id="viewerR" value="1">
+							<label for="viewerR">&nbsp;&nbsp;Resources
+						</label></li>
+					</ul>
+
+
+					<!-- <div class='label-text'>Change to update what is displayed</div>  -->
+					<div class="url share-url"></div>
+				</div>
+				<div class="button-footer">
+					<div class="footer-button save-share-settings">
+						Save changes
+					</div>
+				</div>
+			</div>
 
 			<!--======= PRINT FORM ===========-->
 
 			<div style="display:none;">
 				<iframe id="printTarget" name="printTarget"></iframe>
 				<form name="printForm" target="printTarget" id="printForm" method="POST">
-					<input type="hidden" id="p_questionlist" name="p_questionlist" />
-					<input type="hidden" id="p_folderlist" name="p_folderlist" />
-					<input type="hidden" id="p_types" name="p_types" />
-					<input type="hidden" id="p_key" name="p_key" value="" />
-					<input type="hidden" id="p_subject" name="p_subject" value="AA_MAT" />
-					<input type="hidden" id="p_title" name="p_title" value="" />
-					<input type="hidden" id="p_subtitle" name="p_subtitle" value="" />
-					<input type="hidden" id="p_time" name="p_time" value="" />
-					<input type="hidden" id="p_marks" name="p_marks" value="" />
-					<input type="hidden" id="p_comments" name="p_comments" value="" />
-					<input type="hidden" id="p_showcover" name="p_showcover" value="0" />
-					<input type="hidden" id="p_return" name="p_return" value="0" />
-					<input type="hidden" id="p_filename" name="p_filename" value="0" />
-					<input type="hidden" id="p_brand" name="p_brand" value="EP" />
-					<input type="hidden" id="p_launchkey" name="p_launchkey" value="" />
-					<input type="hidden" id="p_lines" name="p_lines" value="true" />
+					<input type="hidden" id="p_questionlist" name="p_questionlist">
+					<input type="hidden" id="p_folderlist" name="p_folderlist">
+					<input type="hidden" id="p_types" name="p_types">
+					<input type="hidden" id="p_key" name="p_key" value="ff5e382f5b849bd79204d36500163e51">
+					<input type="hidden" id="p_subject" name="p_subject" value="AA_GERM">
+					<input type="hidden" id="p_title" name="p_title" value="">
+					<input type="hidden" id="p_subtitle" name="p_subtitle" value="">
+					<input type="hidden" id="p_time" name="p_time" value="">
+					<input type="hidden" id="p_marks" name="p_marks" value="">
+					<input type="hidden" id="p_comments" name="p_comments" value="">
+					<input type="hidden" id="p_showcover" name="p_showcover" value="0">
+					<input type="hidden" id="p_return" name="p_return" value="0">
+					<input type="hidden" id="p_filename" name="p_filename" value="0">
+					<input type="hidden" id="p_brand" name="p_brand" value="EP">
+					<input type="hidden" id="p_launchkey" name="p_launchkey" value="5c6b0af7930d98c4e5efa5228b062338">
+					<input type="hidden" id="p_lines" name="p_lines" value="true">
 
 				</form>
 			</div>
@@ -599,13 +895,28 @@
 			<div class="no-border-box" id="listItemPreview"></div>
 
 
-			<div class='no-border-box manager-message' id='studentDataPopUp'>
-				<div class="close-button close-no-border-box">
-					<i class="fa fa-times-circle" aria-hidden="true"></i>
-				</div>
+<div class="no-border-box manager-message" id="studentDataPopUp">
+<div class="close-button close-no-border-box">
+	<i class="fa fa-times-circle" aria-hidden="true"></i>
+</div>
+<div class="formBox">
 
-			</div>
+	<div class="manager-body">
 
-</body>
-<script src="../../custom/custom.js"></script>
-</html>
+	<p><i class="fa fa-exclamation-triangle"></i>&nbsp;If you want your students to answer onscreen, your Administrator needs to upload student data into the system. <a href="https://osasupport.exampro.co.uk/kb/?lnd=xh" target="lX">How do they do that?</a></p>
+	<p><b>Your Administrator(s):</b></p>
+<hr>
+		<div class="manager-list">
+
+		</div>
+<hr>
+		<a href="https://lnk.li/ot" target="LZ">How to nominate or change</a>
+	</div>
+	<hr>
+	<label><input type="checkbox" id="dontShow">&nbsp;&nbsp;Don't show me this again</label>
+</div>
+</div>
+
+	
+
+</div></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div></body></html>
